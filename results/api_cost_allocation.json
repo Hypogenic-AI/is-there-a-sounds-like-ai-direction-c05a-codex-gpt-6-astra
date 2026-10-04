@@ -1,0 +1,26 @@
+{
+  "method": "equal fraction of actual mixed-batch API cost per scored item, including reliability reratings",
+  "usd": {
+    "calibration": 0.04578356250000001,
+    "instruct:zero": 0.05600137500000002,
+    "instruct:mean_m1": 0.02186971874999999,
+    "instruct:mean_p1": 0.02361243750000001,
+    "instruct:ablate": 0.021551718750000014,
+    "instruct:mean_p2": 0.045725906250000024,
+    "instruct:mean_m2": 0.05978390624999998,
+    "instruct:logistic_m2": 0.03162112500000001,
+    "instruct:random2": 0.019223343749999993,
+    "instruct:random3": 0.0224795625,
+    "instruct:random1": 0.02025271875,
+    "instruct:random0": 0.021403874999999992,
+    "base:mean_m2": 0.0256003125,
+    "base:zero": 0.020766562500000006,
+    "instruct:residual_m2": 0.025060593750000016,
+    "instruct:formality_m2": 0.023165531250000017,
+    "instruct:random4": 0.02895900000000001,
+    "base:mean_p2": 0.03176090625,
+    "instruct:assistant_m2": 0.029379000000000013,
+    "instruct:residual_p2": 0.02627849999999999,
+    "instruct:human_prompt": 0.022604343750000006
+  }
+}

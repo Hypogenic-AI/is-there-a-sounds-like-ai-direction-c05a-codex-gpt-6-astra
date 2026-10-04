@@ -1,0 +1,8 @@
+{
+  "source_disjoint": true,
+  "normalized_text_disjoint": true,
+  "near_duplicate_definition": "training-fitted character 4gram TF-IDF cosine > 0.90",
+  "test_max_similarity": 0.5795014500617981,
+  "above_threshold": [],
+  "note": "Cannot exclude shared pretraining or less literal semantic duplicates."
+}

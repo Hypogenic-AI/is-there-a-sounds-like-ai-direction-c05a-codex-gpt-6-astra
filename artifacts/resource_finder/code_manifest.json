@@ -1,0 +1,92 @@
+[
+  {
+    "name": "mgt_probes",
+    "repo": "gerritq/mgt_probes",
+    "commit": "8875297e41846760e7cd06a7a249f581b9364146",
+    "path": "code/mgt_probes",
+    "sparse": true,
+    "included_directories": [
+      "src"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 31,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  },
+  {
+    "name": "sv-detect",
+    "repo": "Atmyre/sv-detect",
+    "commit": "d8d6541568c572bc29d53e43e870fd7dfc5d6dbc",
+    "path": "code/sv-detect",
+    "sparse": true,
+    "included_directories": [
+      "src",
+      "configs",
+      "patches"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 37,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  },
+  {
+    "name": "assistant-axis",
+    "repo": "safety-research/assistant-axis",
+    "commit": "a98961956072224eaf244eb289d6c01700b63795",
+    "path": "code/assistant-axis",
+    "sparse": true,
+    "included_directories": [
+      "assistant_axis",
+      "pipeline",
+      "notebooks"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 21,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  },
+  {
+    "name": "CAA",
+    "repo": "nrimsky/CAA",
+    "commit": "5dabbbd9a0bca5f25e174501e959de378806aa48",
+    "path": "code/CAA",
+    "sparse": true,
+    "included_directories": [
+      "utils"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 15,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  },
+  {
+    "name": "fast-detect-gpt",
+    "repo": "baoguangsheng/fast-detect-gpt",
+    "commit": "971b05202bac2bb504d60c0ac0812fea7a8f7c82",
+    "path": "code/fast-detect-gpt",
+    "sparse": true,
+    "included_directories": [
+      "scripts"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 16,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  },
+  {
+    "name": "raid",
+    "repo": "liamdugan/raid",
+    "commit": "f450f4b1e0bfd9dc2e3475d10ec3bd70cc7153f1",
+    "path": "code/raid",
+    "sparse": true,
+    "included_directories": [
+      "raid",
+      "detectors",
+      "generation"
+    ],
+    "root_files_included": true,
+    "python_files_parsed": 78,
+    "syntax_errors": [],
+    "runtime_test": "Not run: no model weights or PyTorch/Transformers installed in resource environment; code inspection and syntax parsing only."
+  }
+]

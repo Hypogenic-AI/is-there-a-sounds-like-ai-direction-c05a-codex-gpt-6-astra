@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small
+\caption{Validation-selected mean-direction AUROC on 128 human/machine pairs per row. Backbone is the model extracting representations; generator produced the comparison text. Bold marks the numerically higher backbone AUROC per row, not a significant difference. Human references are shared across generators within source sets.}\label{tab:transfer}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Corpus / domains & Generator & Base backbone & Instruction backbone\\
+\midrule
+\textsc{HAP-E}, academic/blog/news & GPT-4o & \textbf{0.971} & 0.970\\
+& Llama-3-8B base & 0.479 & \textbf{0.486}\\
+& Llama-3-8B instruction & 0.912 & \textbf{0.913}\\
+\textsc{HAP-E}, held-out domains & GPT-4o & \textbf{0.975} & 0.973\\
+& Llama-3-8B base & 0.549 & \textbf{0.564}\\
+& Llama-3-8B instruction & \textbf{0.913} & 0.911\\
+\textsc{HC3}, question answers & ChatGPT & \textbf{0.923} & 0.909\\
+\bottomrule
+\end{tabular}
+\end{table}

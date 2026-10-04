@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small
+\caption{Primary instruction contrast: mean $-2$ versus zero, averaging two seeds within each of 64 records. CIs are paired prompt-bootstrap 95\% intervals. Only the two style $p$-values receive Holm correction. Lower style scores alone do not establish improvement; neither preservation gate passes.}\label{tab:primary}
+\resizebox{\textwidth}{!}{\begin{tabular}{@{}lrrlrr@{}}
+\toprule
+Outcome & Zero & Mean $-2$ & Change [95\% CI] & Holm $p$ & $d_z$\\
+\midrule
+Encoder probability & 0.476 & 0.537 & $+0.061\;[-0.072,+0.193]$ & 0.381 & $+0.112$\\
+Judge AI-likeness & 69.219 & 49.180 & $-20.039\;[-22.852,-17.266]$ & 0.00020 & $-1.728$\\
+Coherence & 4.703 & 4.112 & $-0.591\;[-0.754,-0.427]$ & --- & $-0.888$\\
+Fact coverage & 0.919 & 0.891 & $-0.0279\;[-0.0573,+0.0016]$ & --- & $-0.229$\\
+Unsupported claims & 0.179 & 0.193 & $+0.0141\;[-0.0137,+0.0422]$ & --- & $+0.121$\\
+\bottomrule
+\end{tabular}}
+\end{table}

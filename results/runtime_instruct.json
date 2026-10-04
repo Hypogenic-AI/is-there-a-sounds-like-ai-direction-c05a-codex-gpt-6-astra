@@ -1,0 +1,10 @@
+{
+  "seconds": 462.71877694129944,
+  "gpu": "NVIDIA RTX A6000",
+  "peak_bytes": 16107621888,
+  "torch": "2.14.1+cu130",
+  "python": "3.12.8",
+  "dtype": "bfloat16",
+  "activation_batch": 32,
+  "generation_batch": 16
+}

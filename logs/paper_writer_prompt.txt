@@ -1,0 +1,621 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .codex/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Is there a “sounds like AI” direction in the residual stream?
+
+Research execution: 2026-10-04. **Outcome: partial causal style control; the stronger distinct, detector-consistent, content-preserving hypothesis was not established.**
+
+## 1. Executive Summary
+
+We tested whether a human/AI readout direction also controls new writing, rather than stopping at probe accuracy. In Qwen2.5-1.5B-Instruct, subtracting a matched-corpus direction at layer 24 lowered a blinded Gemini judge’s AI-likeness rating by **20.04/100 points** (95% paired bootstrap CI −22.85 to −17.27; Holm-adjusted sign-flip p = 0.00020). This exceeded the change under five equal-norm random directions. However, coherence fell **0.591/5 points** (CI −0.754 to −0.427), failing the prespecified preservation margin. A frozen RoBERTa detector did not corroborate the primary improvement: its AI score changed **+0.061** (CI −0.072 to +0.193; adjusted p = 0.381). Positive steering increased judge-rated AI-likeness while sharply *decreasing* the encoder’s score.
+
+The readout was strong in both pretrained base and instruction checkpoints: held-out GPT-4o/human AUROC was **0.9707 vs 0.9704**, respectively. It transferred to Llama-3 instruction outputs (instruction-backbone AUROC 0.913), but not Llama-3 base outputs (0.486). Removing five nuisance directions retained a smaller judge-rated style effect, with continuing quality loss and detector disagreement. These results support a controllable component of instruction-model writing style under this protocol, not a universal representation of machine authorship or a demonstrated separation from the published Assistant Axis.
+
+The study produced **1,472 genuine local-model task outputs**, 288 nuisance outputs, two independent scoring systems, 64 repeated judge ratings, and complete cached artifacts. The practical lesson is that readout transfer, generation controllability, detector validity and preservation of meaning must be tested separately. A lower detector score alone was particularly misleading here.
+
+## 2. Research Question, Motivation and Literature
+
+**Question.** Does a direction fitted to human versus machine text causally alter independent judgments of new generations while preserving content and coherence? Is it separable from length, domain, fluency, formality and assistant persona, and does instruction tuning amplify it?
+
+Quaremba et al. and SV-Detect establish strong representation-based detection, but do not establish generation control. Kuznetsov et al. already steer individual SAE features associated with style; their factual side effects prevent claiming that this is the first causal AI-style intervention. The Assistant Axis concerns persona and is an important alternative explanation. The contribution here is the combined intervention/control/measurement test and its negative findings, not a new detector leaderboard result. The full gathered synthesis and paper-reading record are in [literature_review.md](literature_review.md) and [papers/README.md](papers/README.md).
+
+Three directions were retained before experiments: causal dose response; nuisance distinctness; domain/generator/base–instruct transfer. SAE atlases, evasion optimization, fine-tuning, circuit discovery and multilingual universality were pruned. [planning.md](planning.md) preserves the ranked handoff and frozen feasible protocol, including implementation adjustments.
+
+## 3. Experimental Setup and Methodology
+
+### Models and resources
+
+| Role | Exact checkpoint / revision |
+|---|---|
+| Steered instruction model | `Qwen/Qwen2.5-1.5B-Instruct`, `989aa7980e4cf806f80c7fef2b1adb7bc71aa306` |
+| Paired pretrained model | `Qwen/Qwen2.5-1.5B`, `8faed761d45a263340a0528343f099c05c9a4323` |
+| Frozen encoder detector | `Hello-SimpleAI/chatgpt-detector-roberta`, `d2b342c61775d5dd0221808a79983ed3b86ffd86` |
+| Blinded style/quality judge | OpenRouter `google/gemini-3.8-flash`; catalog canonical slug `google/gemini-3.8-flash-20260902`; returned provider Google |
+
+These historical 1.5B checkpoints were chosen for a paired mechanistic intervention with accessible internals, not as contemporary capability leaders. No model response was simulated. The live OpenRouter catalog, supported parameters and prices were checked and archived **before** judge selection in [results/live_catalog.json](results/live_catalog.json). API requests used `https://openrouter.ai/api/v1/chat/completions`, default routing, temperature 0, JSON output, and max_tokens 3000. API aliases and provider infrastructure remain mutable despite the catalog snapshot.
+
+Hardware was one NVIDIA RTX A6000 (49,140 MiB). Python 3.12.8, PyTorch 2.14.1+cu130, Transformers 4.57.6, NumPy 2.5.3, scikit-learn 1.9.1 and SciPy 1.18.1 ran in the project `.venv`. Local inference used bfloat16 and SDPA, extraction batches of 32 and generation batches of 16. These conservative batches accommodate the large vocabulary/logit tensors and concurrent checkpoint runs; peak allocated memory was 16.1 GB per process. Instruction and base pipelines took 462.7 and 175.4 seconds, partially overlapping. No training or CPU/GPU timing comparison was performed. Optional native JIT was disabled because the environment lacks a C compiler; the initial failed attempt is logged. Exact dependencies and environment are in `uv.lock` and [results/execution_environment.json](results/execution_environment.json).
+
+### Data, grouping and controls against leakage
+
+We used the pre-gathered HAP-E release, joining human **chunk 2** and generated continuations by source ID. Human chunk 1 was not mislabeled as a comparison response. Academic/blog/news sources were split into **384 training, 96 validation and 128 test documents**; **128** fiction/spoken/TV-movie documents formed a held-out-domain set. Training used only GPT-4o versus human continuations. Test sets additionally contained Llama-3-8B base and instruction continuations. Each four-way test source thus shares its human reference; it is not four independent documents. Another **128 HC3 question pairs** tested task transfer without fitting any direction.
+
+The resulting corpus contains **2,240 texts**. Texts were reduced to the first 128 whitespace-delimited words, then at most 192 model tokens. Source IDs and normalized text hashes were disjoint across folds. A training-vocabulary character-4-gram TF-IDF audit found maximum test-to-training cosine **0.580**, with no cases above 0.90. This does not exclude semantic overlap or pretraining contamination. All exact source IDs, labels, text excerpts and hashes are saved in `results/corpus.json`; data revisions are in the original resource manifests. Length matching is approximate, not guaranteed by truncation.
+
+Generation used **64 distinct fictitious factual records**, eight variants in each of eight community-event topics. Prompts requested a 70–100-word paragraph retaining supplied facts without additional claims. Records specify location, event, day/time, coordinator, an item count, free attendance and a registration deadline. They are test inputs assembled procedurally, not fabricated model behavior. Exact inputs and full prompts are in [results/tasks.json](results/tasks.json) and `results/generations.jsonl`. Their repeated template limits the diversity of the 64 inferential units.
+
+### Extraction, vector fitting and intervention
+
+Raw response text, without chat framing, was passed through each checkpoint. Hooks captured the **last real token after transformer blocks 8, 16 and 24**, one-based, before final normalization. Left padding kept this token at the last position. We fitted a unit AI-minus-human mean direction and an L2 logistic normal (`C=1`, max_iter=2000) directly in native coordinates, with no PCA or scaling inversion. Layer 24 won validation mean-direction AUROC in both checkpoints (0.9811 instruction; 0.9825 base). Generation scores were not used for layer selection.
+
+For a unit vector `v`, addition was `h' = h + α σ v`, where σ is the training standard deviation of projection onto the original mean vector: 18.811 instruction and 19.704 base. We tested α = −2, −1, 0, +1, +2 in the instruction model. The ±2 addition norms were about 23–24% of mean training last-token residual norm. All random and nuisance additions used the **same absolute norm**, not their own projection SD. Ablation was uncentered `h' = h − (h·v)v`, which is not equivalent to negative addition.
+
+The hook changed only the last prompt token predicting the first output and each subsequent cached generation token. Earlier prompt positions were untouched. Arithmetic checks, unchanged earlier positions, zero-hook generation equivalence and repeated sampling smoke tests passed for both models. These checks test the implemented intervention, not the causal validity of the chosen layer.
+
+Conditions comprised zero, four signed mean doses, logistic −2, ablation, five random −2 directions, formality −2, assistant-proxy −2, nuisance-residualized ±2, and the plain “write like a human” prompt. All 17 instruction conditions used seed 42; zero and mean ±2 also used seed 43. The base model ran zero and mean ±2 with seed 42. Sampling was temperature 0.7, top_p 0.9, top_k 0, max_new_tokens 160. Batch seeds were the stated seed plus the starting batch offset. The instruction model used its chat template; the base model used `Instruction: …\nResponse:`. Consequently, generation differences between checkpoints are not a clean isolated tuning effect.
+
+### Nuisance estimation and independent measurements
+
+Each checkpoint generated 24 paired texts for each of formal/casual, verbose/concise and helpful-assistant/fictional-narrator prompts on separate pottery-course records (144 outputs per checkpoint). Greedy generation held supplied facts fixed, but generated realizations could differ in content. Last-token mean differences provided three nuisance proxies. A training activation/length covariance vector and academic-versus-other-domain mean vector supplied two more. QR orthogonalization removed their joint span from the AI direction; the remainder was normalized. **The assistant control is a reduced output-text proxy, not a reproduction of Lu et al.’s multi-role Assistant Axis.**
+
+Two external measures saw only generated text: the frozen RoBERTa detector’s ChatGPT probability and a blinded Gemini style score (0–100). Gemini additionally rated coherence (1–5), source-fact coverage (0–1), and unsupported-claim fraction (0–1). Requests shuffled conditions into batches of eight and replaced all condition/model IDs with opaque integers. The full rubric is in [results/judge_rubric.json](results/judge_rubric.json). Encoder and judge share neither fitted activations nor intervention labels, but statistical independence of their errors is not assumed. We also recorded token/word counts, truncation, repeated trigrams, script-mixing flags and simple anchor recall. Anchor substring recall is only a rough check, not semantic fact verification.
+
+The detector’s model card states that it trained on **all HC3**. Therefore, encoder validity was assessed on **64 held-out HAP-E human/GPT-4o pairs**, not HC3. These 64 IDs were lexicographically selected from the held-out test split and do not represent every domain equally. Judge calibration used the same pairs. A separate 64-output re-rating checked judge reliability under different batching.
+
+### Statistical plan and decision rules
+
+The primary contrast was instruction mean −2 versus zero on both external style scores. Seeds were averaged **within prompt**, then 64 prompts were bootstrapped 5,000 times for percentile 95% intervals. Paired sign-flip tests used 10,000 draws, with Holm correction across the two primary style tests. We report paired standardized effect `dz` and all tested conditions. Sign-flip inference assumes exchangeability/symmetry under the paired null; bootstrap intervals avoid a normal-error model. Ordinal quality scores are treated as numeric rubric averages. Other contrasts are exploratory with unadjusted tests, not additional confirmed discoveries.
+
+Preservation required lower 95% confidence bounds above **−0.25 coherence points** and **−0.05 fact-coverage units**. Failure to establish noninferiority is not automatically proof of damage: the coherence result is clear damage, while some content intervals are inconclusive. Coverage alone also does not rule out invented claims, so unsupported-claim scores remain essential. We report the full curves, then descriptive comparisons restricted to mutually high-quality, matched-coherence outputs; those post-treatment subsets cannot identify an unbiased causal effect. Eight-template cluster resampling, individual-seed results and length-adjusted regression are exploratory robustness checks.
+
+## 4. Results
+
+### Primary intervention and preservation
+
+Values below average the two primary seeds within each of 64 source records. Positive encoder change means *more* machine-like according to that detector.
+
+| Outcome | Zero mean | Mean −2 | Paired change [95% CI] | Holm p / paired dz |
+|---|---:|---:|---|---|
+| Encoder AI probability | 0.476 | 0.537 | +0.061 [−0.072, +0.193] | 0.381 / +0.112 |
+| Judge AI-likeness, 0–100 | 69.219 | 49.180 | −20.039 [−22.852, −17.266] | 0.00020 / −1.728 |
+| Coherence, 1–5 | 4.703 | 4.112 | −0.591 [−0.754, −0.427] | exploratory / −0.888 |
+| Fact coverage, 0–1 | 0.919 | 0.891 | −0.0279 [−0.0573, +0.0016] | exploratory / −0.229 |
+| Unsupported claims, 0–1 | 0.179 | 0.193 | +0.0141 [−0.0137, +0.0422] | exploratory / +0.121 |
+
+Neither quality noninferiority gate passed for the primary intervention. Positive +2 raised judge AI-likeness by **16.93** [15.10, 18.72], but lowered encoder score by **0.459** [−0.545, −0.373], lowered coherence by **0.414**, and lowered fact coverage by **0.131**. The two measures are not interchangeable operationalizations of AI style.
+
+![Signed style and quality dose response](figures/dose_response.png)
+
+*Figure 1. Seed-42 signed-dose means and prompt-bootstrap 95% intervals; 64 tasks per point. Base has only −2, 0 and +2 observations. Lines connect observed conditions and do not imply tested intermediate base doses. The primary two-seed analysis is in the table above.*
+
+### Controls and distinctness
+
+The table reports paired changes against the **same-seed** zero baseline. Mean ±2 uses both seeds; other conditions use seed 42. Full intervals and unadjusted exploratory tests are in [results/paired_comparisons.csv](results/paired_comparisons.csv).
+
+| Instruction condition | Δ judge AI-likeness | Δ encoder score | Δ coherence | Δ fact coverage |
+|---|---:|---:|---:|---:|
+| Mean −1 | −1.17 | +0.203 | −0.234 | −0.013 |
+| Mean −2 | −20.04 | +0.061 | −0.591 | −0.028 |
+| Mean +1 | +7.84 | −0.237 | +0.052 | −0.043 |
+| Mean +2 | +16.93 | −0.459 | −0.414 | −0.131 |
+| Logistic −2 | −15.39 | +0.214 | −0.570 | −0.039 |
+| Projection ablation | −15.78 | +0.223 | −0.233 | −0.002 |
+| Random directions, five-condition range | −3.05 to +3.91 | +0.043 to +0.219 | −0.164 to +0.148 | −0.025 to +0.016 |
+| Formality −2 | +1.88 | −0.159 | +0.063 | −0.071 |
+| Assistant proxy −2 | +4.77 | −0.259 | +0.125 | −0.051 |
+| Nuisance-residualized −2 | −8.67 | +0.196 | −0.555 | −0.045 |
+| Nuisance-residualized +2 | +13.00 | −0.327 | −0.406 | −0.111 |
+| Human-style prompt | −6.02 | −0.126 | −0.094 | −0.024 |
+
+At seed 42, mean −2 reduced the judge score **23.08 points more than the average random direction** (CI −26.44 to −19.55), but cost an additional 0.493 coherence points. Its encoder contrast against the random average was −0.012 [−0.129, +0.107]. Thus, generic perturbation does not explain the large judge effect, but the encoder does not establish a corresponding specific effect. The prompt baseline had a smaller judge change with broad quality intervals; neither preservation gate was established for it at this sample size.
+
+Instruction mean-vector cosine similarities were −0.038 with formality, +0.039 with verbosity, −0.236 with the assistant proxy, −0.231 with length, and +0.072 with domain. Joint removal retained **86.3% of vector norm**. The residualized direction remained readable (GPT-4o test AUROC 0.966) and retained a smaller causal judge effect, but still damaged coherence. This rules out simple collinearity with these particular proxies; it does not establish semantic independence from the underlying constructs.
+
+![All instruction-model control contrasts](figures/controls.png)
+
+*Figure 2. Prompt-paired mean changes and 95% bootstrap intervals. Seed counts follow the table above. These intervals are marginal, not simultaneous across all exploratory comparisons.*
+
+### Readout transfer and base versus instruction tuning
+
+| Held-out text setting | Base-backbone mean AUROC | Instruction-backbone mean AUROC |
+|---|---:|---:|
+| GPT-4o, academic/blog/news | 0.971 | 0.970 |
+| Llama-3-8B **base**, same domains | 0.479 | 0.486 |
+| Llama-3-8B **instruction**, same domains | 0.912 | 0.913 |
+| GPT-4o, held-out domains | 0.975 | 0.973 |
+| Llama-3-8B base, held-out domains | 0.549 | 0.564 |
+| Llama-3-8B instruction, held-out domains | 0.913 | 0.911 |
+| HC3 human/ChatGPT answers | 0.923 | 0.909 |
+
+For instruction-backbone in-domain tests, GPT-4o AUROC CI was **0.950–0.987**, versus **0.423–0.550** for Llama base. The paired instruction-minus-base backbone AUROC difference on GPT-4o was **−0.0003** [−0.0051, +0.0053]. We found no amplification in this separability metric; this is not an equivalence test for every aspect of representation strength. Base-model negative steering changed both scores downward (judge −12.81 [−18.28, −7.03]; encoder −0.244 [−0.365, −0.124]), but its coherence interval, −0.094 [−0.320, +0.133], did not establish the −0.25 noninferiority margin. Base controls beyond signed doses were not run.
+
+![Readout transfer](figures/readout.png)
+
+*Figure 3. Validation-selected mean-direction test AUROCs; 128 human/machine pairs per generator-setting. Human references are shared within each source set. Bootstrap intervals and logistic alternatives are saved in results/.*
+
+Readout survived a within-pair token-length difference limit of 10: instruction AUROC **0.973** on 64 in-domain pairs and **0.976** on 77 held-out-domain pairs. Training projection correlated −0.075 with token length and −0.313 with model NLL. In-domain GPT-4o negative-NLL AUROC was 0.684, versus mean-direction 0.970. Intriguingly, negative NLL detected Llama base at 0.903 when the mean direction was near chance. These are partial confound checks, not proof of independence from fluency or length.
+
+### Detector validity, reliability and robustness
+
+| Independent measure | HAP-E calibration AUROC [95% CI] | Human mean / GPT-4o mean |
+|---|---|---|
+| Frozen RoBERTa | 0.656 [0.585, 0.729] | 0.033 / 0.155 |
+| Gemini judge | 0.965 [0.930, 0.992] | 17.42 / 58.05 |
+
+The encoder was weak under this domain/generator shift, so its disagreement limits corroboration rather than decisively disproving every style effect. Across all generated outputs, encoder/judge Spearman correlation was **−0.375**. On 64 re-rated outputs, judge AI-likeness agreement was **0.661**, with mean absolute difference **10.78/100**; coherence agreement was 0.850 and mean absolute difference 0.211. No human rating validation was performed.
+
+The negative judge effect appeared at both seeds (−21.56 and −18.52), with coherence losses at both. Resampling eight topic/template clusters retained a judge interval of −22.70 to −17.30 and coherence interval −0.793 to −0.405; eight clusters remain too few for broad population claims. Exploratory post-treatment length adjustment left an approximately −20.45 judge coefficient, which is not an identified direct effect.
+
+Matched-quality analysis retained only **11/64 instruction pairs** for mean −2 at seed 42. It showed judge change −15.45 [−28.64, −1.82], but encoder change +0.301 [−0.032, +0.613]. Only **22 base pairs** passed the same filter, with both scores lower. These small selected subsets cannot establish preservation for the full population; bootstrap and discrete sign-flip inference also differ at these small sample sizes. All subset counts and intervals are in [results/quality_matched.csv](results/quality_matched.csv).
+
+### Error analysis and cost
+
+The primary instruction baseline already contained unsupported claims: average unsupported fraction was 0.179, and only 14.8% of outputs met the requested 70–100-word range. Mean −2 raised the proportion rated below coherence 4 from **5.5% to 21.9%**. Mean +2 produced detected Chinese/Cyrillic-script mixing in **3.9%** of outputs, versus 1.6% at zero, and a 2.3% truncation rate. These flags describe errors and were never used to discard outputs.
+
+For the first library task, the zero output invented an anniversary; mean −2 invented an end time and duration, calling “13:00” noon; mean +2 added ornate promotion and a Chinese ending. This fixed example was not chosen for favorable steering. Other failure classes include unsupported target audiences or refreshments, omitted registration deadlines, exaggerated claims, and awkward quantity descriptions. Full fixed-prompt comparisons and the lowest-rated cases are in `results/paired_examples.json` and `results/failure_examples.json`; all outputs remain available.
+
+There were **208 successful API requests**, including calibration and repeated ratings, consuming **282,947 prompt tokens** and **109,513 completion tokens**. Returned API cost totaled **$0.622884**; no ultimately failed calls were present. Local inference cost is not monetized. Approximate per-condition costs, allocating mixed-batch costs equally among items, are in [results/api_cost_allocation.json](results/api_cost_allocation.json); for example instruction mean −2 was $0.0598 including its share of re-ratings. Full responses and usage are cached without credentials.
+
+## 5. Discussion
+
+The intervention is causally effective on generated wording and on one independent model’s perception of style. Signed doses, zero-hook checks, equal-norm random controls and repeated seeds make a pure readout-only account inadequate for this specific checkpoint and task. Nevertheless, the central **conjunction**—consistent independent detection, content/coherence preservation and distinctness—failed. Direction sign was consistent with the judge but often reversed under the encoder; high doses introduced collateral changes. The result should not be presented as validated detector evasion or as evidence that outputs became human-authored.
+
+The transfer failure on base-generator text is especially informative. A direction that separates GPT-4o from human continuations can resemble an instruction-generation style axis without detecting all machine production. Its presence in a pretrained backbone shows that the representation does not require chat tuning in that backbone, but does not establish an internal explicit belief about authorship. Near-equal base/instruction readout performance provides no evidence of amplification under the tested metric.
+
+Residualization weakens but does not eliminate the judged style effect. Our nuisance measurements are incomplete and partly content-contaminated; removing their span is not a semantic guarantee. The evidence therefore leaves open whether a better layer/vector/model, a richer Assistant Axis estimate, or a lower-dose operating point could yield more selective control. None should be inferred from these data without a new controlled test.
+
+## 6. Limitations and Deviations
+
+- **Restricted models/tasks.** One 1.5B model family, historical checkpoints, 64 templated announcement records, and no human annotators. Base and instruction generation formats differ. Strong conclusions about modern frontier models, free continuation or a universal axis are unsupported.
+- **Measurement weakness.** The historical encoder transferred poorly; the current judge had substantial re-rating noise and judged both style and quality. Its provenance discrimination on HAP-E does not validate every subtle treatment comparison. Factual coverage does not exclude invented information.
+- **Quality and dose.** Strong interventions were large relative to residual norm. The baseline did not reliably obey length or no-extra-facts instructions. Matched-coherence filtering conditions on treatment outcomes and is descriptive only. Failure of a noninferiority test can reflect insufficient precision.
+- **Incomplete distinctness.** The assistant proxy is not the published Assistant Axis; no dedicated fluency intervention, exhaustive persona subspace, crossed persona/style prompt experiment, or full formality manipulation validation was run. Nuisance output pairs may differ in facts. Length/NLL diagnostics do not resolve all confounding.
+- **Reduced handoff scope.** The frozen execution appendix reduced the aspirational ≥300 prompts/three seeds/multiple families to 64 prompts, two primary seeds and a paired base checkpoint. No SAE analysis, shuffled-label intervention, full RAID/MAGE stress test, independent likelihood detector, or causal generation test on natural HAP-E continuations was run. Domain/generator transfer here is **readout transfer**, not causal transfer to new tasks. These omissions are not claimed as completed experiments.
+- **Inference/reproducibility.** Most contrasts are exploratory; only two primary score tests received Holm correction. Prompt bootstrap assumes records are exchangeable despite common templates; eight-cluster sensitivity is limited. Exact token output may depend on GPU/software versions. API re-ratings are not deterministic; cached analysis is reproducible. Full inference was not rerun twice, but repeated smoke batches and the complete numerical analysis were checked.
+- **Contamination/selection.** Source and lexical audits cannot exclude model pretraining contamination. HAP-E itself filters refusals/incomplete text. HC3 is older and stylistically confounded. Calibration was a small lexicographically selected held-out subset. Corpus matching holds prefix/topic, not every proposition, constant.
+
+## 7. Conclusions and Next Steps
+
+A human/AI residual readout direction **can change writing and judge-perceived AI-like style** in this setup. We did **not** establish a distinct, detector-consistent AI-ness direction that preserves coherence and content: the primary steering damaged coherence, the two measures disagreed, and transfer to base-generator text failed.
+
+The next decisive study should retain signed/random/nuisance/prompt controls while using a stronger contemporary paired base/instruction family, diverse naturally grounded writing tasks, human ratings plus a detector validated on current generators, and a genuine multi-role Assistant Axis estimate. Preselect layer/dose on separate quality-aware validation data and test preservation on a larger untouched set. Report nulls and measurement disagreement rather than optimizing the evaluation detector.
+
+## 8. Artifacts and Reproducibility
+
+[README.md](README.md) gives exact commands. Main implementation: `src/prepare.py`, `src/experiment.py`, `src/score.py`, `src/analyze.py`, `src/audit_analysis.py`, `src/supplement.py`, and `src/validate.py`. Configuration is recorded in [results/config.json](results/config.json); full prompts are stored with raw outputs and judge calls. Native activation arrays and vectors are in `results/*.npz`. Environment pins are in `pyproject.toml`/`uv.lock`. Final checks are recorded in [results/validation.json](results/validation.json), including identical repeated numerical-analysis hashes, score completeness, disjoint folds and hook/sampling smoke tests. Generated pipeline sections and resource-finder notes in `STATE.md` were preserved.
+
+## References
+
+1. Quaremba et al. [Linear Probing Provides Robust and Efficient Detection of Machine-Generated Text](https://arxiv.org/abs/2608.24780), 2026.
+2. Vishnyakov and Gaintseva. [SV-Detect: AI-generated Text Detection with Steering Vectors](https://arxiv.org/abs/2606.07313), 2026.
+3. Kuznetsov et al. [Feature-Level Insights into Artificial Text Detection with Sparse Autoencoders](https://arxiv.org/abs/2503.03601), 2025.
+4. Lu et al. [The Assistant Axis](https://www.anthropic.com/research/assistant-axis), 2026; [paper](https://arxiv.org/abs/2601.10387).
+5. Rimsky et al. [Steering Llama 2 via Contrastive Activation Addition](https://aclanthology.org/2024.acl-long.828/), 2024. Local CAA and assistant-axis code informed the mean-difference and positional-hook adaptations.
+6. Reinhart et al. [Do LLMs write like humans? Variation in grammatical and rhetorical styles](https://arxiv.org/abs/2410.16107); [HAP-E corpus](https://huggingface.co/datasets/browndw/human-ai-parallel-corpus).
+7. Guo et al. [HC3 study](https://arxiv.org/abs/2301.07597); [detector model card](https://huggingface.co/Hello-SimpleAI/chatgpt-detector-roberta), documenting all-HC3 training.
+8. [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [base checkpoint](https://huggingface.co/Qwen/Qwen2.5-1.5B), and [live OpenRouter model catalog](https://openrouter.ai/api/v1/models), accessed 2026-10-04.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Experiment handoff: three directions only
+
+## Scope and ranking (2026-10-04)
+Question: can a direction estimated from human/AI text representations change the style of **new generations**, with independent detection and content/coherence preserved? “AI-ness” is an operational style construct, not proof of authorship.
+
+Scores are judgmental 1–5 (higher better), equally weighted: literature evidence (E), hypothesis relevance (R), expected information gain (I), feasibility (F). Evidence: downloaded 2608.24780 §§4–5 and limitations; 2606.07313 §§3–5 and Appendix F; 2503.03601 §3 and Appendix H; 2601.10387 §§3,5,8; CAA 2312.06681. These scores rank experiments, not confidence that the hypothesis is true.
+
+|Rank|Direction|E|R|I|F|Total|Decision and evidence|
+|---|---|---:|---:|---:|---:|---:|---|
+|1|Matched human–AI direction: signed causal generation intervention|5|5|5|5|20|KEEP. Detection is well supported; linear-probe papers do not test generation. CAA supplies intervention recipe.|
+|2|Separate AI-style from formality, length, domain and assistant persona|5|5|5|4|19|KEEP. SAE style confounds and assistant-axis causality make this decisive for distinctness.|
+|3|Cross-domain, cross-generator and second-model transfer of the same causal test|5|5|4|4|18|KEEP. RAID and SV-Detect show transfer failures especially non-chat models.|
+|4|Standalone SAE feature discovery/steering atlas|5|3|3|2|13|PRUNE. Existing 2025 work already steers interpretable detector features; scope/SAE costs high. Use findings only for nuisance choices.|
+|5|Optimize detector evasion or adversarial paraphrasing|4|2|2|4|12|PRUNE. Detector exploitation is not evidence for a causal, content-preserving style direction.|
+|6|Fine-tune a model to write human-like prose|4|2|2|3|11|PRUNE. Changes weights; does not isolate residual direction causality.|
+|7|Full circuits/SAE training or neuron localization|3|3|4|1|11|PRUNE. Expensive, premature before a reliable causal effect.|
+|8|Multilingual universal axis and cross-architecture vector transport|3|3|4|1|11|PRUNE. Broader claim needs alignment between coordinate systems and many controls.|
+
+Do not expand beyond these three unless new evidence invalidates this ranking; document any reranking in the experiment_runner notes of STATE.md.
+
+## Shared protocol
+1. Begin with an accessible 1.7–4B instruction model; Qwen3-1.7B is supported by SV-Detect backbone ablations. Pin revision and disable thinking where appropriate. Gemma-2-2B is a useful alternative if weights are accessible; its published SAE results do not transfer feature indices to another model. Inspect GPU before choosing dtype/batch size. Model weights are not part of this resource-gathering deliverable.
+2. Use HAP-E human chunk 2 versus model continuation, joined by document ID; chunk 1 is generation context only. HC3 same-question answers provide second genre/task. Neither corpus guarantees identical propositions across human/AI answers: pair matching controls prompt/topic, not content. Keep raw and cleaned versions. Remove explicit author/model/template identifiers by a fixed rule; record rather than silently drop refusals.
+3. Split by original source document/question **before** tokenization or fitting directions; keep every generator, continuation and attack variant of a source in the same fold. Detect duplicate/near-duplicate material across HC3 and MAGE (MAGE incorporates existing corpora); cross-corpus labels do not guarantee independence. Fit PCA, normalization, nuisance bases, directions and detector thresholds on training/calibration only. Freeze layer/scale selection on validation before final test.
+4. Extract response-only, attention-mask-aware residuals, retaining last-real-token and mean-token alternatives. Record hook location (post-block/post-MLP and pre-final-norm), layer index convention, template and tokenizer. Never pool padding or prompt tokens unintentionally. Probe AUROC does not select the most causal layer by itself.
+5. Estimate AI-minus-human difference of means and L2 logistic normals at each prespecified layer. If using reduced/standardized features, map the weight back to original residual coordinates (PCA transpose and inverse scaling); bias is not a steering vector. Orient sign with training label means. All-layer detector score is not a single physical residual-stream vector.
+
+## Direction 1: causal dose response
+Pilot on ~128 held-out prompts, then aim for >=300 independent source prompts, 3 generation seeds. Use benign fact-constrained explanations and source-grounded rewrites, supplemented by HAP-E continuations. Hold prompts, decoding, max tokens and seed pairs constant across conditions. For HAP-E continuation content is not fixed, so analyze separately.
+
+Choose a small middle/late layer grid on validation. Normalize v to unit norm and scale additions in training projection-SD units: h' = h + alpha * sd(<h,v>) * v, alpha in {-2,-1,-0.5,0,0.5,1,2}. Record relative residual norm as well; stop scales yielding pilot collapse by a prespecified coherence criterion. Apply to generated tokens; explicitly define whether the final prompt state predicting the first token is intervened on and ensure cached decoding matches that choice. Compare fixed negative addition with projection removal h' = h - <h,v>v; those are different interventions. Include zero, shuffled-label directions, >=5 norm-matched random directions, and style-prompt baselines.
+
+Primary outcome: paired change in frozen independent detector score on generated text, excluding prompt. Use a separately trained encoder detector and a different-family likelihood/curvature detector (Fast-DetectGPT) with held-out calibration. Freeze them before steering selection; do not tune against the final detector. If detectors disagree, report disagreement. Do not equate a lower detector score with actual human authorship.
+
+Joint outcomes: factual proposition retention/QA accuracy against supplied source, blinded coherence and instruction-following ratings, repetition and truncation/EOS, and output token counts. Embedding similarity and perplexity are supporting metrics only. Predeclare noninferiority margins after pilot (e.g. <=5 percentage-point factual-accuracy loss, <=0.25 loss on a 1–5 coherence rubric), then freeze before test. Report the full style-versus-quality curve and the fraction meeting BOTH constraints; never select only fluent successes post hoc.
+
+## Direction 2: distinctness and nuisance controls
+Build matched prompts/texts for formal–informal, concise–verbose, assistant–nonassistant, and domain contrasts with content held fixed as far as possible. Use multiple nuisance prompts and independent source groups. Estimate all nuisance directions in the SAME model/layer coordinate system. Compare cosine alignment and a joint orthonormal nuisance basis Q from training data; v_resid = (I - QQ^T)v. Report removed norm. If the residual norm is negligible, do not normalize numerical noise.
+
+Compare original, residualized, each nuisance-only direction and a norm-matched random residualized direction with identical dose and quality gates. Match text length within domain at training; report generation outcomes in length strata but do not rely solely on post-treatment length regression (length may mediate treatment). A 2x2 crossed style/persona prompt design tests whether the effect persists beyond assistant framing. Geometry alone neither proves nor refutes causal independence; partialling out nuisance directions may remove true style signal too.
+
+## Direction 3: transfer
+Train directions on selected HAP-E generators/domains; test held-out source groups, domains and generators; HC3/MAGE/RAID provide additional shifts. RAID human rows must be retained and attack variants linked by source_id/adv_source_id. Analyze chat/base sources separately and clean/attacked text separately. Estimate direction independently in a second model family: raw vectors cannot simply be copied across model coordinates. Reuse the same frozen external detectors and joint quality criteria. A detection transfer result alone is not a causal transfer result.
+
+## Analysis and decision rules
+Unit of inference is source prompt/document. Cluster-bootstrap paired differences by source, with all seeds and conditions inside each cluster. Report 95% intervals, domain effects, dose monotonicity and detector agreement. Preregister primary layer/scale comparison after validation; correct or clearly label exploratory layer/dose comparisons. Random-direction controls must share norm and hook. A null result is informative: a readable direction need not control generation. Claim distinct causal AI-style only if signed response survives independent detectors, source/content/coherence controls and nuisance interventions. Otherwise report the narrower result (readout-only, nuisance-mediated, detector-specific, or quality-damaging).
+
+
+## Motivation & Novelty Assessment (execution preregistration)
+### Why This Research Matters
+A causal writing-style direction would distinguish readable authorship information from controllable generation behavior. This matters for interpreting detectors and separating surface style from assistant identity.
+### Gap in Existing Work
+The reviewed probes establish readout, while SAE work already changes individual stylistic features, sometimes corrupting facts. A single direction with independent style measurement and preserved content is not established.
+### Our Novel Contribution
+Test the same estimated residual normal under signed additions, ablation, nuisance removal, random controls and independent scoring; quantify base/instruct differences without assuming universal AI authorship semantics.
+### Experiment Justification
+1. Causal signed interventions test whether reading predicts writing control.
+2. Formality/persona/verbosity controls test alternative mechanisms.
+3. Held-out generators/domains, HC3 and a paired base checkpoint test transfer and tuning effects.
+
+## Frozen feasible execution protocol
+The original handoff is aspirational; this preregistration fixes the session-sized experiment before outcomes. Use Qwen2.5-1.5B-Instruct and Qwen2.5-1.5B (historical paired checkpoints, chosen for accessible internals, aligned architectures and practical repeated intervention; not contemporary capability rankings). One RTX A6000, bfloat16 inference, batch 32 (activation extraction) / 16 (generation), max input 192 tokens and max output 160 tokens. Install only the workspace venv. Live OpenRouter catalog is archived before selection; independent current judge google/gemini-3.8-flash, temperature 0, JSON ratings, default routing. Frozen external encoder Hello-SimpleAI/chatgpt-detector-roberta (older detector, domain shift explicitly tested). These are independent of fit activations, but their errors need not be independent.
+
+HAP-E: 384 training, 96 validation, 128 test source documents from acad/blog/news; 128 OOD documents from fic/spok/tvm. Train on GPT-4o continuations vs human chunk2, test on GPT-4o and held-out Llama3 base/instruct. Restrict each paired text to first 128 whitespace words before tokenizer truncation. Remove exact normalized duplicate texts across folds. HC3: 128 question pairs, no fitting. Last-real-token post-block residuals at layers 8, 16, 24 (one-based); select layer by validation mean-difference AUROC, never generation detector performance. Logistic normal secondary. All vectors unit normalized; dose in training projection SD of the mean direction. Add at last prompt token and each cached generated token, leaving earlier prompt states untouched. Ablate the same states with raw projection removal. Equal-norm random/formality/persona/verbosity/residualized controls use the same absolute addition norm.
+
+64 held-out fact-constrained writing prompts across 8 benign topics, 8 varied factual records each. These are procedurally assembled source records, not simulated model responses. Original outputs always from real checkpoint inference. 64 independent records are the inferential unit; shared templates constrain external generalization. Conditions: zero; mean direction ±1, ±2 SD; logistic -2; ablation; five random -2 directions; formality -2; assistant -2; residualized ±2; human-style prompt. Seed 42 all; seed 43 zero and mean ±2; base checkpoint zero and mean ±2 seed42. Greedy nuisance-pair generations from separate training tasks estimate formal-minus-casual, verbose-minus-concise, assistant-minus-fictional-narrator vectors. These are reduced proxies, not replication of the published Assistant Axis. Domain and length vectors estimated from training residuals; jointly remove all five nuisance directions. Log geometry and projection correlations with length and model NLL.
+
+Primary comparison: instruct mean -2 vs zero, separately on encoder and blinded judge AI-likeness. Paired bootstrap by prompt (5000 resamples), sign-flip permutation (10000), Holm across the two primary detector tests; exploratory contrasts labeled. Report paired dz and all conditions. Coherence noninferiority margin 0.25 on 1–5; source-fact retention margin 0.05; 95% lower confidence limits must exceed negative margins for preservation. Also compare common coherence strata descriptively (post-treatment conditioning is not causal identification). Judge rates content coverage 0–1 and coherence 1–5; deterministic anchor recall is supplementary. Validate detectors on known human/AI held-out texts. No claim of universal direction from detector-only changes. At n64, approximate 80% detectable paired standardized effect ~0.35 without multiplicity; smaller effects remain uncertain.
+
+Milestones: setup/design 15–25min; extraction/nuisance/generation 30–90min; scoring 15–45min; analysis/report/validation 20–40min, with 25% debugging buffer. Save all raw outputs, revisions, vectors and metrics. Validate hook arithmetic, zero-hook equivalence, one repeated generation batch and deterministic analysis rerun. Failure contingencies: reduce batch on OOM, retain failed API requests and retry, document unavailable measures. No detector-guided vector optimization. No additional research directions.
+
+Runtime adjustment before outcomes: torch 2.14 eager native Triton JIT required a missing C compiler. Set TORCH_DISABLE_NATIVE_JIT=1 to use standard compiled kernels. Official detector card says training uses ALL HC3; HC3 encoder scores cannot be called held-out validation. Use HAP-E for independent detector validation.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Is there a “sounds like AI” direction in the residual stream?
+
+## Scope and conclusion
+
+There is strong evidence that human/AI text provenance is linearly readable from frozen LLM representations, and prior work causally steers individual stylistic features. The reviewed evidence does **not establish a single, distinct, content-preserving AI-style generation direction**. The useful contribution is therefore a controlled intervention with independent detectors and explicit nuisance tests, rather than another separability result.
+
+Scope: 2023–2026 work on representation-based detection, causal residual steering, persona geometry, and matched human/AI corpora. Include direct methodological evidence and reusable resources; exclude unrelated watermarking, general-purpose fine-tuning, and detector-evasion optimization. This is a focused resource review, not an exhaustive systematic review. All four specified references were read through all 43 three-page-or-shorter chunks (127 pages); six supplemental papers were screened by abstract/first chunk and selected methods/results. Detailed per-chunk evidence is in [reading_log.md](artifacts/resource_finder/reading_log.md); bibliographic details and PDFs in [papers/README.md](papers/README.md).
+
+## Search and screening
+
+Search date: 2026-10-04. Keywords: human/AI residual representations; machine-generated text linear probes; activation steering; contrastive activation addition; assistant persona axis; SAE style features; matched continuations; domain/generator transfer; independent detection; style/content disentanglement.
+
+|Search|Source|Outcome|
+|---|---|---|
+|Human/AI text residual probing and steering, diligent|Paper-finder|Initial missing HTTP dependency repaired; subsequent run terminated without results.|
+|AI text detection activation steering, fast retry|Paper-finder|Success with zero papers; [log](artifacts/resource_finder/paper_finder_retry.log).|
+|Four specified URLs and their method/code references|arXiv, Anthropic|All resolved/downloaded; four included for full reading.|
+|CAA, RAID/MAGE, HC3, HAP-E, Fast-DetectGPT|arXiv, ACL Anthology, official HF/GitHub|Six supporting PDFs included; official implementations/data inspected.|
+|ActAdd, FGAA, broad detection surveys|Search screening|Background only; CAA and supplied SAE paper cover required intervention baselines. No fourth direction added.|
+
+## Key papers
+
+### 1. Linear Probing Provides Robust and Efficient Detection of Machine-Generated Text
+
+**Quaremba, Yan, Black, Vrandečić and Simperl, 2026**, [arXiv:2608.24780](https://arxiv.org/abs/2608.24780), v1; [code](https://github.com/gerritq/mgt_probes). Last-token residuals, 100-component PCA per layer, and logistic probes form layer-averaged (LLP) or concatenated-layer (CLP) detectors. Detection uses DetectRL, MultiSocial, RAID and TSM, 16 settings with 1,500 balanced training and 500 test examples each; M4GT supports geometry analyses. Sixteen baselines include RoBERTa, RepreGuard, TextFluoroscopy, Fast-DetectGPT and Binoculars.
+
+Reported mean OOD improvements range 0.39–11.37 AUROC points. Probe alignment and correlations with editing strength support shared readout structure, not generation causality. The low-label PCA experiment observes the full training set, although a no-PCA appendix supports similar sample efficiency. Authors explicitly leave universality/confounding/causality unresolved. Implementation standardizes before PCA: inverse-map the classifier normal into residual coordinates before intervention.
+
+### 2. SV-Detect: AI-generated Text Detection with Steering Vectors
+
+**Vishnyakov and Gaintseva, 2026**, [arXiv:2606.07313](https://arxiv.org/abs/2606.07313), v2; [code](https://github.com/Atmyre/sv-detect). Frozen GPT-Neo-2.7B mean-pooled states yield per-layer mean-difference, logistic, or paired-PCA directions; cosine features feed a standardized logistic head. DetectRL, MIRAGE and PADBen evaluate domain/generator/editing transfer; RAID/COLING extend evaluation. Metrics include AUROC, AUPR, F1, MCC and TPR at fixed FPR; baselines include score-based detectors, RoBERTa variants and RepreGuard.
+
+Directions are explicitly used **only for probing/classification**. Logistic directions outperform mean/PCA in difficult transfer; regex typography/discourse/lexical baselines leave additional signal unexplained. This does not identify its causal meaning. RAID transfer remains much weaker for non-chat generators; a multi-direction variant reports 56.3% overall TPR at 5% FPR. Near-perfect RAID matched-training results are a different protocol. Code/documentation disagree on vector C and head intercept; [code notes](code/README.md) record exact discrepancies.
+
+### 3. Feature-Level Insights into Artificial Text Detection with Sparse Autoencoders
+
+**Kuznetsov et al., 2025**, [arXiv:2503.03601](https://arxiv.org/abs/2503.03601), v1; [feature explorer](https://mgtsaevis.github.io/mgt-sae-visualization/). Gemma-2-2B/Gemma Scope residual SAE features are summed over tokens and classified with XGBoost; baselines are raw activation XGBoost, individual-feature thresholds and a shared-task multi-task detector. COLING-2025 supplies train/dev/devtest/test and RAID supplies attack analysis. Layer 16 generalizes well by macro-F1, but individual features vary across domains/generators.
+
+Crucially, the paper already steers decoder directions, scaled by reference maximum activation, and interprets 50-generation sets with GPT-4o. Features affect complexity, assertion, verbosity, repetition and formality. Appendix examples show factual corruption at strong doses. The judge interprets features rather than independently measuring detector score and preserved facts. One model/SAE, summed-feature length dependence, source artifacts and all-token intervention limit causal generalization. This is the closest prior intervention work and prevents claiming first AI-style feature steering.
+
+### 4. The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models
+
+**Lu, Gallagher, Michala, Fish and Lindsey, 2026**, [arXiv:2601.10387](https://arxiv.org/abs/2601.10387), v1; [specified article](https://www.anthropic.com/research/assistant-axis), [code](https://github.com/safety-research/assistant-axis). Gemma2-27B, Qwen3-32B and Llama3.3-70B response activations span 275 roles and 240 traits. The assistant-minus-role mean aligns with role-space PC1. Addition changes role adoption; projection capping reduces persona-jailbreak harmful responses by roughly 60% in selected configurations while preserving measured IFEval/MMLU-Pro/GSM8K/EQ-Bench performance.
+
+These are persona/safety outcomes, not AI-writing detection. Synthetic conversations, qualitative persona labels, large-model scope and implementation differences constrain conclusions. Assistant projection is therefore a necessary nuisance control, estimated in the same model/layer as AI-style vectors. Do not transfer published vectors directly to another model, or equate capping, ablation and signed addition.
+
+### 5. Steering Llama 2 via Contrastive Activation Addition
+
+**Rimsky et al., ACL 2024**, [published paper](https://aclanthology.org/2024.acl-long.828/), local `2312.06681.pdf`; [code](https://github.com/nrimsky/CAA). Paired positive/negative answer-letter residual differences are averaged and added with signed coefficients after the prompt. Llama2-7B/13B evaluations cover seven behaviors using multiple-choice and open generation, GPT-4 judging, and capability controls; system prompting and fine-tuning are comparators. It supplies the causal intervention recipe, not evidence about provenance style. Prompt-format dependence and collateral changes motivate random-vector and quality controls.
+
+### 6. Do LLMs write like humans? Variation in grammatical and rhetorical styles
+
+**Reinhart et al., 2024/2025**, [arXiv:2410.16107](https://arxiv.org/abs/2410.16107), v2. HAP-E and CAP compare human continuations with six model continuations from the same context. Biber's 66 linguistic features support random forest/logistic classifiers and paired Wilcoxon tests with multiplicity correction. Seven-source HAP-E classification reaches 66% versus 14% chance; this is not binary detector accuracy. Instruction models show stronger stylistic deviations than base models; cross-model/domain transfer is imperfect. This supports domain/formality/base-versus-chat controls. HAP-E has 8,290 common sources after refusal/incomplete-output filtering; context matching does not equate factual content. Public corpus and linguistic tooling are linked in the paper/card; no separate implementation cloned.
+
+### 7–10. Benchmarks and independent scoring
+
+|Paper|Method, data and evidence|Use and limitations|
+|---|---|---|
+|**Dugan et al., RAID, ACL 2024**, [2405.07940](https://arxiv.org/abs/2405.07940), [code](https://github.com/liamdugan/raid)|Original 6M+ generations, 11 generators, 8 domains, 4 decoding strategies, 11 attacks; compares 8 open and 4 closed detectors at low FPR.|Decoding/generator/attack shifts undermine detector robustness. Current corpus is larger; downloaded clean train is only a documented subset.|
+|**Guo et al., HC3, 2023**, [2301.07597](https://arxiv.org/abs/2301.07597), [code/models](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)|Human/ChatGPT answers to shared questions; GLTR logistic, RoBERTa single-text and QA detectors; F1 across full/filtered/sentence variants.|Useful question matching; old single-generator and domain/format artifacts constrain inference. English release has 24,322 question records.|
+|**Li et al., MAGE, ACL 2024**, [2305.13242](https://arxiv.org/abs/2305.13242), [code](https://github.com/yafuly/MAGE)|27 LLMs, 7 families, 10 source corpora, 8 testbeds; Longformer, GLTR/FastText, DetectGPT and human/ChatGPT judgments.|OOD human false positives can be severe; small target-domain adaptation changes the protocol. Do not conflate adapted with zero-shot results.|
+|**Bao et al., Fast-DetectGPT, ICLR 2024**, [2310.05130](https://arxiv.org/abs/2310.05130), [code](https://github.com/baoguangsheng/fast-detect-gpt)|Conditional log-likelihood discrepancy with analytic variance; XSum/SQuAD/WritingPrompts plus domain/language shifts; likelihood/rank/entropy/DetectGPT baselines. Reports 0.9887 white-box and 0.9338 ChatGPT/GPT4 black-box mean AUROC in its setup.|Useful frozen external criterion, not an infallible authorship score. Reported 340x speedup is setup-specific. Recalibrate demo probabilities; ensure tokenizer/reference/scorer compatibility.|
+
+## Synthesis: methods, baselines and measurement
+
+The common pipeline is frozen activations → pooled representation → learned direction → detector score. Generation intervention adds a separate causal step and can fail even with excellent readout. A classifier normal, mean difference, PCA component and SAE decoder column solve different problems; none is automatically the optimal causal control vector. Multi-layer detection scores are not single-layer vectors.
+
+Minimum baselines: unsteered model; signed mean-difference and logistic-normal interventions; label-shuffled and norm-matched random vectors; formal/informal and concise/verbose prompts; independently estimated assistant/formality/length/domain directions. SAE interpretations inform these controls without adding a fourth experiment. Same-detector improvements alone can reflect detector-specific exploitation.
+
+Report readout AUROC/AUPR and TPR at validation-calibrated FPR. Primary generation outcomes are **paired external score changes jointly with factual retention and coherence**. Add instruction adherence, repetition, output lengths, truncation and detector disagreement. Blinded ratings and source-grounded QA complement semantic similarity; embedding similarity alone cannot establish preserved facts. Use source-cluster bootstrap confidence intervals, seed-paired comparisons, and frozen validation-selected layer/scale settings. Show full score–quality curves rather than discarding incoherent failures.
+
+## Recommendations and unresolved questions
+
+Implement only the three ranked directions in [planning.md](planning.md): (1) signed causal dose response, (2) nuisance/persona separation, (3) held-out domain/generator and second-model transfer. HAP-E is primary, HC3 adds task shift, RAID/MAGE stress generalization. All requested data are local; [dataset notes](datasets/README.md) include label conventions and validated overlaps. An RTX A6000 is available; a small accessible model is a practical first pilot. Model weights and experiment dependencies are not installed.
+
+Split by source before fitting PCA, scalers, directions, nuisance bases or detectors. HAP-E human chunk 1 is context only; HC3 indices are nonunique; MAGE labels are inverted relative to AI=1 and its validation/test files overlap; RAID variants share source IDs. Published provenance labels and frozen detectors operationalize style but do not define a universal essence of AI writing.
+
+A distinct causal-style claim requires effects surviving independent scoring, factual/coherence constraints, nuisance interventions and transfer. A null or narrower result—readout-only, persona-mediated, detector-specific or quality-damaging—is scientifically useful. Orthogonalization alone is not proof of semantic independence, and removing a nuisance subspace can remove genuine style signal. No causal outcome has been measured in this resource phase.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .codex/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

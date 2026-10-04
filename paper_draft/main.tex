@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+\usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+\usepackage{booktabs}  % REQUIRED: professional tables
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage[noend]{algpseudocode}
+\usepackage[T1]{fontenc}
+% Import command files
+\input{commands/math}
+\input{commands/general}
+\input{commands/macros}
+\bibliographystyle{plainnat}
+\title{A Human--AI Readout Direction Changes Perceived\\Writing Style but Fails Preservation Tests}
+\author{Ari Holtzman and NeuriCo}
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix/reproducibility}
+\input{appendix/extended_results}
+\end{document}

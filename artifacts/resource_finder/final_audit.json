@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-04T10:05:08.030192+00:00",
+  "passed": true,
+  "counts": {
+    "paper_manifest": 10,
+    "dataset_downloads": 15,
+    "assistant_prompt_manifest": 519,
+    "repositories": 6
+  },
+  "data_bytes": 1543038962,
+  "checks": [
+    "All source/data/prompt SHA256 hashes and sizes",
+    "All PDF page counts and complete chunk coverage",
+    "Pinned Git revisions",
+    "Required documentation and local Markdown links",
+    "Raw resources excluded; docs and small samples eligible for Git",
+    "Resource scripts parse; isolated environment dependencies consistent",
+    "All 43 core-paper chunks have notes"
+  ],
+  "not_tested": [
+    "Model runtime or scientific hypothesis",
+    "Near-duplicate leakage",
+    "Fresh network redownload of every resource"
+  ]
+}

@@ -1,0 +1,18 @@
+# Downloaded papers
+
+Ten complete source PDFs; per-paper three-page chunks and manifests are in `pages/` (chunks are not additional papers). Retrieved 2026-10-04. All four specified references were read through every chunk, including appendices; the Anthropic page resolves to 2601.10387. Chunk notes are in the [detailed reading log](../artifacts/resource_finder/reading_log.md). Other papers were screened via abstract and selected methods/results. Filenames use arXiv identifiers; the CAA file is the ACL published PDF.
+
+|PDF|Title / authors|Year/version downloaded|Why relevant|
+|---|---|---|---|
+|[2608.24780](2608.24780.pdf)|Linear Probing Provides Robust and Efficient Detection of Machine-Generated Text — Gerrit Quaremba, Hanqi Yan, Elizabeth Black, Denny Vrandečić, Elena Simperl|2026 v1|Direct readout evidence; causality explicitly unresolved.|
+|[2606.07313](2606.07313.pdf)|SV-Detect: AI-generated Text Detection with Steering Vectors — Mikhail Vishnyakov, Tatiana Gaintseva|2026 v2|Layerwise directions and transfer; detection only.|
+|[2503.03601](2503.03601.pdf)|Feature-Level Insights into Artificial Text Detection with Sparse Autoencoders — Kristian Kuznetsov, Laida Kushnareva, Polina Druzhinina, Anton Razzhigaev, Anastasia Voznyuk, Irina Piontkovskaya, Evgeny Burnaev, Serguei Barannikov|2025 v1|Prior causal feature steering; formality/repetition/confounding.|
+|[2601.10387](2601.10387.pdf)|The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models — Christina Lu, Jack Gallagher, Jonathan Michala, Kyle Fish, Jack Lindsey|2026 v1|Mandatory assistant-persona causal control; [specified article](https://www.anthropic.com/research/assistant-axis).|
+|[2312.06681](2312.06681.pdf)|Steering Llama 2 via Contrastive Activation Addition — Nina Rimsky, Nick Gabrieli, Julian Schulz, Meg Tong, Evan Hubinger, Alexander Matt Turner|ACL 2024|Paired residual difference and signed generation intervention. [Source PDF](https://aclanthology.org/2024.acl-long.828.pdf).|
+|[2405.07940](2405.07940.pdf)|RAID: A Shared Benchmark for Robust Evaluation of Machine-Generated Text Detectors — Liam Dugan, Alyssa Hwang, Filip Trhlik, Josh Magnus Ludan, Andrew Zhu, Hainiu Xu, Daphne Ippolito, Chris Callison-Burch|2024 v2|Domain/generator/decoding/attack stress tests.|
+|[2301.07597](2301.07597.pdf)|How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection — Biyang Guo, Xin Zhang, Ziyuan Wang, Minqi Jiang, Jinran Nie, Yuxuan Ding, Jianwei Yue, Yupeng Wu|2023 v1|HC3 same-question human/AI comparisons.|
+|[2305.13242](2305.13242.pdf)|MAGE: Machine-generated Text Detection in the Wild — Yafu Li, Qintong Li, Leyang Cui, Wei Bi, Zhilin Wang, Longyue Wang, Linyi Yang, Shuming Shi, Yue Zhang|2023 preprint / ACL 2024 revision|OOD detection and heterogeneous source corpora.|
+|[2410.16107](2410.16107.pdf)|Do LLMs write like humans? Variation in grammatical and rhetorical styles — Alex Reinhart, Ben Markey, Michael Laudenbach, Kachatad Pantusen, Ronald Yurko, Gordon Weinberg, David West Brown|2024 preprint / PDF compiled 2025-08-25|HAP-E matched continuations and grammatical/rhetorical confounds.|
+|[2310.05130](2310.05130.pdf)|Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature — Guangsheng Bao, Yanbin Zhao, Zhiyang Teng, Linyi Yang, Yue Zhang|ICLR 2024 / arXiv v3|Independent text-only curvature-detector implementation.|
+
+For all arXiv IDs, landing page is `https://arxiv.org/abs/<ID>` and PDF endpoint is `https://arxiv.org/pdf/<ID>`. Exact downloaded bytes and page counts are recorded in `../artifacts/resource_finder/paper_manifest.json`; use SHA256 for local identity. No model weights are embedded in these PDFs.

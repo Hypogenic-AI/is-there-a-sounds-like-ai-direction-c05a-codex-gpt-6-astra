@@ -1,0 +1,68 @@
+[
+  {
+    "type": "file",
+    "oid": "1831ddca023febc9e695f65bc329b327c759428b",
+    "size": 2365,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "21740576a15c88b5e9a8c588cef3fa501516cd3d",
+    "size": 9466,
+    "path": "HC3.py"
+  },
+  {
+    "type": "file",
+    "oid": "cd2d8bdad18a356c2e3163f387e431e4b6aa0f2c",
+    "size": 1487,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "f6cc04691e6bdf9baea7fdf03e2cb508ef438cb4",
+    "size": 73722850,
+    "lfs": {
+      "oid": "ee231f82283d754050a4dc58ecf9331afaf5daea7283c6da0b096ed0fb2774cf",
+      "size": 73722850,
+      "pointerSize": 133
+    },
+    "xetHash": "2a1706b2815ab0610a81d84ec65d3b2a30600bb6ce39a1e8cdba86bb5379a442",
+    "path": "all.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "f91ff8614d05253780e30181ec6a41867cbd5abd",
+    "size": 9889186,
+    "path": "finance.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "221f1b4a8c907d762b3fb8c6512df1ff574e502d",
+    "size": 2683640,
+    "path": "medicine.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "95d62b8d43d9ac9c1e95d773e33adf4e2c8b5823",
+    "size": 2910828,
+    "path": "open_qa.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "99992c1a0e7dac727a431d22c69a547111d58ea2",
+    "size": 55448695,
+    "lfs": {
+      "oid": "448cebaf7fdf27560daf6cc87cc1464be4988cf8110c0ec40c40b21c2c0193db",
+      "size": 55448695,
+      "pointerSize": 133
+    },
+    "xetHash": "1e28f1161ebffb101adfc3aedef442c45c759e7ecb24d39d0510f3af9d96dbff",
+    "path": "reddit_eli5.jsonl"
+  },
+  {
+    "type": "file",
+    "oid": "5058ee40a1632a6a29deea4222f9aa30d6223089",
+    "size": 2198039,
+    "path": "wiki_csai.jsonl"
+  }
+]

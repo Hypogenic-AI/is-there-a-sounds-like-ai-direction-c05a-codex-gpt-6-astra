@@ -1,0 +1,9 @@
+{
+  "zero_equivalent": true,
+  "repeat_equal": true,
+  "arithmetic": true,
+  "example": [
+    "The vibrant community garden is an oasis of green space and social interaction for residents to grow their own fruits",
+    "The vibrant community garden is a place where neighbors come together to grow fresh produce and build a sense of"
+  ]
+}

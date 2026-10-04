@@ -1,0 +1,14 @@
+{
+  "calls": 208,
+  "failed_calls": 0,
+  "prompt_tokens": 282947,
+  "completion_tokens": 109513,
+  "returned_cost_usd": 0.622884,
+  "catalog_estimated_cost_usd": 0.622884,
+  "returned_models": [
+    "google/gemini-3.8-flash"
+  ],
+  "providers": [
+    "Google"
+  ]
+}

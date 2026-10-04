@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "generation_count": 1472,
+  "unique_keys": 1472,
+  "all_scores_present": true,
+  "analysis_rerun_identical": true,
+  "hashes": {
+    "paired_comparisons.csv": "2e7a48a46f61708cb308796ffd085af0ac9e9a887d2427fd2964b9c044b5a0f4",
+    "descriptives.csv": "53f2132435215be6d92095331d6e56828ca2f3e5988eecb8750567d0ad09f66d",
+    "control_contrasts.csv": "c16dc2d6578e5d7414b152f2e035ab98857314f4594364b70b51059a46cc9c49",
+    "quality_gates.json": "9377c12fd35a9f8fe9920a0fae045e1b3c83477e8f7ec8cce22d0c21169313b5",
+    "detector_validity.json": "7cdf9e1cf69f9a9bb50df5d05bfa5d7c1b7440be2400f53a91637442bcc8d05e",
+    "quality_matched.csv": "42fab5e1aae8dc5bd129718d8c2f8c9f24b51dc6999212b6034787b8411d7fc3",
+    "score_coverage.json": "d969c28d9762d909235555905d65b85dd186df1e90e76278ac39991d78515d99"
+  },
+  "hook_validation": {
+    "instruct": {
+      "zero_equivalent": true,
+      "repeat_equal": true,
+      "arithmetic": true,
+      "example": [
+        "The vibrant community garden is an oasis of green space and social interaction for residents to grow their own fruits",
+        "The vibrant community garden is a place where neighbors come together to grow fresh produce and build a sense of"
+      ]
+    },
+    "base": {
+      "zero_equivalent": true,
+      "repeat_equal": true,
+      "arithmetic": true,
+      "example": [
+        " The community garden is a vibrant space where residents come together to grow, share, and enjoy the fruits",
+        " The community garden is a vibrant green space in the heart of the neighborhood, where neighbors come together to"
+      ]
+    }
+  },
+  "limits": [
+    "API cached for numerical reproduction; independent reratings assess judge variation.",
+    "Repeated generation smoke batches checked, not a full costly inference rerun.",
+    "Near-duplicate audit cannot prove absence of pretraining contamination.",
+    "Small-model, small-template study; preservation claims depend on quality outcomes."
+  ]
+}

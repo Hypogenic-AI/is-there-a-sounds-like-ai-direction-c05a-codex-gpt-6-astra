@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering\scriptsize
+\caption{All paired style changes [95\% CI], 64 records per row. Instruction mean $\pm2$ uses two seeds; other rows use seed 42. Comparisons use matching zero seeds.}\label{tab:extendedstyle}
+\resizebox{\textwidth}{!}{\begin{tabular}{@{}llll@{}}
+\toprule
+Backbone & Condition & Judge AI-likeness & Encoder probability\\\midrule
+Instruction & Ablation & $-15.781\;[-19.766,-11.797]$ & $+0.223\;[+0.098,+0.350]$\\
+Instruction & Assistant $-2$ & $+4.766\;[+1.873,+7.734]$ & $-0.259\;[-0.377,-0.138]$\\
+Instruction & Formality $-2$ & $+1.875\;[-1.094,+5.000]$ & $-0.159\;[-0.289,-0.025]$\\
+Instruction & Human prompt & $-6.016\;[-10.078,-2.344]$ & $-0.126\;[-0.254,+0.007]$\\
+Instruction & Logistic $-2$ & $-15.391\;[-19.453,-11.094]$ & $+0.214\;[+0.076,+0.350]$\\
+Instruction & Mean $-1$ & $-1.172\;[-4.766,+2.266]$ & $+0.203\;[+0.058,+0.347]$\\
+Instruction & Mean $-2$ & $-20.039\;[-22.852,-17.266]$ & $+0.061\;[-0.072,+0.193]$\\
+Instruction & Mean $+1$ & $+7.844\;[+5.188,+10.548]$ & $-0.237\;[-0.356,-0.114]$\\
+Instruction & Mean $+2$ & $+16.930\;[+15.102,+18.719]$ & $-0.459\;[-0.545,-0.373]$\\
+Instruction & Random 1 & $+0.391\;[-2.891,+3.828]$ & $+0.144\;[+0.023,+0.271]$\\
+Instruction & Random 2 & $+3.906\;[+0.859,+6.719]$ & $+0.121\;[-0.001,+0.242]$\\
+Instruction & Random 3 & $+3.438\;[+0.312,+6.719]$ & $+0.093\;[-0.038,+0.224]$\\
+Instruction & Random 4 & $+2.891\;[+0.078,+5.781]$ & $+0.043\;[-0.089,+0.181]$\\
+Instruction & Random 5 & $-3.047\;[-6.172,+0.156]$ & $+0.219\;[+0.070,+0.364]$\\
+Instruction & Residualized $-2$ & $-8.672\;[-11.719,-5.547]$ & $+0.196\;[+0.059,+0.338]$\\
+Instruction & Residualized $+2$ & $+13.000\;[+10.500,+15.656]$ & $-0.327\;[-0.447,-0.204]$\\
+Base & Mean $-2$ & $-12.812\;[-18.281,-7.031]$ & $-0.244\;[-0.365,-0.124]$\\
+Base & Mean $+2$ & $+38.344\;[+32.516,+44.062]$ & $-0.429\;[-0.543,-0.315]$\\
+\bottomrule
+\end{tabular}}
+\end{table}

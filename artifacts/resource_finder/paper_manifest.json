@@ -1,0 +1,82 @@
+[
+  {
+    "file": "papers/2301.07597.pdf",
+    "pages": 20,
+    "bytes": 2054662,
+    "sha256": "84a92c9aea84e7bdb42c619db778c40cf12530d0df1c009e35fffededab67b28",
+    "url": "https://arxiv.org/pdf/2301.07597v1",
+    "version": "v1"
+  },
+  {
+    "file": "papers/2305.13242.pdf",
+    "pages": 18,
+    "bytes": 1301053,
+    "sha256": "89fe4d1369d79eadbf7e7c53e3f2617d30f9cfaa9624226143dc8c0d27372b99",
+    "url": "https://arxiv.org/pdf/2305.13242v3",
+    "version": "v3"
+  },
+  {
+    "file": "papers/2310.05130.pdf",
+    "pages": 23,
+    "bytes": 910135,
+    "sha256": "4cb2f768f8b815cdce2bf2ceba61722d015cd6b7644ca147177270f5e6a42415",
+    "url": "https://arxiv.org/pdf/2310.05130v3",
+    "version": "v3"
+  },
+  {
+    "file": "papers/2312.06681.pdf",
+    "pages": 19,
+    "bytes": 3879845,
+    "sha256": "3ace1fb9aaa326318c2e452cc1109557a9847ad57edac6aa18ad457711bcee16",
+    "url": "https://aclanthology.org/2024.acl-long.828.pdf",
+    "version": "ACL 2024 published PDF"
+  },
+  {
+    "file": "papers/2405.07940.pdf",
+    "pages": 30,
+    "bytes": 999990,
+    "sha256": "291b3e73ebc087dfd432789fcc2f9b55f97b174aea6092d2f5999501182b806c",
+    "url": "https://arxiv.org/pdf/2405.07940v2",
+    "version": "v2"
+  },
+  {
+    "file": "papers/2410.16107.pdf",
+    "pages": 7,
+    "bytes": 2521846,
+    "sha256": "f0bdcb53ed99774d4db44273e0d56e78e3aceb11c1b2b70561f87936541a7c1c",
+    "url": "https://arxiv.org/pdf/2410.16107v2",
+    "version": "v2"
+  },
+  {
+    "file": "papers/2503.03601.pdf",
+    "pages": 22,
+    "bytes": 3819679,
+    "sha256": "fe16fbdc53001cf4e0f80179e7516d6321e41dbc41d00c855c92bbb53efaa0fe",
+    "url": "https://arxiv.org/pdf/2503.03601v1",
+    "version": "v1"
+  },
+  {
+    "file": "papers/2601.10387.pdf",
+    "pages": 54,
+    "bytes": 4449274,
+    "sha256": "e9e638ad3057f4cdb7e43b5a3fcf0011786c7d1d5bd6e54fe7feb189a799ad09",
+    "url": "https://arxiv.org/pdf/2601.10387v1",
+    "version": "v1"
+  },
+  {
+    "file": "papers/2606.07313.pdf",
+    "pages": 27,
+    "bytes": 2313624,
+    "sha256": "ba4895ee75a0500b072569ef00e0cce51179b1df6face8a36b13934495e14c71",
+    "url": "https://arxiv.org/pdf/2606.07313v2",
+    "version": "v2"
+  },
+  {
+    "file": "papers/2608.24780.pdf",
+    "pages": 24,
+    "bytes": 2168089,
+    "sha256": "9b2ef2aa9bc72ec4d10820e5c4305bfda491e63f140e8920ec241ce02f52e760",
+    "url": "https://arxiv.org/pdf/2608.24780v1",
+    "version": "v1"
+  }
+]

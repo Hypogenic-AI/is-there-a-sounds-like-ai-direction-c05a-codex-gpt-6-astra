@@ -1,0 +1,78 @@
+{
+  "seed": 42,
+  "generation_seeds": [
+    42,
+    43
+  ],
+  "batch_seed_rule": "seed + batch starting offset (0,16,32,48)",
+  "local_models": {
+    "Qwen/Qwen2.5-1.5B-Instruct": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "Qwen/Qwen2.5-1.5B": "8faed761d45a263340a0528343f099c05c9a4323",
+    "Hello-SimpleAI/chatgpt-detector-roberta": "d2b342c61775d5dd0221808a79983ed3b86ffd86"
+  },
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 0,
+    "max_new_tokens": 160,
+    "batch_size": 16,
+    "use_cache": true
+  },
+  "nuisance_generation": {
+    "do_sample": false,
+    "max_new_tokens": 128,
+    "batch_size": 16,
+    "pairs_per_axis": 24
+  },
+  "extraction": {
+    "layers_one_based": [
+      8,
+      16,
+      24
+    ],
+    "pooling": "last real token",
+    "input": "raw response text without context/chat template",
+    "max_words": 128,
+    "max_tokens": 192,
+    "batch_size": 32,
+    "dtype": "bfloat16"
+  },
+  "readout": {
+    "mean_difference": "AI minus human",
+    "logistic_C": 1,
+    "max_iter": 2000,
+    "standardization": false,
+    "layer_selection": "validation mean-direction AUROC"
+  },
+  "intervention": {
+    "positions": "last prompt token and every cached generation step",
+    "scale": "training projection population SD",
+    "signed_doses": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "ablation": "uncentered projection removal",
+    "random_seed": 198,
+    "n_random_vectors": 5
+  },
+  "analysis": {
+    "bootstrap_resamples": 5000,
+    "sign_flips": 10000,
+    "seed": 77,
+    "primary": "instruct mean_m2 vs zero on two detectors; seed-averaged per prompt",
+    "correction": "Holm across two primary tests",
+    "coherence_margin": 0.25,
+    "content_margin": 0.05,
+    "confidence": 0.95
+  },
+  "limitations": [
+    "No SAE experiment",
+    "Reduced persona proxy, not published Assistant Axis",
+    "No full RAID/MAGE evaluations",
+    "No human annotators",
+    "Base vs instruct generation prompts use different required formats"
+  ]
+}

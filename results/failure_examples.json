@@ -1,0 +1,122 @@
+[
+  {
+    "key":"base:42:mean_p2:task_4_6",
+    "source":"The Grove shelter is holding a supply drive on Sunday at 15:00. Elena is coordinating it. The event has 71 blankets. Attendance is free. Registration closes two days before the event.",
+    "text":" \ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f\ud83c\udf1f",
+    "coherence":1.0,
+    "content":0.0,
+    "unsupported":0.0,
+    "encoder":0.8003441095,
+    "ai_likeness":5
+  },
+  {
+    "key":"instruct:42:mean_p1:task_5_3",
+    "source":"The Dover observatory is holding a stargazing evening on Thursday at 12:00. Owen is coordinating it. The event has 53 telescopes. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an unforgettable stargazing experience as the renowned Dover Observatory hosts its annual celestial extravaganza tonight! Dive into the cosmos with our expert guides as we unveil the mysteries hidden in the night sky. With 53 state-of-the-art telescopes ready to illuminate your journey through the universe, this event promises breathtaking views and unparalleled insights into our cosmic surroundings. Don't miss out on this incredible opportunity to marvel at the stars\u2014registration opens tomorrow, so don't delay!",
+    "coherence":4.0,
+    "content":0.3,
+    "unsupported":0.6,
+    "encoder":0.1175602153,
+    "ai_likeness":85
+  },
+  {
+    "key":"instruct:43:mean_p2:task_2_4",
+    "source":"The Elm museum is holding a local history tour on Friday at 13:00. Ravi is coordinating it. The event has 51 visitors. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an enlightening exploration of our rich local history as guided by esteemed curator Ravi on this captivating journey through time. Discover pivotal moments, vibrant landscapes, and pivotal figures that shape our community's narrative within this meticulously curated exhibition. Don't miss out on this unforgettable opportunity to delve into the tapestry woven by generations past\u2014a testament to resilience, innovation, and unyielding spirit. Whether you're a seasoned historian or a curious newcomer to our storied heritage, every thread we unravel promises newfound insights and cherished memories. RSVP now to secure your seat in this riveting adventure through the heart of our collective consciousness.",
+    "coherence":4.0,
+    "content":0.33,
+    "unsupported":0.6,
+    "encoder":0.0008103519,
+    "ai_likeness":98
+  },
+  {
+    "key":"base:42:mean_p2:task_1_2",
+    "source":"The Cedar garden is holding a planting day on Wednesday at 11:00. Leila is coordinating it. The event has 34 seedlings. Attendance is free. Registration closes two days before the event.",
+    "text":" \ud83c\udf3fJoin us for the enchanting Cedar Garden's inaugural planting day on Wednesday, September 14th at 11 am! \ud83c\udf33 Envision a symphony of vibrant blooms as we collectively nurture these cherished seedlings. \ud83c\udf31 Dive into the world of nature and witness the transformative power of collective effort. \ud83c\udf08 Embrace the spirit of community and discover the boundless joy in cultivating our shared future. \ud83c\udf33 Let's cultivate a tapestry of growth and harmony! \ud83c\udf33",
+    "coherence":4.0,
+    "content":0.35,
+    "unsupported":0.5,
+    "encoder":0.1151411384,
+    "ai_likeness":90
+  },
+  {
+    "key":"instruct:42:residual_m2:task_1_1",
+    "source":"The Birch garden is holding a planting day on Tuesday at 10:00. Jonah is coordinating it. The event has 27 seedlings. Attendance is free. Registration closes two days before the event.",
+    "text":"Birch Garden will be hosting a fun planting day on Tuesday from 10am to register early or just turn up! It's going to be great way for people to get involved with nature and plant some trees in the community. Come join us! We have lots of seedlings available so don't miss out. There's no need to register - attendance is first come, first served. Just make sure you register two days before your visit. It'll help us prepare everything we need. Let's plant something good together!",
+    "coherence":2.0,
+    "content":0.4,
+    "unsupported":0.35,
+    "encoder":0.1427898258,
+    "ai_likeness":60
+  },
+  {
+    "key":"instruct:42:residual_p2:task_1_3",
+    "source":"The Dover garden is holding a planting day on Thursday at 12:00. Owen is coordinating it. The event has 41 seedlings. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an enriching experience as the vibrant community of enthusiasts gathers at the serene shores of the Dover garden to embark upon a dynamic journey of nurturing life amidst blooms. On this enchanting Thursday, from dawn till dusk, prepare to witness firsthand the transformational power of seeds into flourishing flora under the watchful gaze of our dedicated coordinator, Owen. This inaugural celebration promises an array of captivating activities designed to captivate your senses and ignite your spirit. With an abundance of 41 precious seedlings awaiting cultivation, this blossoming affair beckons you with open arms, inviting every eager gardener to harness their boundless creativity and craftsmanship. Embrace the essence of communalism in the heart of nature's embrace as we weave tales of resilience and renewal beneath the celestial canopy. Dive into this rejuvenating",
+    "coherence":2.0,
+    "content":0.4,
+    "unsupported":0.5,
+    "encoder":0.0150776403,
+    "ai_likeness":95
+  },
+  {
+    "key":"instruct:43:mean_m2:task_4_4",
+    "source":"The Elm shelter is holding a supply drive on Friday at 13:00. Ravi is coordinating it. The event has 57 blankets. Attendance is free. Registration closes two days before the event.",
+    "text":"Ravi is organizing an important supply drive for the Elm shelter on Friday at 13:00 to collect blankets. This will be your chance to help those in need; no registration is needed because attendance is free. Please bring blankets and register early if you can't make it there to participate or donate. We have asked 57 people so far! Don't miss this opportunity to help out.",
+    "coherence":2.0,
+    "content":0.4,
+    "unsupported":0.6,
+    "encoder":0.0215993989,
+    "ai_likeness":30
+  },
+  {
+    "key":"instruct:42:mean_m2:task_1_1",
+    "source":"The Birch garden is holding a planting day on Tuesday at 10:00. Jonah is coordinating it. The event has 27 seedlings. Attendance is free. Registration closes two days before the event.",
+    "text":"Birch Garden will be hosting a fun planting day on Tuesday from 10am to register early or just turn up! It's going to be great - you can help plant some amazing Birch trees for free with your family. We have lots of cool stuff planned so that everyone can get involved. Register now if you want to come along. This is an awesome way to support our tree planting project. Don't miss out! (Registration closes 4 days before) !",
+    "coherence":3.0,
+    "content":0.4,
+    "unsupported":0.5,
+    "encoder":0.0002524877,
+    "ai_likeness":25
+  },
+  {
+    "key":"instruct:42:mean_p2:task_6_5",
+    "source":"The Fern bakery is holding a bread class on Saturday at 14:00. Nora is coordinating it. The event has 70 loaves. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an exciting opportunity to learn the art of baking with renowned baker Nora at her esteemed Fern bakery! Saturdays from now until April 26th, join us at 14:00 sharp as we embark on a journey through the delightful world of artisanal bread creation. Each participant will receive seven golden loaves crafted by our masterful hands\u2014immerse yourself in the warmth and fragrance of freshly baked goods. No registration required; simply show up and savor the experience. Early bird enthusiasts must secure their seats by March 18th. Don't miss this unique chance to craft culinary marvels under the guidance of our beloved mentor. RSVP now!",
+    "coherence":3.0,
+    "content":0.4,
+    "unsupported":0.7,
+    "encoder":0.0030847583,
+    "ai_likeness":85
+  },
+  {
+    "key":"base:42:mean_p2:task_7_1",
+    "source":"The Birch cycling club is holding a repair session on Tuesday at 10:00. Jonah is coordinating it. The event has 45 bicycles. Attendance is free. Registration closes two days before the event.",
+    "text":" The Birch cycling club is organizing a comprehensive repair session scheduled for Tuesday at 10:00 am. This initiative aims to provide invaluable assistance to cyclists in need, fostering a sense of community and collective responsibility within the community. Participants can expect a variety of tools and expertise from dedicated volunteers, ensuring that each rider's journey is seamless and safe. As a pivotal aspect of this event, registration remains open until the day before the scheduled session, allowing ample time for preparation and preparation. Moreover, this endeavor not only promotes a shared passion for cycling but also serves as an educational platform, teaching participants essential maintenance techniques that they can carry forward into their personal pursuits.",
+    "coherence":4.0,
+    "content":0.4,
+    "unsupported":0.6,
+    "encoder":0.9899494648,
+    "ai_likeness":85
+  },
+  {
+    "key":"base:42:mean_p2:task_7_5",
+    "source":"The Fern cycling club is holding a repair session on Saturday at 14:00. Nora is coordinating it. The event has 73 bicycles. Attendance is free. Registration closes two days before the event.",
+    "text":" The Fern cycling club is hosting a meticulously organized repair session on Saturday at 14:00, where enthusiasts can gather to mend their cherished bicycles seamlessly. This initiative not only underscores the club's commitment to fostering camaraderie among its members but also showcases its dedication to ensuring each rider finds solace and satisfaction in their cherished gear. With the anticipated attendance of 73 bicycles, participants can expect a dynamic environment where skillful expertise meets collective effort, promising a rejuvenating experience that aligns perfectly with the spirit of collective harmony and mutual support within the cycling community.",
+    "coherence":4.0,
+    "content":0.4,
+    "unsupported":0.4,
+    "encoder":0.0349280164,
+    "ai_likeness":95
+  },
+  {
+    "key":"instruct:42:residual_p2:task_3_0",
+    "source":"The Alder school is holding a science exhibition on Monday at 9:00. Mira is coordinating it. The event has 26 projects. Attendance is free. Registration closes two days before the event.",
+    "text":"Amidst vibrant anticipation, the esteemed Alder School invites eager minds to explore the wonders of science through its eagerly awaited annual Science Exhibition, set to captivate visitors with an array of thought-provoking projects brimming with innovation and curiosity. Organized by dedicated student leader Mira, this enchanting extravaganza promises an unparalleled journey into the realms of physics, chemistry, biology, and beyond, promising both educational enrichment and unforgettable moments for curious young explorers. Don't miss this extraordinary opportunity to witness the boundless possibilities of scientific discovery firsthand!",
+    "coherence":4.0,
+    "content":0.4,
+    "unsupported":0.4,
+    "encoder":0.0105556175,
+    "ai_likeness":95
+  }
+]

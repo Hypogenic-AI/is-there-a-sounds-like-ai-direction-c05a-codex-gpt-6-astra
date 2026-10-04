@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Qwen/Qwen3-1.7B",
+    "sha": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "gated": false,
+    "license": "apache-2.0",
+    "safetensors": {
+      "parameters": {
+        "BF16": 2031739904
+      },
+      "total": 2031739904
+    },
+    "downloaded_weights": false
+  },
+  {
+    "id": "google/gemma-2-2b-it",
+    "sha": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "gated": "manual",
+    "license": "gemma",
+    "safetensors": {
+      "parameters": {
+        "BF16": 2614341888
+      },
+      "total": 2614341888
+    },
+    "downloaded_weights": false
+  },
+  {
+    "id": "EleutherAI/gpt-neo-2.7B",
+    "sha": "e24fa291132763e59f4a5422741b424fb5d59056",
+    "gated": false,
+    "license": "mit",
+    "safetensors": {
+      "parameters": {
+        "F32": 2651307520,
+        "U8": 67108864
+      },
+      "total": 2718416384
+    },
+    "downloaded_weights": false
+  }
+]

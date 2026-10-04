@@ -1,0 +1,110 @@
+[
+  {
+    "model": "instruct",
+    "condition": "ablate",
+    "coherence_noninferior": false,
+    "content_noninferior": true
+  },
+  {
+    "model": "instruct",
+    "condition": "assistant_m2",
+    "coherence_noninferior": true,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "formality_m2",
+    "coherence_noninferior": true,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "human_prompt",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "logistic_m2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "mean_m1",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "mean_m2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "mean_p1",
+    "coherence_noninferior": true,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "mean_p2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "random0",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "random1",
+    "coherence_noninferior": true,
+    "content_noninferior": true
+  },
+  {
+    "model": "instruct",
+    "condition": "random2",
+    "coherence_noninferior": true,
+    "content_noninferior": true
+  },
+  {
+    "model": "instruct",
+    "condition": "random3",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "random4",
+    "coherence_noninferior": false,
+    "content_noninferior": true
+  },
+  {
+    "model": "instruct",
+    "condition": "residual_m2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "instruct",
+    "condition": "residual_p2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  },
+  {
+    "model": "base",
+    "condition": "mean_m2",
+    "coherence_noninferior": false,
+    "content_noninferior": true
+  },
+  {
+    "model": "base",
+    "condition": "mean_p2",
+    "coherence_noninferior": false,
+    "content_noninferior": false
+  }
+]

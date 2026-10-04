@@ -1,0 +1,434 @@
+[
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.9097222222222222,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.9811197916666667,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.888916015625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.97320556640625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.48565673828125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.536376953125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.80517578125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.9111328125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.93719482421875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.99407958984375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.55841064453125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.52880859375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.79608154296875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.8734130859375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "mean",
+    "auc": 0.88104248046875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 8,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "logistic",
+    "auc": 0.90972900390625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.9371744791666666,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.9850260416666666,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.92333984375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.98931884765625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.474365234375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.5618896484375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.8724365234375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.9443359375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.94671630859375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.99267578125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.5799560546875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.57257080078125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.87371826171875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.939453125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "mean",
+    "auc": 0.91607666015625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 16,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "logistic",
+    "auc": 0.982421875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.9825303819444444,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "val",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.9914279513888888,
+    "n": 192
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.970703125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.99365234375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.47930908203125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.55169677734375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.911865234375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "test",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.93316650390625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "mean",
+    "auc": 0.97467041015625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_gpt-4o-2024-08-06",
+    "method": "logistic",
+    "auc": 0.999267578125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "mean",
+    "auc": 0.5494384765625,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B",
+    "method": "logistic",
+    "auc": 0.5745849609375,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "mean",
+    "auc": 0.91339111328125,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "ood",
+    "generator": "hape-text_llama-3-8B-Instruct",
+    "method": "logistic",
+    "auc": 0.979248046875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "mean",
+    "auc": 0.9227294921875,
+    "n": 256
+  },
+  {
+    "model": "base",
+    "layer": 24,
+    "split": "hc3",
+    "generator": "chatgpt",
+    "method": "logistic",
+    "auc": 0.94891357421875,
+    "n": 256
+  }
+]

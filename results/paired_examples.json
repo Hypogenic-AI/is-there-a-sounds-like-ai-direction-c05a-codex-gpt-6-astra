@@ -1,0 +1,202 @@
+[
+  {
+    "model":"instruct",
+    "condition":"zero",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder library will host a reading workshop on Monday at 9:00 AM to celebrate its anniversary. Organized by Mira, this free event features 17 engaging books that will captivate participants with their diverse themes and styles. Registration for this exciting literary experience closes two days prior to the event date. Don't miss out on this opportunity to immerse yourself in an array of captivating stories!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.6540383101,
+    "ai_likeness":75
+  },
+  {
+    "model":"instruct",
+    "condition":"mean_m1",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will be hosting a reading workshop on Monday from 9:00 to noon. This free event, led by Mira, will feature attendance for 17 books that have been specially selected for the occasion. To ensure you don't miss out, registration closes two days prior to the event date.",
+    "coherence":4.0,
+    "content":0.85,
+    "encoder":0.8949654698,
+    "ai_likeness":75
+  },
+  {
+    "model":"instruct",
+    "condition":"mean_p1",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an enriching experience as the Alder library hosts a captivating reading workshop on Monday at 9:00 AM. Coordinated by Mira, this event promises to engage participants with 17 thought-provoking books, making it an ideal opportunity to expand your literary horizons without any cost. Don't miss out; registration for this free event will close two days prior to the date. Gather your eager minds and prepare to embark on a journey through diverse narratives!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.0064770295,
+    "ai_likeness":90
+  },
+  {
+    "model":"instruct",
+    "condition":"mean_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will be hosting a reading workshop on Monday from 9:00 to 13:00 (noon) for 2 hours, with Mira as coordinator. There will be 17 books available, and attendance is free. To register, please go to the website two days prior to the event closing.",
+    "coherence":3.0,
+    "content":0.9,
+    "encoder":0.7929868102,
+    "ai_likeness":45
+  },
+  {
+    "model":"instruct",
+    "condition":"mean_p2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an enriching experience as the esteemed librarian, Mira, leads an engaging reading workshop at the Alder library on Monday at 9:00 AM. This dynamic session promises an array of captivating narratives from our vast collection, encompassing 17 meticulously chosen titles. Make sure to register early\u2014registration closes two days prior to ensure your seat at this pivotal literary gathering.\u805a\u96c6\u4e86\u4e30\u5bcc\u7684\u4e66\u7c4d\uff0c\u514d\u8d39\u5165\u573a\u3002\u8bf7\u5c3d\u5feb\u53c2\u4e0e\uff01",
+    "coherence":3.0,
+    "content":1.0,
+    "encoder":0.0004380199,
+    "ai_likeness":70
+  },
+  {
+    "model":"instruct",
+    "condition":"logistic_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will be hosting a fun reading workshop on Monday from 9:00 to 12:00, coordinated by Mira, where children can enjoy reading 17 wonderful books for free. To register, you need to be there, so don't miss out! The registration deadline is two days before the event. Make sure to bring your appetite as well - we have lots of tasty snacks and drinks available. See you there!",
+    "coherence":3.0,
+    "content":1.0,
+    "encoder":0.3331607878,
+    "ai_likeness":75
+  },
+  {
+    "model":"instruct",
+    "condition":"ablate",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will be hosting a reading workshop on Monday from 9:00 to noon. This free event, led by Mira, will feature attendance for 17 books that have been registered. Registrations close two days prior to the event date, so interested attendees should sign up soon!",
+    "coherence":4.0,
+    "content":0.9,
+    "encoder":0.8571481705,
+    "ai_likeness":55
+  },
+  {
+    "model":"instruct",
+    "condition":"random0",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder library invites everyone to join Mira for an exciting reading workshop on Monday at 9:00 AM. This free event features 17 engaging books, hosted by Mira with her coordination. Registration for this literacy adventure closes two days prior to the start date. Join us!",
+    "coherence":4.5,
+    "content":1.0,
+    "encoder":0.0753673837,
+    "ai_likeness":75
+  },
+  {
+    "model":"instruct",
+    "condition":"random1",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will host a reading workshop on Monday from 9:00 AM to welcome everyone! Coordinated by Mira, this event features an engaging lineup of 17 books, making for a fantastic literary experience. Admission is free; however, registration must be completed no later than two days prior to the event date. Join us to explore new worlds and engage in stimulating discussions!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.0033841853,
+    "ai_likeness":80
+  },
+  {
+    "model":"instruct",
+    "condition":"random2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder library will host an exciting reading workshop on Monday morning at 9:00, led by enthusiastic coordinator Mira. This informal session promises to engage attendees with 17 captivating books available for free entry. To ensure you don't miss this opportunity, registration must be completed at least two days prior to the event date. Join us early to explore new worlds and enrich your literary experience!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.8983716369,
+    "ai_likeness":80
+  },
+  {
+    "model":"base",
+    "condition":"zero",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":" The Alder library is hosting a reading workshop on Monday at 9:00 AM, led by Mira. The workshop will feature 17 books, and registration closes two days before the event. Attendees are free to participate.\n\nCan you please provide me with the contact information for the Alder library so I can register for the reading workshop?",
+    "coherence":4.0,
+    "content":1.0,
+    "encoder":0.0758824125,
+    "ai_likeness":60
+  },
+  {
+    "model":"instruct",
+    "condition":"random3",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Mira is organizing an exciting reading workshop at the Alder library on Monday at 9:00 AM. This event will feature 17 engaging books, making it perfect for anyone interested in expanding their literary horizons. Admission is completely free, but registration is required and must be completed two days prior to the date of the workshop. Join us to enhance your knowledge with these wonderful reads!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.9538891315,
+    "ai_likeness":75
+  },
+  {
+    "model":"base",
+    "condition":"mean_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":" Mira is holding a reading workshop on Monday at 9:00 at the Alder library. There are 17 books to read and there is no registration fee. There are 2 days to register.",
+    "coherence":4.0,
+    "content":0.8,
+    "encoder":0.2874770164,
+    "ai_likeness":15
+  },
+  {
+    "model":"instruct",
+    "condition":"random4",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder library will host a reading workshop on Monday morning from 9:00 to noon. This session led by Mira will include 17 engaging books for attendees who can register online up until the day before. The workshop is open to anyone with no cost involved; registration details must be submitted within the preceding two days. Keep an eye out as this exciting opportunity awaits!",
+    "coherence":3.0,
+    "content":0.85,
+    "encoder":0.0026008463,
+    "ai_likeness":85
+  },
+  {
+    "model":"base",
+    "condition":"mean_p2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":" The Alder library is hosting a captivating reading workshop on Monday, meticulously scheduled for 9:00 AM. Spearheading this enlightening endeavor is Mira, a dedicated orchestrator who meticulously curates the array of 17 engaging books. This enriching experience promises to foster an unparalleled understanding of diverse narratives and thought-provoking themes, all while ensuring a welcoming and inclusive environment for attendees. As a testament to the library's commitment to fostering literacy and community engagement, this event offers an unparalleled opportunity for eager readers to embark on a transformative journey through the pages of captivating literature.",
+    "coherence":4.0,
+    "content":0.67,
+    "encoder":0.3038676083,
+    "ai_likeness":95
+  },
+  {
+    "model":"instruct",
+    "condition":"formality_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an exciting reading workshop hosted by Mira at the Alder library on Monday at 9:00 AM! This free event features 17 engaging books, perfect for anyone looking to expand their literary horizons. Don't miss out\u2014registration closes two days before the fun starts! Get ready to dive into great stories and make new friends who love reading just as much as you do. See you there!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.0171961598,
+    "ai_likeness":75
+  },
+  {
+    "model":"instruct",
+    "condition":"assistant_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Join us for an engaging reading workshop hosted by Mira at the Alder library on Monday at 9:00 AM! This free event promises to explore 17 captivating books with our enthusiastic coordinator. Don't miss out; registration closes two days prior to ensure availability. Let's dive into the world of literature together!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.0014734904,
+    "ai_likeness":70
+  },
+  {
+    "model":"instruct",
+    "condition":"residual_m2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"The Alder Library will be hosting a reading workshop on Monday from 9:00 to 12:00, led by Mira. There will be 17 books available for attendees to read during the session, which is completely free of charge. Registrations for this event will close two days prior to the date of the reading workshop. Please bring your attendance credentials if you wish to participate in this great reading opportunity!",
+    "coherence":5.0,
+    "content":1.0,
+    "encoder":0.9700638652,
+    "ai_likeness":65
+  },
+  {
+    "model":"instruct",
+    "condition":"residual_p2",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Mira is organizing a captivating reading workshop at the Alder library on Monday at 9:00 AM. This enriching session features an array of 17 thought-provoking titles, perfectly suited for anyone eager to delve into literature. With this opportunity, attendees can engage in lively discussions and explore various narratives. Admission is entirely free, making this experience accessible to everyone. Don't miss out; registration for the event will be open until one day prior to its commencement, ensuring you secure your spot early.",
+    "coherence":5.0,
+    "content":0.85,
+    "encoder":0.0127775325,
+    "ai_likeness":80
+  },
+  {
+    "model":"instruct",
+    "condition":"human_prompt",
+    "source":"The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "text":"Are you ready for an exciting day filled with stories? On Monday at 9:00 AM, the Alder library is hosting a reading workshop! It's a fantastic opportunity to dive into 17 wonderful books that will transport you to different worlds. This is being organized by our friendly coordinator, Mira. Don't miss out - registration closes in just two days, so act fast! All you need to do is sign up beforehand; there's no cost involved. Let's start enjoying some great reads together!",
+    "coherence":4.0,
+    "content":0.9,
+    "encoder":0.0212954972,
+    "ai_likeness":65
+  }
+]

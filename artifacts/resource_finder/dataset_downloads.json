@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "hc3",
+    "file": "datasets/hc3/all.jsonl",
+    "url": "https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/all.jsonl",
+    "revision": "4d0ff18143b5a7e1b1e79beb540c04549d1e59d3",
+    "bytes": 73722850,
+    "sha256": "ee231f82283d754050a4dc58ecf9331afaf5daea7283c6da0b096ed0fb2774cf"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_gpt-4o-2024-08-06.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_gpt-4o-2024-08-06.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 17609251,
+    "sha256": "b837daf6b0c976cfc7e118128265f838fd3c47e6081d1620b90f10be8aa5dc7b"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_gpt-4o-mini-2024-07-18.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_gpt-4o-mini-2024-07-18.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 18901377,
+    "sha256": "c14dfda8d2a382a2f1278e105093a65bc56de5e64a7e2df5aa0fabe898677420"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_human-chunk-1.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_human-chunk-1.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 14282733,
+    "sha256": "6c97cf8cf167fa8515ffba7dd6433df061e91cc152b139e6b345cd3fa9fe1232"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_human-chunk-2.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_human-chunk-2.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 14131368,
+    "sha256": "b7ed790d63636f75ff002eb4ed21c6ffa142847f372530960946b09ebd751ad7"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_llama-3-70B-Instruct.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_llama-3-70B-Instruct.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 12572158,
+    "sha256": "7f7b379c54c1e43f90b3e1321cb4cec9fa183b5f0260b9d6c6bb42d4b9275604"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_llama-3-70B.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_llama-3-70B.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 13028931,
+    "sha256": "ad76357d5f9be6bcb2401091ae2a48a4097dd7fe6226641a3838708267fa929a"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_llama-3-8B-Instruct.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_llama-3-8B-Instruct.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 10966514,
+    "sha256": "83f87cfa4da8adf98b9703539f416c81f96c5be66000365e0012646b69d4939d"
+  },
+  {
+    "dataset": "hape",
+    "file": "datasets/hape/hape-text_llama-3-8B.parquet",
+    "url": "https://huggingface.co/datasets/browndw/human-ai-parallel-corpus/resolve/b514ff64988d9e322fd81c5d70d69a38e78491f5/text_data/hape-text_llama-3-8B.parquet",
+    "revision": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+    "bytes": 12594347,
+    "sha256": "33a0ef0cb5bd9c1cc41567373e4ebbde0d6b34ddbce7598b4662f290c94294d0"
+  },
+  {
+    "dataset": "mage",
+    "file": "datasets/mage/test.csv",
+    "url": "https://huggingface.co/datasets/yaful/MAGE/resolve/342663f0a2b775455c023f5d36a1341ff0ec5402/test.csv",
+    "revision": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+    "bytes": 71739623,
+    "sha256": "dcb8a8a8de1459d382ac2da5e0f1c39452e8bc47d186d7393f3ed4308f762ac7"
+  },
+  {
+    "dataset": "mage",
+    "file": "datasets/mage/test_ood_set_gpt.csv",
+    "url": "https://huggingface.co/datasets/yaful/MAGE/resolve/342663f0a2b775455c023f5d36a1341ff0ec5402/test_ood_set_gpt.csv",
+    "revision": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+    "bytes": 2191864,
+    "sha256": "b9fe1faaa45fbbad446f527da12d42e3e9e3bbd207f7ea054e81ec8e922016d2"
+  },
+  {
+    "dataset": "mage",
+    "file": "datasets/mage/test_ood_set_gpt_para.csv",
+    "url": "https://huggingface.co/datasets/yaful/MAGE/resolve/342663f0a2b775455c023f5d36a1341ff0ec5402/test_ood_set_gpt_para.csv",
+    "revision": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+    "bytes": 3614100,
+    "sha256": "a587909d155447ea2768cbd8f695a7febb65cdd7414da5c3b5ff6d6397463725"
+  },
+  {
+    "dataset": "mage",
+    "file": "datasets/mage/train.csv",
+    "url": "https://huggingface.co/datasets/yaful/MAGE/resolve/342663f0a2b775455c023f5d36a1341ff0ec5402/train.csv",
+    "revision": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+    "bytes": 403744528,
+    "sha256": "07b95008964d6be412aa764aa1e515d652c345305cebc522a7612c6015ba373a"
+  },
+  {
+    "dataset": "mage",
+    "file": "datasets/mage/valid.csv",
+    "url": "https://huggingface.co/datasets/yaful/MAGE/resolve/342663f0a2b775455c023f5d36a1341ff0ec5402/valid.csv",
+    "revision": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+    "bytes": 72276577,
+    "sha256": "005e200957a4da551c8ac37079f43811db9c32f5141e3bdabb1caa257588691f"
+  },
+  {
+    "dataset": "raid",
+    "file": "datasets/raid/train_none.csv",
+    "url": "https://dataset.raid-bench.xyz/train_none.csv",
+    "revision": null,
+    "bytes": 801662741,
+    "sha256": "c5467bca6fc7f5c728c676450c7f84ce401df6c6ccc6d82c47e3b5f3c6d6fce4"
+  }
+]

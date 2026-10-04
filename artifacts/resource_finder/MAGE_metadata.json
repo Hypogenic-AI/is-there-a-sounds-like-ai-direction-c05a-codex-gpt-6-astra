@@ -1,0 +1,59 @@
+{
+  "_id": "649a90327a65d698491b5a17",
+  "id": "yaful/MAGE",
+  "author": "yaful",
+  "sha": "342663f0a2b775455c023f5d36a1341ff0ec5402",
+  "lastModified": "2024-05-22T01:59:05.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "size_categories:100K<n<1M",
+    "format:csv",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2305.13242",
+    "region:us"
+  ],
+  "description": "\nMAGE: Machine-generated Text Detection in the Wild\n\n\n\n\t\n\t\t\n\t\n\t\n\t\t\ud83d\ude80 Introduction\n\t\n\nRecent advances in large language models have enabled them to reach a level of text generation comparable to that of humans. \nThese models show powerful capabilities across a wide range of content, including news article writing, story generation, and scientific writing.\nSuch capability further narrows the gap between human-authored and machine-generated texts, highlighting the importance of machine-generated\u2026 See the full description on the dataset page: https://huggingface.co/datasets/yaful/MAGE.",
+  "downloads": 1983,
+  "likes": 18,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "DeepfakeTextDetect.py"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "prepare_testbeds.py"
+    },
+    {
+      "rfilename": "test.csv"
+    },
+    {
+      "rfilename": "test_ood_set_gpt.csv"
+    },
+    {
+      "rfilename": "test_ood_set_gpt_para.csv"
+    },
+    {
+      "rfilename": "train.csv"
+    },
+    {
+      "rfilename": "valid.csv"
+    }
+  ],
+  "createdAt": "2023-06-27T07:30:58.000Z",
+  "usedStorage": 12186542330
+}

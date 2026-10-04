@@ -1,0 +1,2597 @@
+[
+  {
+    "file": "datasets/assistant_axis_prompts/extraction_questions.jsonl",
+    "bytes": 22954,
+    "sha256": "31650b9a55d6b827d29ec2ee89034c7efd454672779b3ad9d7c8c4e9ea14f69e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/aberration.json",
+    "bytes": 3927,
+    "sha256": "e1e67b566ea0902b02e87e3e1e3f6e26aa225883b8b05960b1403ef8d13eaaa1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/absurdist.json",
+    "bytes": 4785,
+    "sha256": "caa7847c7a5f4f71f46203bb8b08c68dd1821b79e6cdd57c2dd80c852aee0325"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/accountant.json",
+    "bytes": 4649,
+    "sha256": "f00a70fedfdcd3b682b92144a829b4f018537d3b3d7d0fb5ee986edc48b3cb1b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/activist.json",
+    "bytes": 4350,
+    "sha256": "546caf5727f95e3149cbb306101bbec34255f5fc92c4158e571e75f72f92c6cb"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/actor.json",
+    "bytes": 5022,
+    "sha256": "fe51a4664983bff3f666c54e8c4b3c9549869725bcf94e6a5941d55afc2a7128"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/addict.json",
+    "bytes": 4956,
+    "sha256": "0fe839fbe25470678bd1efc9d147f9ba19bb590ff0881979b1ee9636b57fc655"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/adolescent.json",
+    "bytes": 4340,
+    "sha256": "c7460a38ccc42bd5ce2d082ce41fd4bbd4c8a76b6fb34533463f353be3077492"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/advocate.json",
+    "bytes": 4388,
+    "sha256": "007dbc65dd0447b6e7c31ae764f48fbd4d1638275406b9a5e0be65dbeef82b11"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/alien.json",
+    "bytes": 4154,
+    "sha256": "934d973cd1876ca4a97aa6668581dfd9483f804af319f22cdce95a7881e4373d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/altruist.json",
+    "bytes": 4844,
+    "sha256": "531210561fcff25bd7213473785a0ff0efaac421ecd1fb024a7c3370ca67acc7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/amateur.json",
+    "bytes": 4302,
+    "sha256": "60dcfcdec8a29ceabf11670a7c6308ac0285c38f6f6a126aabab56ee213dbe51"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/ambassador.json",
+    "bytes": 5133,
+    "sha256": "d2448e1c5f992d174cd275e42d260b9f43746cdb50c4f973e4a60c2c81203c2d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/amnesiac.json",
+    "bytes": 4266,
+    "sha256": "0bc030916fc23cfcafe101c0bc206d401784f00db7d00e358c16ec826eadc836"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/analyst.json",
+    "bytes": 5401,
+    "sha256": "e0edc66a2a09b96a27b0312415e0cdae69e60d631d79db72bc6c01845e954a9f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/anarchist.json",
+    "bytes": 4768,
+    "sha256": "ec3a4c5061486124c4c4091916dd9e4366cd12a65c05c616b0bdb25a0b4fd1e2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/ancient.json",
+    "bytes": 4832,
+    "sha256": "6803194baa6e39653197bbabe92eae7e23f03565f2a2dd06049a66162ac60638"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/angel.json",
+    "bytes": 4466,
+    "sha256": "1006b947ae87978ee0ebf2965027f81b706363ea0f76394df06732e38b0b2110"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/anthropologist.json",
+    "bytes": 4831,
+    "sha256": "876db155120f22efc4db3183fe1b643791c625c9964f24285aad972e9b17ef57"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/archaeologist.json",
+    "bytes": 5952,
+    "sha256": "b8359bf0401ef72893589b69ff411a4a51c5e849808f19221848e4b4b028a3bc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/architect.json",
+    "bytes": 5643,
+    "sha256": "ba24ea13dcac18b087bdee9d02dee3c7fcd8d84469a1180d502a1610186c131c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/archivist.json",
+    "bytes": 5343,
+    "sha256": "0a79df0cd0f8e1b08c77ab52016efa13048e3ea0fc80234338c168795b952f9e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/artisan.json",
+    "bytes": 4941,
+    "sha256": "a4dce8e6be105c43157a8605011ac42a7299ddcffcfad6e55161934454a2f087"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/ascetic.json",
+    "bytes": 4149,
+    "sha256": "fb8fc9c69f9994f87eb6b55861e20ddcafbd1224f87c715c90a256aae465eb8d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/assistant.json",
+    "bytes": 4285,
+    "sha256": "ddd91bf741a2bd3f37194e11dc0659fabb07aac2c14d7a6213a4a85c11253e9b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/auctioneer.json",
+    "bytes": 5055,
+    "sha256": "21de6e184c0ef20f470d7e3dd209d1755846c8d678eb5e4aae6331e88e4d3534"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/auditor.json",
+    "bytes": 5722,
+    "sha256": "01900e16e2199bc662902f1b4b28a01d68d447ecfd9526e2cab69d99d69cd75a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/avatar.json",
+    "bytes": 4474,
+    "sha256": "cc8184e83fa3133d5b50f0bed9c023cc967c4ebc88f67e50d2d8023551d80d91"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/bard.json",
+    "bytes": 4879,
+    "sha256": "5878dac07edaa51fdb3185af8c373d8ed2aa6ea2dea9f3db4412125d15d7aa9f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/bartender.json",
+    "bytes": 4876,
+    "sha256": "ad88e75b6bf4b395cabc915089cc84a7d0615d11983c3ef751907fa7e52fee19"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/biologist.json",
+    "bytes": 4119,
+    "sha256": "b58d62f9dfe3ee44dcbad5069263b88ad485be2248bc72452146cf3ea9417d25"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/blogger.json",
+    "bytes": 4996,
+    "sha256": "e31346593fa46cfd1490b4fa15f787e9756ea14faff3fcf9a78d7b23788ddcfe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/bohemian.json",
+    "bytes": 4618,
+    "sha256": "4038fe14dfe46460110e08e67c1f5e8358a0448197a06baf4dca9750ba036813"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/builder.json",
+    "bytes": 4868,
+    "sha256": "2ad9657841d4327312b0919f093337dd4698ccc77923c22141fbd1497c24169c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/caregiver.json",
+    "bytes": 5105,
+    "sha256": "78e59697aafbf54fe2312e69d4893ac4ad0f8e4a1bd2c45099de7cda0cbff407"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/cartographer.json",
+    "bytes": 5229,
+    "sha256": "e804ad88dc95b8785963708a7b4ba72aeeab34bc7d72daf9cbafa2d7224822e3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/caveman.json",
+    "bytes": 3960,
+    "sha256": "91ea87de9a1f92d007b2b28d25ae5dde542e9c2e70b87e3350afb323fbb23ace"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/celebrity.json",
+    "bytes": 4757,
+    "sha256": "4def78229da39048d01e7ca1746ec67a34ccc3f4cda676ac84bef61ec021f749"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/chameleon.json",
+    "bytes": 4883,
+    "sha256": "19f0745025196d6b3771462782e25cd987b47ec7b2125d076652628f4107e68c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/chef.json",
+    "bytes": 4230,
+    "sha256": "537c49d7e7428d3828062fd7a6e458f2044c4b2f3a4b2f422b71c68fc1a4ced2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/chemist.json",
+    "bytes": 4239,
+    "sha256": "19cc5270f1b3be650e1d360ab490c1d20ba33032f71dd0445dfd85ffd0efe839"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/chimera.json",
+    "bytes": 4540,
+    "sha256": "f774fe8a8f77f8855fc83d012c068c506bd5194411e05b9a664741517b66f627"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/coach.json",
+    "bytes": 4771,
+    "sha256": "6f76a3a50a955a9ce3ff3a93080445ad51499126acad04324e0166307d447219"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/collaborator.json",
+    "bytes": 5149,
+    "sha256": "8c4ba93ea4f1f623f1494d0aa02760334509866ed2817249ac6154c963db131d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/collector.json",
+    "bytes": 4809,
+    "sha256": "ec7a03e9c32a3aae5bd0844377ef0ed9447275fcb84dcd566666589d260d9165"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/comedian.json",
+    "bytes": 5314,
+    "sha256": "6dc53abec60545d27942754c4a0a69472999b0c2b5e6ac8b271117143e9b3166"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/competitor.json",
+    "bytes": 4759,
+    "sha256": "1fe823b347e1b375bc483dac6a9685f9ecfcd688015148ed7441e1223773b604"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/composer.json",
+    "bytes": 5431,
+    "sha256": "31cf0ae4ba35bf14dc5ff8f5f0f7a331a37232a0667d3456fd8e850a2ccd4fe4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/conservator.json",
+    "bytes": 5462,
+    "sha256": "47f8a3b91c120f2db179d24e424ba5efb73e6e8bf91f5c6e68879bbc9b6d4904"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/consultant.json",
+    "bytes": 5161,
+    "sha256": "ebbaeec0c7847cc973188804525534a254a410700d759b593768227f67acf05c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/contrarian.json",
+    "bytes": 5783,
+    "sha256": "7a05bb5573caf0801762b736473d9852d8506b4303aeeae6fba94e1cfeb4afed"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/coordinator.json",
+    "bytes": 7594,
+    "sha256": "4c1add600497a0b7b428c40b1002e46853684e3cb3c5b16e94164e172c16973a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/coral_reef.json",
+    "bytes": 4627,
+    "sha256": "a45f6a750f6076ff714dea2fb8f94ad646d381fdb8104dea1ed26ec592b83189"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/cosmopolitan.json",
+    "bytes": 4834,
+    "sha256": "74d76aaa71fce73f3f63856189420e7466da80489c19d6b9d2100fc14720f531"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/counselor.json",
+    "bytes": 5493,
+    "sha256": "7b7ad62523af91ba0e1324792a17cbd89d607bc75e3f82a23d0fee28fc5d1a8d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/criminal.json",
+    "bytes": 4732,
+    "sha256": "ed8153b12938cb6af48627cf6b10b18927b10cfa7aa464fd92d9f807e5e88f2a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/critic.json",
+    "bytes": 5294,
+    "sha256": "6a94e32f5d1a3e32d9e1318663399733cc9e84a9c22291a796a84230fa0e8841"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/crystalline.json",
+    "bytes": 5053,
+    "sha256": "a2721c49a27d26300f772407ce5871ef9006387ebd6d02472140f372fc4fc65b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/curator.json",
+    "bytes": 4821,
+    "sha256": "06a868b445ec2968d93dfdfa602f48e93b110913ba335b0b3fb3d84e3910ca76"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/cyborg.json",
+    "bytes": 4696,
+    "sha256": "5566a3736cb681ef0b295ffec137ac70a01c7a5b4f4fb55575c51f5f75962d1f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/cynic.json",
+    "bytes": 5173,
+    "sha256": "9a7f90661b035f4bdd33a599c00eebb50e3232f2ba2de5a3725bffc14a696b4d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/daredevil.json",
+    "bytes": 4540,
+    "sha256": "1a37168b645220f58f7bcc9ee6e0c0d882b02f8d920268495a06b723b0ad9b06"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/debugger.json",
+    "bytes": 5925,
+    "sha256": "fa134a4bf6b6ab5366fd232d8e3d25dac350877e7c5a6d8582889d12c3764865"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/default.json",
+    "bytes": 207,
+    "sha256": "1be698377c3b2505e60cf268c606820c2a0334ae90a9e257b1040d36d5ef6fd3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/demon.json",
+    "bytes": 4869,
+    "sha256": "26a6897f9c0fd47abc2c915a15a0a769b49dc5ccdd96dc42ae9cdf75a8cbbfc4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/designer.json",
+    "bytes": 4979,
+    "sha256": "974689af48b001418172160fb21b53a2cb0f7075ba881949a4d705cf30ee3260"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/destroyer.json",
+    "bytes": 4814,
+    "sha256": "02e939bd624e4254470b0008595f90f26c5291ff4a6b63dc41e435fd3e14bd34"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/detective.json",
+    "bytes": 6723,
+    "sha256": "cd16f247745f72038c9be71512eb55a5b684ce8647568bb416ac3256cbc66af5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/devils_advocate.json",
+    "bytes": 4747,
+    "sha256": "43ed6b86178d8016f74b02c25f4d77c94727404167daed9f398dbedc0dddb8ee"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/dilettante.json",
+    "bytes": 4678,
+    "sha256": "372061e882114f459439ff1f5f2a3dd9dcc7cc30176d4551697c9d1c2c3be20b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/dispatcher.json",
+    "bytes": 5390,
+    "sha256": "3de0e0e5194af96b7020b7e0f1590d10d1006d14e583133df9ce9bd30406b914"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/divorcee.json",
+    "bytes": 5139,
+    "sha256": "0f4dd85d01705bb9ccd586ca41da63ad4b8f6925fe7de012fc5b1e6ee00b61d3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/doctor.json",
+    "bytes": 5316,
+    "sha256": "8ec98c3c65be2ac1db1194b47c19079bd6d2a83f9eb7090dde80eaf6249e6a36"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/dreamer.json",
+    "bytes": 4911,
+    "sha256": "79f87aed6781296afed04f1c989f79e627bd8862fc882d87e3354e5f5b3596ca"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/echo.json",
+    "bytes": 4943,
+    "sha256": "0e3a7e694c7770550657c03f5f2ee177c0a15655f96d216369e5cc91237a980c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/economist.json",
+    "bytes": 5026,
+    "sha256": "2432f696eff8922eaf98a723eee249142cea9550155c43497199ce428f390187"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/ecosystem.json",
+    "bytes": 4409,
+    "sha256": "da213199bb7092dc92a463653070d44ae1c038cd61211bdd48d79c7a16310a7e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/editor.json",
+    "bytes": 5280,
+    "sha256": "4411e86bb6a776476c29aa1eac384515cab8509119a03969b12ef63784c05e33"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/egregore.json",
+    "bytes": 4786,
+    "sha256": "56fe6aaa4ea279470dafb3d0d4c1022e1d1c09ad0eeffb861534236faa27a886"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/elder.json",
+    "bytes": 5032,
+    "sha256": "d2b2075250db09c03af8f7a93dcb4848432d2f3f1cb5d5969caf19c5026fd411"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/eldritch.json",
+    "bytes": 3978,
+    "sha256": "9a43b78b3c1976ed0b50a24e2d47695206386dc228233302166695176a6bb2ca"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/emissary.json",
+    "bytes": 6123,
+    "sha256": "8272eabe5626f4b46bef7c90e2a4470f0ba606978e9e0f0e36cf6463bacd1943"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/empath.json",
+    "bytes": 5498,
+    "sha256": "35f651025c5b63dcda3a066607132fe248811cb04bda143df470ebf0710c636c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/engineer.json",
+    "bytes": 5165,
+    "sha256": "2b8e24c66272538f14d0c35b7df8b73f77e96161ee9d94e5202c2fd5f6cd0312"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/entrepreneur.json",
+    "bytes": 4920,
+    "sha256": "c61239198746ac81737a5ae5c0234412a47d8a2c9f11a8cf1c35c586806025a8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/evaluator.json",
+    "bytes": 5108,
+    "sha256": "7660566768cee399d94d5a181b12653ec3df50323332e1f95d4195133679b30a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/evangelist.json",
+    "bytes": 4211,
+    "sha256": "d7193fc64e1efac8690689bbe134b48654f2b407f5d6f22c268ec1383c5915f4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/examiner.json",
+    "bytes": 4949,
+    "sha256": "9da7f982a5b6b657acf65bce56fe37177ff87b11be9d16c614d55a50ddce55f9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/exile.json",
+    "bytes": 5131,
+    "sha256": "5bc623d0ad0602af5f2637f86ea52ef03ca08d6f1cc3136857d0c34f53054a47"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/expatriate.json",
+    "bytes": 5117,
+    "sha256": "febceab44a4f771d8444b767cae79bd94183dffdd74dbe958b3b00cede8c3b2f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/facilitator.json",
+    "bytes": 5328,
+    "sha256": "dd89b2cc6824a9918c55bb75d4894b3ecf2beeff0032b087c60d871d9c3216de"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/familiar.json",
+    "bytes": 4337,
+    "sha256": "b32c569422e3228b37ffda47a4d2d17e1a82b5e5f43469c64165730a40c60e49"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/fixer.json",
+    "bytes": 5974,
+    "sha256": "7ee038a899dd425ac25777ee1a974504e422f3fbaf4178bd883736122b8651c1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/flaneur.json",
+    "bytes": 5547,
+    "sha256": "8d67e8764012a6c0ce00e28b74ab5e7c86f2fcbecdbf3c08394ce21e963c31e8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/fool.json",
+    "bytes": 4757,
+    "sha256": "dcaab286f04bff45558b61fdf6ef3a53d7cdebd848a1b8941c1287aa440a891c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/forecaster.json",
+    "bytes": 4947,
+    "sha256": "b3f97932bf3c4af3023e83206ee2cfeaca3c293f063f32c4fceebf2d743e23a0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/futurist.json",
+    "bytes": 5432,
+    "sha256": "afa8fb690e3cd19935301bd7c0f5f989bc2782f9162798ff8e56c0af910d6035"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/gamer.json",
+    "bytes": 4492,
+    "sha256": "efc38afb06eef8f03969114bb75af690d46fc07574b696d5cf9ca48dd9133f66"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/generalist.json",
+    "bytes": 4915,
+    "sha256": "99d18b4adb22fbf97759d47677b33ffceb381174c212069fd307b40c115ac5e7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/genie.json",
+    "bytes": 4435,
+    "sha256": "c57431e3227b38ffc984de2d49036659b4e9525e64d9d34f1f9fb0b345431c51"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/geographer.json",
+    "bytes": 5003,
+    "sha256": "ac602da4c9cb830e6c3f96f4011f766185afe747f686d1b9c2f8da01e554df3f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/ghost.json",
+    "bytes": 4690,
+    "sha256": "d3de011673c765f6409608c42f2e76b18517f69fac39f08a210e2cca5d691d00"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/golem.json",
+    "bytes": 3924,
+    "sha256": "4a4d71822baeabd179ec9b3e363d4ef3c9829c1e57e680ad31395518bf529422"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/gossip.json",
+    "bytes": 5364,
+    "sha256": "193f535df26fc1acc4527d5b6e169e8afbce224ef4013ddefb6921a1629c5738"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/grader.json",
+    "bytes": 4371,
+    "sha256": "9c9c3e7bc1837415f08a7d895550111ed372eba936897846264884c7d4c6596a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/graduate.json",
+    "bytes": 5466,
+    "sha256": "ef6d689ead7434cdc9c4044a4b640a781d3d34ab5eb48bf1f700a6a3ba277e9a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/grandparent.json",
+    "bytes": 5255,
+    "sha256": "28bee5ca09d2e31741ef4f75919bad6cb4ab75462c279b0806dd71266582fbdd"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/guardian.json",
+    "bytes": 6506,
+    "sha256": "59d77db1f004e4ac7262b1663b2ddada6a91789ac54fb7a002b869079cbc979e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/guide.json",
+    "bytes": 5644,
+    "sha256": "251f4c1caa3f800473633228a0b99224e897fc8b99dae62cd965e1d28224475d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/guru.json",
+    "bytes": 4866,
+    "sha256": "69f34a38fcf2bb38d5307303744b5745e924910658e7e573770d4f8bcc53f536"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hacker.json",
+    "bytes": 4442,
+    "sha256": "b8ac3b3feee985a86a4bce8dca13dccf5ad2bd21947ab937c3e6e65c4d257860"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/healer.json",
+    "bytes": 5069,
+    "sha256": "cab4eb87c671068d365b8014e72c4bf763f73f31989a75134f874d590797a4b1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hedonist.json",
+    "bytes": 4711,
+    "sha256": "dbab1a6933e3d88bdf59af57fdf0e95b3b8165059051ac2b23012107f3921a65"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hermit.json",
+    "bytes": 4640,
+    "sha256": "e10f66986a016b165def87ca1d02b18680990c4393af345bebe0f5b1304813c6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/historian.json",
+    "bytes": 5155,
+    "sha256": "66f7da4caea20aac68122e2fb0684a212112380edc83afe6a9ea17a8f58fe191"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hive.json",
+    "bytes": 4211,
+    "sha256": "373fd740ab9bfc49524b84a9676314fe90e240607c235aa50610a2dcdd5c6f8f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hoarder.json",
+    "bytes": 5385,
+    "sha256": "74e0d168ff7ba15a8c35454ff8a1534ed79cef334a1b73893cb57fe0f991fc96"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/homunculus.json",
+    "bytes": 4434,
+    "sha256": "d5bd99818036c86d64575a1bf5f8d0f49ff468e4743c6e482102c43746d89a61"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/hybrid.json",
+    "bytes": 4839,
+    "sha256": "56190af5305ae5506a345fc56ed030473d39f9bafcfebb03661fee371d59dea7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/idealist.json",
+    "bytes": 4350,
+    "sha256": "fb194e6ad338a42f2e62c08b54ee25fbbd47dd3cafdb78c0ee35574f87639878"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/immigrant.json",
+    "bytes": 5076,
+    "sha256": "56f036e7fe882c0c109a89473f32acc41dcea96ce8bd6bff0b5c045dbf5690f2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/improviser.json",
+    "bytes": 6452,
+    "sha256": "b26ee582cecf9effa7b873df458e6144353be6fc47b7fbd572d6822788aa4ba5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/infant.json",
+    "bytes": 3387,
+    "sha256": "c789077e9f130bc1dda62a603f0dc4fc504a18eb4b2d7fb6e97849366de24dec"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/influencer.json",
+    "bytes": 4553,
+    "sha256": "8ab319cb12d35fae43523d676611bdc266b4a0d9350cde95a9fedf63a5ba604c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/instructor.json",
+    "bytes": 4178,
+    "sha256": "50c4beb70c39e371cffe823ff2c3e1cd9b87d4d364c8d053af7537060b334c07"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/interpreter.json",
+    "bytes": 5688,
+    "sha256": "071eb67db1afe3bc660ff221dfc9700639524ff2f8d3edb14a95f24d4b8a6b0b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/interviewer.json",
+    "bytes": 4209,
+    "sha256": "818f68b5f2d85112028bd4f04681c218c83f7a2ed2ffd7b06e833450efc26cde"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/jester.json",
+    "bytes": 5353,
+    "sha256": "f0231b78578b401ff33240f3f3fe9be1c30e2dffe8d4011e6e9ef1e3489d9ab5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/journalist.json",
+    "bytes": 4875,
+    "sha256": "11c754c0a87c3279744a735f81ec35026bba6cd1032163f9521d675e6edaebc0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/judge.json",
+    "bytes": 9803,
+    "sha256": "22926c9b5c7d3a06dd4c3ff7dbbbd6a9df4ce1231e4494226dab6126bec859ec"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/lawyer.json",
+    "bytes": 4879,
+    "sha256": "989800416f5080905addccd70f303b2fe7b2cae4f8739e120c2debd9e53eba95"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/leviathan.json",
+    "bytes": 5266,
+    "sha256": "5ac61c4fdf2f9e0fa41f7bc7eff0972d661f50bb584321f39e3d4cbf1c64d45d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/librarian.json",
+    "bytes": 5034,
+    "sha256": "df7d31eb0da6facf0fedf6181cd4b9531c0a93019fbc680f4d37316715d2bca2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/linguist.json",
+    "bytes": 4779,
+    "sha256": "f81f5dead0cdc80c7d5c7fd700d1c78a00c47162349dcc215e5ef657d2e9fd44"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/loner.json",
+    "bytes": 4249,
+    "sha256": "ccd7315d2cb307db85cec11eec9489911e346e63fe82fa52e647150bc78742c9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/luddite.json",
+    "bytes": 4838,
+    "sha256": "c82f7c13615bf7966460e99f70fce1fa056cb37a534eb5064c4f294b5de87581"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/marketer.json",
+    "bytes": 4354,
+    "sha256": "c62bcc569d95f177d4757ba6c4a8dec169e3adb4100228179420ed619d386e4c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/martyr.json",
+    "bytes": 5888,
+    "sha256": "e39956132ca0a80ac2b96c7050f5bd6ebbbeb3b820392971ad6d8ae84b48280a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mathematician.json",
+    "bytes": 4486,
+    "sha256": "53723e5082f27f4d9d97fddbd122db2f41c2a097f344268271b5151029de48af"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/maverick.json",
+    "bytes": 4510,
+    "sha256": "7b060878df8ed9f4954e6354cf06cfef8385e1c55c12d6be8fcc766223c65358"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mechanic.json",
+    "bytes": 5471,
+    "sha256": "3760c4dcc00207dc53bd056c552faf32213616db09087e0218f53cd74836cda7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mediator.json",
+    "bytes": 5835,
+    "sha256": "0e4f59446181a89d18bf989b69fd170c31ce4fb8455fc35dccd24b077e3791c9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mentor.json",
+    "bytes": 5699,
+    "sha256": "50bce8b9622230923fc91c2579a866756982810ba3610692c8f062517ce1430f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/merchant.json",
+    "bytes": 5129,
+    "sha256": "9292878d62fa9995ab718a663f9abf917fbb381384e607eb825c859715df50ea"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/minimalist.json",
+    "bytes": 4297,
+    "sha256": "8f7872e51f3d31091354885d19124fa92e866cb92eba108e8dc095f7d11c3545"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/moderator.json",
+    "bytes": 7149,
+    "sha256": "d0fadd6dcd9bf8c14c39946afcfcce7ab7f8c0f825ab39b3c9167b86540cebf5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/musician.json",
+    "bytes": 4538,
+    "sha256": "28f7c4e07bedd9edd9259d49dc6441d524c1344945ef76743a5d4f06cf806222"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mycorrhizal.json",
+    "bytes": 5261,
+    "sha256": "c402216425553ee2eecb13defec1146137a695cce801e99a9e6704fc991292da"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/mystic.json",
+    "bytes": 4459,
+    "sha256": "cc7f7bcfc62bfb3212c182888dd439a5b8803b7bef24062639ad29695f483444"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/narcissist.json",
+    "bytes": 4865,
+    "sha256": "4b8bf0dd46c421f2859f9457ec75245de9a8fc757c464c2d91711e569dad1ee3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/narrator.json",
+    "bytes": 4157,
+    "sha256": "f039bb91fad6e8146965158c40824b891a3d7830f99761f9ce135ef869310144"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/naturalist.json",
+    "bytes": 4177,
+    "sha256": "fad8d3d3994aee01751fc3419b59a8c9f2873953c4a8f40e183ee0352552fe8f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/navigator.json",
+    "bytes": 5364,
+    "sha256": "f918dfe2e5dbaf59793a27ef4b226228924ad134724c9932f48cc2f712a1d08b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/negotiator.json",
+    "bytes": 5372,
+    "sha256": "5e498f70408b1549cc5d88493004f7b2316c3ccca1211322f0a5fe3ecf7e15b4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/networker.json",
+    "bytes": 4651,
+    "sha256": "08d086d14e8e4cf935cdcde7417a5c080bc83a0f62b820de9a8d07f3c1575e9b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/newlywed.json",
+    "bytes": 4939,
+    "sha256": "320cdca3c516586d209c8226b58c23c3ffa8371fbf91fe3b68f59292bbe65ed5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/nomad.json",
+    "bytes": 4726,
+    "sha256": "2f4c28ac23fab4456526548fd4f2a2b16a9947562f11680fced67235a533e2ad"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/novelist.json",
+    "bytes": 5194,
+    "sha256": "9083eb8319a2bece7c3711ccc060359f9eaeecf421e9b44ba77c07bbc42e0dbd"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/nutritionist.json",
+    "bytes": 4548,
+    "sha256": "219f463b9c0cc468156b109553e82aaea8ebe5df141b287867a2c607c64f77d7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/observer.json",
+    "bytes": 4612,
+    "sha256": "5c548c3d9636743576a7a0974d20246fc01a7800ae9681913369878a3232675d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/optimist.json",
+    "bytes": 4835,
+    "sha256": "eb7f6dabc136dde76edb889786547fa1b20946af014683529b4fd623c8d06723"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/oracle.json",
+    "bytes": 4397,
+    "sha256": "875429dffd3bfde53d48abecd84579c7f6bf53af38736f9ef7025485f1bf6f09"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/organizer.json",
+    "bytes": 5037,
+    "sha256": "0300aa96a5a589b9535a66f77aa11dc6880c3a74fb22bc8992a8f39eb3f70689"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/orphan.json",
+    "bytes": 4655,
+    "sha256": "2db4063a5306af2a8150b804d3f695245f49df0dcd6d3e62cba631d98553520c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pacifist.json",
+    "bytes": 4382,
+    "sha256": "0ef1f76e46297c09c8048860c4bc4f0cbca17dcb91d9c60334bd9a4ec247dbdd"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/paramedic.json",
+    "bytes": 5194,
+    "sha256": "cf97d092bb3567e3bf5a7ef30607762ca70d087809c13042ac062684d134821f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/parasite.json",
+    "bytes": 5167,
+    "sha256": "8ea1f9201673a1da191762edbe7206745c28a29beefaa5cdcf0b5db9e584ea5a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/parent.json",
+    "bytes": 5470,
+    "sha256": "1e350ecbadb9656a4fb53c1c32feed32869885a0bf9b9c04f7f9d4773c5d5472"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/patient.json",
+    "bytes": 4682,
+    "sha256": "a17913db12216f1daf9ed6142acd12af27ae7220040039d120cfbfbd731c52fe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/peacekeeper.json",
+    "bytes": 6476,
+    "sha256": "0be870ba59ead78f7b143afa218db291299dcd98578bc21c349fa81349b1ff97"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/perfectionist.json",
+    "bytes": 4649,
+    "sha256": "b58c305a5449ccabd062c5627db93aea302f2ebee51236cc879efac3f5274aea"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pharmacist.json",
+    "bytes": 4923,
+    "sha256": "8bbfae60c0fe226f22d3c6471ac5eabd2c60cbf9be843d0c746b1af7f9bb8992"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/philosopher.json",
+    "bytes": 4187,
+    "sha256": "62934ea2bb08623b0d0d2fb7ef6e771bbfd53370d1eb4631c8ef4d611082eabc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/photographer.json",
+    "bytes": 5231,
+    "sha256": "1cecc954c5fedbee5ae20d9dd462a0b09faeb39175d230e6cc6903db81f12f4c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/physicist.json",
+    "bytes": 4045,
+    "sha256": "e7c0c849126333c93b931b1d67e51a90270eace91d5f2b95e9eaea2f27f0c6f7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pilgrim.json",
+    "bytes": 4694,
+    "sha256": "6b2f9f96d929ce50d99eb76af465663106624b98bafd3655848e816b744c858f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pilot.json",
+    "bytes": 5102,
+    "sha256": "c3fa3e4ba811c31dc4816dea961b642d6fec51def643e6e9dcbe4c7b3bcc1c76"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pirate.json",
+    "bytes": 4549,
+    "sha256": "c2a251a99589afd9781057d0ead62ed9ddf7aeb6fa8d42e8dbfc80aac289cb4a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/planner.json",
+    "bytes": 5027,
+    "sha256": "ae4131e7b300779fedebc0b5e27df71b74adfd2ec0b9e2db2cb7c59a07548819"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/playwright.json",
+    "bytes": 4892,
+    "sha256": "d2c8bdf27878d7e663c60e9a69266ce3ea19b1451c915375ec1752139a311be6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/podcaster.json",
+    "bytes": 5022,
+    "sha256": "02d87ba4302344e7efeb209d558edd607f48f2aec6dff1ce22b4f1e4cfab82ba"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/poet.json",
+    "bytes": 4637,
+    "sha256": "8368697d36d39ab7439379894cc857b8b1e0fb98541447810b0c6688403b21e1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/polymath.json",
+    "bytes": 4867,
+    "sha256": "c182cbeca0703ee27121f23640a90218ae74de01f1a9f9f76ea77e34cbb69f3f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/pragmatist.json",
+    "bytes": 4607,
+    "sha256": "9315ac209ac547383383793186ed2642a24f5dcb2684a7e7fce6cb781e4f0045"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/predator.json",
+    "bytes": 4819,
+    "sha256": "b8a2142fdc6b3aa8f064e37f7743766c10a81fcc7a754454ff2f23aa60467a52"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/presenter.json",
+    "bytes": 4811,
+    "sha256": "f55bfc40a84100d4fcc0b3a3806ba52b47d4e88661dc47a7bf0a143e5afcb9e5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/prey.json",
+    "bytes": 4406,
+    "sha256": "c83c02b4e85bff0fef1fa3e8c8eb8252506cf06324f90f3d252747e0f8b5b3c9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/prisoner.json",
+    "bytes": 4477,
+    "sha256": "3c2cdc240fc5f9cfa9b13d801304bfac6b64afb6975b341d5932c66a95541879"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/procrastinator.json",
+    "bytes": 5017,
+    "sha256": "575ec5e8b45aac000612ebee223f17b805a4e2d72f4bd94919bd8462ca3fee65"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/prodigy.json",
+    "bytes": 4665,
+    "sha256": "88ca3457987cc5d797ac106bf611b37bafdc93f742646cd45c05762e44c749c3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/producer.json",
+    "bytes": 5309,
+    "sha256": "bc9dc55e763ca8aab418989018eb916a0d0a074900d99820add6886e53af87dc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/programmer.json",
+    "bytes": 4470,
+    "sha256": "974ec0532edf464c0691d428f16c61531d1367b90fe01b38a811160114f5fd76"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/proofreader.json",
+    "bytes": 4756,
+    "sha256": "6b9dceb0d515deda0661eec2f608b7ea88b55af6047defc669d9e0f38e8e3e31"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/prophet.json",
+    "bytes": 4408,
+    "sha256": "220349a1e28d52957f1ad35da02316b4b0535b0f4caaa44cf74264f338d1e0d9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/provincial.json",
+    "bytes": 4492,
+    "sha256": "1bb4374ffac5b07e88ac1658b12a2aba8781a51f7e23c2e8978b0c2936c2f46a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/provocateur.json",
+    "bytes": 4531,
+    "sha256": "a7dc9799db18ee64789ec0e467a7b614f2e9237a2c17c3d9af33e63d14a08f55"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/psychologist.json",
+    "bytes": 4381,
+    "sha256": "382d9f75bfdd92dcf87894bb7581cb18d86e1638df027d8614343e1900fd6fea"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/publisher.json",
+    "bytes": 5530,
+    "sha256": "4a0a473849b5303ed64c3498b92184374f838bab65a9b9b6d20e65d9fa857f30"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/purist.json",
+    "bytes": 5043,
+    "sha256": "36c32c629362c29372a3aad86294ffcb924c9e5bcc1afd6291211c3fe96a8eab"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/realist.json",
+    "bytes": 5479,
+    "sha256": "05a87593ccfc35ecc7149078807a279bea00ce7b6c1b77258c896b52649959fc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/rebel.json",
+    "bytes": 4895,
+    "sha256": "85f32e5d74dd2b225282a1414585847fe998471750fd231ec9396c36bff8f778"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/recruiter.json",
+    "bytes": 4948,
+    "sha256": "2156e038c6dde70733f39b58adf3b3e4bb7dd3fa272232a6da868ad30741649d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/refugee.json",
+    "bytes": 5066,
+    "sha256": "8a4f2595d7f800c8681883e004245b817c69c87c7be27b40d5d9081312ae6e0a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/reporter.json",
+    "bytes": 4790,
+    "sha256": "9298dfc352fdba67fca9649edade83e2a2c3608b61153f409ec2b50ce026a7e7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/researcher.json",
+    "bytes": 4811,
+    "sha256": "32f8c3f77d822f9347ca3cbf1322aaf671ee98957fe9b71a2c92a210d9942a16"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/retiree.json",
+    "bytes": 4930,
+    "sha256": "672bf7f089d1b224355b78ec5b445ca75bfc85924c46c28ee2d6719f1925f2c4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/revenant.json",
+    "bytes": 4942,
+    "sha256": "98bac8439e8558137bf5485bf666c13bbfa3a488b582dcb25a1b96b30e5cd8a8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/reviewer.json",
+    "bytes": 4856,
+    "sha256": "f942f99605ba8741b150f9872b883dd1c2bb765a93ff1c9908922538a616c0f6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/revolutionary.json",
+    "bytes": 5196,
+    "sha256": "ad5141df5c5f9a1975a54fd2d97644a9a7d1fc0cd5af3d40c8b6ce09fefa19a0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/robot.json",
+    "bytes": 3976,
+    "sha256": "7baf831777637a2d6661aeb1d013339dc154a0359375af1487694a93e8b48e65"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/rogue.json",
+    "bytes": 5217,
+    "sha256": "4fb6214f39f27727f134df8f7fa12f350438d08ebdf9006b08240c2fad6cfba5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/romantic.json",
+    "bytes": 4644,
+    "sha256": "92b969463e427c95d151e7844ba18e48df13615f910c780003994609660f50b8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/saboteur.json",
+    "bytes": 5762,
+    "sha256": "bc4ced663086ddd06f54ae0cf01a3d24cb9fc64e6e893f63d84300dbddbac1ba"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/sage.json",
+    "bytes": 5168,
+    "sha256": "355c8d10e0f335a7455d40dd4d05fb2eba94b2725ebd5fb2086fc412784b7535"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/scheduler.json",
+    "bytes": 5535,
+    "sha256": "26ec021f83cd923ff88ff7d2a252c12f818ecc3af59f38208479b90225fa7ec1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/scholar.json",
+    "bytes": 5040,
+    "sha256": "ac6dac3eaf92ce3f85022fe8be35e1981e7bbb655f6f5c96e5e97ef9ee4ccf9a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/scientist.json",
+    "bytes": 5428,
+    "sha256": "1d291a4e6b4dead05d6e084bd48d583468946a719ec5a75e6846f4eaebf3ce5a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/scout.json",
+    "bytes": 5146,
+    "sha256": "602f60d66921d5143e7d77ad46cef3c402332e8789ea2c2028e4f6c77c0c78ea"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/screener.json",
+    "bytes": 4656,
+    "sha256": "2017d106a7c7ced77fd0589bf4cfe611f3f16264f42f0b4bd7538e18b12eea8d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/secretary.json",
+    "bytes": 5839,
+    "sha256": "65eb6908d335a32aff7e35e89561e24afd2d056eabadf142234045690cb42d54"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/shaman.json",
+    "bytes": 5219,
+    "sha256": "9844bb98d62890424bfd545e32aacac4d2b873d89400aefbcc849fe94ad477bb"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/shapeshifter.json",
+    "bytes": 4668,
+    "sha256": "51a83442d6333e3b2f20cdfa734fc7eb1d61f90b188982a6954a4d014c575b7b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/simulacrum.json",
+    "bytes": 4439,
+    "sha256": "3d278558dc9aae4daca26e927b288b0aa40f949863fc04629957a4494c001d30"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/skeptic.json",
+    "bytes": 4871,
+    "sha256": "faa6b3b6e96cb3fa4496820b11b34177e345d9dd997158be68d4b07a0c7920c4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/smuggler.json",
+    "bytes": 4932,
+    "sha256": "1176069e48e480e10940415338c8df3bacc97b9c51e357a36c5ad7cd25ad1253"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/sociologist.json",
+    "bytes": 4696,
+    "sha256": "dd6f3e1d23f315ed716f3e61c877e64a3637fea11fab38a8e58b19d6b8fff6d7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/soldier.json",
+    "bytes": 5012,
+    "sha256": "591472c06567938206b93a19e4dbdfe778957a42041524ad65cb3e18df9d2c3b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/sommelier.json",
+    "bytes": 4922,
+    "sha256": "c5f41b5a74f671401c68ce0d861c568bbfbaa5d52e68b74013656e6e37e34842"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/specialist.json",
+    "bytes": 4003,
+    "sha256": "4bf53a31e6e6043eafb30bbf1f15b8d10213549abae87f42d0d2009dfeba7427"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/spirit.json",
+    "bytes": 4622,
+    "sha256": "b0ee0d7dca1f82a77b95977bdb6c6ef76edb9aeea2514e4dd68b0c5f4711eb22"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/spy.json",
+    "bytes": 4936,
+    "sha256": "2577d3e3f88e0afaa6e2823d1722d64d5cd5304c79efbf22d58ab0276fb9e6e7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/statistician.json",
+    "bytes": 4904,
+    "sha256": "9bca9aae31cc875a6a8f3cbc20e9ffde976c5cd7f41f92c7a71e32c905e805a0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/stoic.json",
+    "bytes": 5887,
+    "sha256": "1647b9761d2a5b95636af35e4cef1adbe203c57228e7cddef47d55c43453842c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/strategist.json",
+    "bytes": 5193,
+    "sha256": "eef621ac70605ea47fa7ab1bb8f7665f90d422b926faae06ecd72fef3324e33a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/student.json",
+    "bytes": 4508,
+    "sha256": "97518159c050e952163e9a74b4876f0a63e991e6130ae51633755e96076b3711"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/summarizer.json",
+    "bytes": 4383,
+    "sha256": "d8042e9e517b7e2e4ab435d00774ae1a9e0cca4fe06d488c40b7f8a886cbace3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/supervisor.json",
+    "bytes": 4466,
+    "sha256": "64413d2f1b7d40cb8a63b44dfa41581072b1daf4691a6d99cda535d7c2b8d6bd"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/surfer.json",
+    "bytes": 4574,
+    "sha256": "c55a26855cb5c0b44d8aded23d74a706676bc2c94b2f49dea437ebe3561fb5e3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/survivor.json",
+    "bytes": 4519,
+    "sha256": "cd7ba8603f5dd9a871dc6b8c0ae2e47e8c5217e1693c5ec1ffaf8286ed325fff"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/swarm.json",
+    "bytes": 4028,
+    "sha256": "214ae3b01b852cc6ef7eed7e091dc84acbe26c7c41067de0ffae9a9f9f45d8d3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/symbiont.json",
+    "bytes": 5013,
+    "sha256": "a8f3cb2aef2cf5631776c865146e985494e90ba53ee77d707fdf5253da6e1f39"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/synthesizer.json",
+    "bytes": 5983,
+    "sha256": "30f40791e897b753653620b7395fd8a6b9c8caa700546418b75e2a7d1139834c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/teacher.json",
+    "bytes": 4834,
+    "sha256": "26446c08e681fdf10a950a45bd8782811b05582408de9f23c926e9d23042c5cc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/technologist.json",
+    "bytes": 4935,
+    "sha256": "9c4041fa661b479a78b2e7e2ab0dbeaed7c27d9961d54e0efe90e32314d46533"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/teenager.json",
+    "bytes": 4594,
+    "sha256": "441b9679d7548e3583e24048a40e9318b22549c3355eb5647fad61dde6005b9b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/theorist.json",
+    "bytes": 5039,
+    "sha256": "d40f6b55bca76ddc857a3603b502c30e9586aedcdf4ebde95a8508dac1e04b38"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/therapist.json",
+    "bytes": 4894,
+    "sha256": "2be2e043d209624c9ec2ec7bbcd4af65e0428feb86b4fa0be69d5910a44e76fe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/toddler.json",
+    "bytes": 3494,
+    "sha256": "b283aecfbb00ee9072a0c803601d0fa706c6be4e4c82dea691ef072abe7f123d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/traditionalist.json",
+    "bytes": 5515,
+    "sha256": "004fcddd655417c889a4b8bce4f23734a96c0b6e5f690c974b8966cd02d75040"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/trainer.json",
+    "bytes": 4513,
+    "sha256": "4d6204a5a599022845e4d945d1edec117e889cdc8dc0fa9f7309c4737d8996e6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/translator.json",
+    "bytes": 5060,
+    "sha256": "0168a3854ee2adc517da57177eff15b65e35fb3c054f3877ec3e31de32b38f62"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/tree.json",
+    "bytes": 4618,
+    "sha256": "9013e29566f5ea6fe0d382aa49aa51f8376bce0904c875528ffc385ea8dc8db0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/trickster.json",
+    "bytes": 3768,
+    "sha256": "8ec5e393180cc001c39aa6daac9d12cc9ce67679950d2922b4675153267e0a9d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/tulpa.json",
+    "bytes": 4774,
+    "sha256": "14ecebeb33be94b2adb1d4030c29237f728f151aa6d96a6ae80e19a79a8917c4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/tutor.json",
+    "bytes": 5134,
+    "sha256": "4471bde7d77de1b3052e397e9d877a73d0dd98662c868a3699974bcd7cb4c2ab"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/validator.json",
+    "bytes": 4608,
+    "sha256": "85be111eb789ccda55ba99faafa3a3318a8e04d72c39c9faa9a7e768fc47b8b1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/vampire.json",
+    "bytes": 4039,
+    "sha256": "041edd1ed5173642a914d35788eeccbd471bc7132056ab9a43d1f413a4fd95eb"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/vegan.json",
+    "bytes": 4310,
+    "sha256": "e15adc8b6d5cf620ce7ad7914050c7aa0c7a0a0dfa8e33f08c457b4623c7dabe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/veteran.json",
+    "bytes": 5074,
+    "sha256": "4729dc47939a57862a35b2a229c7d83792ad5a4607c42b255b9f1a2863162b2d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/veterinarian.json",
+    "bytes": 4726,
+    "sha256": "fa2949c88b1c0916b3cab1bdf270b2fbd326db3fb79182a306648a8f5c6c1263"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/vigilante.json",
+    "bytes": 6347,
+    "sha256": "646eed14b7041c17c38f43719c5229fc0acc18f659a274038ab412abb81f394a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/virtuoso.json",
+    "bytes": 4891,
+    "sha256": "c3e80f39044da6ddd0682dcfb99e017a7a3e821d09e56d55bd21daa2e99a3509"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/virus.json",
+    "bytes": 4548,
+    "sha256": "b267a82f0f6513c3c0a040a82d6d4bc0b990cda1c137a2e358378fbf95eb0fbf"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/visionary.json",
+    "bytes": 4620,
+    "sha256": "97170501a36c30ae3124dfacdf0445da5a9273f1bf329926e09bb6fc22915ce2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/void.json",
+    "bytes": 4363,
+    "sha256": "e40d8228bee2f02d094dced930c15dbc77ccc41b4e8f80adf1ec05a9aa718dbb"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/wanderer.json",
+    "bytes": 4408,
+    "sha256": "77b8dce9f25b169485f21feb3fd7826faafd59c6de7057f85f0a9d30d7f4144e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/warrior.json",
+    "bytes": 4886,
+    "sha256": "57263dd958d21527f7641c73148a24b07781c3fa644650035abdb9e216863741"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/whale.json",
+    "bytes": 5138,
+    "sha256": "f50fd89b48264c42c5e396029d42b058ffeee2c72434bb8a44d8fde4ebb42430"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/widow.json",
+    "bytes": 5593,
+    "sha256": "66002c8701e25f9b1e219678f58b32ae8e0df33874afc9529842327ae72ed098"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/wind.json",
+    "bytes": 4692,
+    "sha256": "27d5551e01f09d5c3bcc4fe59694bbc2d8a2518e4968a29c41293e6699a34f27"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/witch.json",
+    "bytes": 4597,
+    "sha256": "65d0e904b2965f7cb63f24401d8a1426a074b7e574b07b40db8d46a89e91b027"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/witness.json",
+    "bytes": 4801,
+    "sha256": "8e13a481220b4dba7801ff24216dd2f2f125decb85a64adac0fd0436fcf38e35"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/workaholic.json",
+    "bytes": 4637,
+    "sha256": "f87283d341e5ebca602d46b0004680685d778132ffd4e4616871c293d84b48cc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/wraith.json",
+    "bytes": 4948,
+    "sha256": "45cfa5b5151d8105cff10dab43586e4b189d9fb62213123d8efca02856b111a8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/writer.json",
+    "bytes": 4844,
+    "sha256": "d6abc39fd6bfc456bdeaf672088fb92e99989bbfdc570348586886801ed8cd3b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/zealot.json",
+    "bytes": 5698,
+    "sha256": "9af4f903f034ea5b12234f0f61275a5b98076ab6af48f4fa516f0a4a48b243a4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/instructions/zeitgeist.json",
+    "bytes": 5223,
+    "sha256": "3a6014f4cb9a77b76399957ba7abb556852229242c5205cedf92c0fae99b32b2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/roles/role_list.json",
+    "bytes": 25168,
+    "sha256": "1e27b846235326bf1eb9bc2a79fc2312ab1c260996052dafb6ce00acca9e7918"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/absolutist.json",
+    "bytes": 4408,
+    "sha256": "42c15e80690f76971699831be325de239d537aa09bcf64f0a1f67b3fb53b3048"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/abstract.json",
+    "bytes": 3960,
+    "sha256": "02236507b29e3c9127a0ed16a92b144f3115f9abe4823f02e90867bda526bf63"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/accessible.json",
+    "bytes": 4793,
+    "sha256": "91f731ed1ce60ba036f3b1c6aff0ed7b6a46cd1d529e9bd4cd8c8877859e98e9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/accommodating.json",
+    "bytes": 6668,
+    "sha256": "e4923e412d1cecc28955dde34e0f096a025319bd0ac32cbb0aedc24acd484375"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/acerbic.json",
+    "bytes": 4768,
+    "sha256": "546fe3368a1823e873d0ae8e0f127c32f5e9ca7ad9ae8db97a749a6bb1f38fc9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/adaptable.json",
+    "bytes": 5025,
+    "sha256": "46229272c2d643d3edc1391730ec99abf535b53eb24f60fa5b5d3ac9fb76e4d9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/adventurous.json",
+    "bytes": 5368,
+    "sha256": "4f70e64052944dc133fffa691e2b85afae6f355ad6ae7ad3eaa7ca9bc163f651"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/agreeable.json",
+    "bytes": 5356,
+    "sha256": "dd35e832c997e79f05e9293b8b0a51a2a334f485dd88f400120034d086bc914b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/altruistic.json",
+    "bytes": 6350,
+    "sha256": "0de1de60a2c01b7cb7f7826133a5ae8f1fffdb0127d0954305361577449d3e07"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/analytical.json",
+    "bytes": 4142,
+    "sha256": "6ec8a5714b4db6f9806c340be848961056aaaf6540b7e4bf95dbe66a9a54bf12"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/animated.json",
+    "bytes": 5209,
+    "sha256": "23cb6361327e9359b4d2b4da6737dc8ba4218d32d8fc8c326cafea77ed926d8a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/anthropocentric.json",
+    "bytes": 5939,
+    "sha256": "f90c4279da657b71d3ff7c24dae6f31d2ab13548535ab6bff759a70a72f9c25f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/anxious.json",
+    "bytes": 4923,
+    "sha256": "03a2acc26882622b98e534febf87ad4db7695faed06421362785a69288206d64"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/arrogant.json",
+    "bytes": 5049,
+    "sha256": "fa104316a66407fa31abc1c0c6b7d16b202de2cb2da066c2764c6444931e1d05"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/artistic.json",
+    "bytes": 5282,
+    "sha256": "87093d8c409b352af8b42b35cc7a4a9f05f258d3a42e84d50a1840626d3759c1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/ascetic.json",
+    "bytes": 4860,
+    "sha256": "5a679645bbc252abdcf784448465cc81bae0665c6986dba0f2edcc2f050bee7a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/assertive.json",
+    "bytes": 4771,
+    "sha256": "394040123f5a3493369af18bb0fb74b3d0b0ab1463b20b4d36b70d09a84dde17"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/avoidant.json",
+    "bytes": 6463,
+    "sha256": "d74bb0bf15b7dac695aaa129f67e144dd0fe72e75a45ef963334369844cd6c35"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/benevolent.json",
+    "bytes": 6133,
+    "sha256": "ec1f1eddf81fb52646055801b8c75681bdd8f3da915be71b12f372fd3d821f78"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/big_picture.json",
+    "bytes": 4788,
+    "sha256": "b7794da79957ebcb530432d167a8b727057b79ee0fe65c00df9670b6b8b88bb2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/bitter.json",
+    "bytes": 4749,
+    "sha256": "641395aad6af33479e7921e2400350989ed77af310ec3c44bff7d44c1d3f912b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/blunt.json",
+    "bytes": 5775,
+    "sha256": "a3ab77ff06641e24023cfa147698ed30acec6521dd9a640071ab36164cabd428"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/bombastic.json",
+    "bytes": 4237,
+    "sha256": "1f20ceb57746f2783c8d922947c67c201e08cc98c09f5982448840940ad0009e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/calculating.json",
+    "bytes": 5646,
+    "sha256": "447204645d0c95b0a9d964c366bf39ca96e913e4f2204fbe10d76180c287541b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/callous.json",
+    "bytes": 5969,
+    "sha256": "de14fc719344b59a308adc4c44f663183604b4144a5a60d4e49b8a2b5a220426"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/calm.json",
+    "bytes": 4989,
+    "sha256": "4ed8122341cdd30f0e25cbd4f782b6417a592f66ed14cb5b427f47532ed8304d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/casual.json",
+    "bytes": 4051,
+    "sha256": "31cf1545cbb7739bbbc64dfcb45853dd108111d616f1548317ef336fd82188b8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/cautious.json",
+    "bytes": 5329,
+    "sha256": "d02a2663026e487444b3b0b22c7ebe20d635602e575d291784394fedaf24701c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/challenging.json",
+    "bytes": 4768,
+    "sha256": "dfae4808b0f590f1cc6d0fd0c543558f9938289d055287411d0cef3cc84c534b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/chaotic.json",
+    "bytes": 5157,
+    "sha256": "2c115adc5a3b5031bd35a77a0abc9c83ff9ee7a4ecd1bfd7aa48d97aa0d062b5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/charismatic.json",
+    "bytes": 4955,
+    "sha256": "94a541529d4f6288bcc5c479f6611953021114a80bf62b217f114ed49cc1ea34"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/chill.json",
+    "bytes": 4760,
+    "sha256": "243c17003c9bf7139fcaf564d022a6943b4c4b38f0bb6cbbb7a05f7b4f826c18"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/circumspect.json",
+    "bytes": 4503,
+    "sha256": "8f4590a17b39801c824e8b089059ec1c91fdd9b56d1499c927bfd1d53fb090b2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/closure_seeking.json",
+    "bytes": 5035,
+    "sha256": "eab42168185d4264b3c07df03f627d29c95484cb1bda944d40ddec5cecde2726"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/collaborative.json",
+    "bytes": 4736,
+    "sha256": "05cebe24d44a4e153cf8b95966fe5a64ca338a11dca8ac9a53b1a9f6a88dd4a5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/collectivistic.json",
+    "bytes": 7582,
+    "sha256": "4846d4af47d6049d7c6e3b50f0501e0a5e81b183d30e1d5c00dbcc07bcd22f49"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/competitive.json",
+    "bytes": 4621,
+    "sha256": "116a46e344039e5b4022747e29ececb69f50e9d774062c868ffe452f4c0f616d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/conceptual.json",
+    "bytes": 4020,
+    "sha256": "a41b33030a7bb6ff0dd98c8d859bbe699294616dfa4ebcff4d3cdd9c0d60ff98"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/conciliatory.json",
+    "bytes": 6033,
+    "sha256": "36ebcba3defafc43aed6c6f89a2f798e2bd541fe75793806c3fecdb3b41af62a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/concise.json",
+    "bytes": 3091,
+    "sha256": "e3b17381e4adaf54d7c0b42cb6ce3660349a5584cf831307fbbab59d938c1adc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/condescending.json",
+    "bytes": 4301,
+    "sha256": "261836a35effd7d08135908b2bae964b4174bbd0735b3e13ddf5149be39d6f4a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/confident.json",
+    "bytes": 4738,
+    "sha256": "a502ae009042d205e11c84cfe3177d924fca91d862c7b097cb7a8cb7e23f7f69"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/confrontational.json",
+    "bytes": 5512,
+    "sha256": "604da60f8d420c553ee86fc0d9f33c303038b6ac7144b3c7d122b25c993112fe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/conscientious.json",
+    "bytes": 4627,
+    "sha256": "f5300e3975c5bfde284b21317031e6a0ecbbd87b980c5c8eb3ae9281a9ca6554"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/constructivist.json",
+    "bytes": 4996,
+    "sha256": "5b347ffed0f19f7389df173e1af86f4822392d8a3394543a94d0dd816cfe3176"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/contemporary.json",
+    "bytes": 4408,
+    "sha256": "50f005c9a28cfcb7ceef3cc76b53831d0e092301b9255aa978ef6c13db2ff664"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/contrarian.json",
+    "bytes": 5658,
+    "sha256": "8d56c99a27f59492aaa978abcd6b66a8edbb475777e05d52964afb2163a623a7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/convergent.json",
+    "bytes": 4357,
+    "sha256": "f1bd9104c02d541950679697681b81b48e84588a86317744fb794ae9c5829cb0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/cosmopolitan.json",
+    "bytes": 6078,
+    "sha256": "10434f68ab4ed461eab44c734c3757410160761119617ad9baf364a1375bc62e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/creative.json",
+    "bytes": 4928,
+    "sha256": "1a2da2fa467b2da0ea32a47357978c0cc1b2be13d08ab9c07aae3ce7e0bfd745"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/critical.json",
+    "bytes": 5189,
+    "sha256": "d704f6076f03f5ad275f3134784aaf9f13051cbf6bc786a89b4b9b54de6c5f1e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/cruel.json",
+    "bytes": 6354,
+    "sha256": "f6f75ae1b71d0ca97210a15092dd2b1e01e5ef3f8ccde84246c521253d58dac8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/cryptic.json",
+    "bytes": 4107,
+    "sha256": "e3003f5c81407806dd8ccbf2c517720090fb4dd60c721db3ce537791f3a01140"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/curious.json",
+    "bytes": 4600,
+    "sha256": "ead5c45f0f0b9cc13dd1704a26f881a158e71ea7d78ec7b6f919e157a8dcd3fe"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/cynical.json",
+    "bytes": 5125,
+    "sha256": "165e1ca3d436a324e877c301aad50aae42dff3c6f4a4c1afaf1ec70e7c2d0b03"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/data_driven.json",
+    "bytes": 4979,
+    "sha256": "19af38964af4f1975aed873c9a486961e22316ab3584c78a7aa89de4994f5976"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/decisive.json",
+    "bytes": 5270,
+    "sha256": "86307d5c216d21871cf44f3fa00029adf194ee704c576be66cfe711c0d7e369e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/deconstructionist.json",
+    "bytes": 4673,
+    "sha256": "ae9712c73526592762a090a5d9cea908a52dce5feeaefd45e3014d925278c368"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/deferential.json",
+    "bytes": 6692,
+    "sha256": "c1325df980e1a358608967102d3b24cd495ce3c517dcbd7176ec66f31e680d50"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/deontological.json",
+    "bytes": 5517,
+    "sha256": "78d96a71a13728f21ae91d051582870b6bd5f20f7e3792be233ca6f752d3d059"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/descriptive.json",
+    "bytes": 4616,
+    "sha256": "747907afa39f0e52078d8a79c637fd7f32232ed31944619d72ac17dc4f43b8ce"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/detached.json",
+    "bytes": 6182,
+    "sha256": "ad3a99b87fa6143a2b4aba6e2d8cfe77bf4922f2c4478228d0515cbaf30face4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/deterministic.json",
+    "bytes": 5531,
+    "sha256": "9993698df6060b5d7ae6a723ba807bdb6cc0684ae9a0a493adee5128e957aa77"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/diplomatic.json",
+    "bytes": 5044,
+    "sha256": "f25b0c8e590ab809f92a954566e0d2209f0b502b32786b2cc009f07a9928fa7b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/disorganized.json",
+    "bytes": 4826,
+    "sha256": "0640d3af8a208c0cda22936ba8673d1003a1a607f3b2e49edc03f8d4771b6b8b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/dispassionate.json",
+    "bytes": 5924,
+    "sha256": "114fb5594542a4bf91eb00e51f7c083624385830aa09a1a460c246f4087b65ba"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/divergent.json",
+    "bytes": 5081,
+    "sha256": "fd4f86ee36a44c8b0f1cdce7b8468e2a63f52b37b8e244ceb005e9488a04b1ab"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/dogmatic.json",
+    "bytes": 5421,
+    "sha256": "aa75cee412bdf58581304f45e59b6bd222f662d37fea1596138e98fb7939749e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/dominant.json",
+    "bytes": 6161,
+    "sha256": "4bf1aecd22a51c07ee36d5fe56a8eefd874c63e0646fae8c839e43f51cdb70ee"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/dramatic.json",
+    "bytes": 4349,
+    "sha256": "adfa5ca8c252d8401512db7f551eecc8a3e82977a603185153010c2293dfa933"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/earnest.json",
+    "bytes": 4473,
+    "sha256": "6d260fef79c7386785b2cfff1963f89ed8d8224bb7c82cae0b466b5ba1a26b6f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/eclectic.json",
+    "bytes": 5102,
+    "sha256": "435fd21b7f46ea9e3ab7e51efb8576d451d66e9d88dffb4871b6adcf6e9e2432"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/edgy.json",
+    "bytes": 4417,
+    "sha256": "52449f06722931467c1832cdf879b0756b14165984659ead52d15854950d99f4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/educational.json",
+    "bytes": 4150,
+    "sha256": "37094fd4f7cd5a832ebbd427d8cf6451abeca4c2b622606878d5bf9634483284"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/efficient.json",
+    "bytes": 4144,
+    "sha256": "0276410f2f5e208833686f47e018895c8e1ac76ff29d0f7e873991066399d231"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/effusive.json",
+    "bytes": 5229,
+    "sha256": "1e43f3622359f62690ebee4e2f3e15804053603bb19ef55dd3eb868de376c2e4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/egalitarian.json",
+    "bytes": 5692,
+    "sha256": "98414058753b46fa4ce9255a1915184808eea056bfcbefea1c7ce89aa72c458d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/elitist.json",
+    "bytes": 5152,
+    "sha256": "9960d656ef1ea0a5a774f6f76b138de4dabe3ddeb97b419e14046344cd11a277"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/eloquent.json",
+    "bytes": 4402,
+    "sha256": "90681ab7b43d5a062ab5f82b11390162e450a4652fba9afd4526cfe158753755"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/emotional.json",
+    "bytes": 5514,
+    "sha256": "6affc77408cc1eb92763177a14f5e7ff9919164a7ab9dd2e35d76296d7693a06"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/empathetic.json",
+    "bytes": 5546,
+    "sha256": "a4071228277619a7cbdeed9700a57e37105686a420dea907172f8f5d0d773e19"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/enigmatic.json",
+    "bytes": 4193,
+    "sha256": "2871bf02092f71d2d34c72c32e8a0cf9b25950854730333fee44f671242be3a1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/entertaining.json",
+    "bytes": 3863,
+    "sha256": "8cdb30f5c4de20a668e99181666a4fa18ad0aefe5902f50c1065a86ad137dec1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/environmental.json",
+    "bytes": 4749,
+    "sha256": "31d0efae342abee1d1ec5aca9185dd9b967cc31ced4b082515068f9707fc3e74"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/epicurean.json",
+    "bytes": 4712,
+    "sha256": "85c1b37393931bdd2f1f6632a71ec3e7333046e2956a5ed4a42943513a393be2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/erudite.json",
+    "bytes": 5469,
+    "sha256": "9cb5a886cd608a5cc2f90a2aefe447113560247ecd55c631e2dc99287df6811c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/esoteric.json",
+    "bytes": 4992,
+    "sha256": "87a7c48e22b57bfecae3d71d40c0452aac4fe7be6c8f2c0462573b3eb97337ac"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/essentialist.json",
+    "bytes": 4771,
+    "sha256": "40de574f3189abb4f49f5a6c99d70caa3aff5e615ba0f8ffa7ab849deecfa272"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/ethereal.json",
+    "bytes": 4615,
+    "sha256": "b8f8ca2c60bee290752923bc21917d95d2ca28cdcb00962a4522fa13a4a8dd77"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/evil.json",
+    "bytes": 6034,
+    "sha256": "7ca406f234be92f9ec00dc77358e0ed048a10632be91312fd5cee97e33864e98"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/existentialist.json",
+    "bytes": 5576,
+    "sha256": "102b9fb5505a7a6f8ea76ab6371223448814aec59296c5004aa4689d87c2235c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/experiential.json",
+    "bytes": 5000,
+    "sha256": "8ca865b996e993c81e6367451f517c1c15bc51632d668cd2d0f3afe34fb0c201"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/exploratory.json",
+    "bytes": 4818,
+    "sha256": "9b83ae59d606ef3453e2307fae1bc742f5a774eb9b3410f9462eecb52d6cd302"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/extroverted.json",
+    "bytes": 4577,
+    "sha256": "03cc45074ffbc61c42f8f108afe3bba08ed896ad734798bfa57f61ab8faed2be"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/factual.json",
+    "bytes": 4189,
+    "sha256": "08ecbf4ca9a036c154d82a0c608283cbd8ba03094bd5e097fa23531d8a1140fc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/fatalistic.json",
+    "bytes": 5500,
+    "sha256": "2f3b2e613ca01fd7bc321cf4779b26f06d7d71abe10a7c8b235a51235103c20c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/flexible.json",
+    "bytes": 6858,
+    "sha256": "c276d765e0f8344098b4043f40723aa70474cdb6fde3b3163c171269fd622745"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/flippant.json",
+    "bytes": 5470,
+    "sha256": "65e224b9da39a403a409a47ea13cf2cacdcebd9602ee09116fbaa0bc28eea30b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/flirty.json",
+    "bytes": 4420,
+    "sha256": "508ac51773befc3a347b30552b9081799a24e49f49963d4ea54dd6858e10c541"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/forgiving.json",
+    "bytes": 6878,
+    "sha256": "783c4a668f22bc032c0f957bb24548bc0b6d7bc9cdc12f3256a273963672863b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/formal.json",
+    "bytes": 4912,
+    "sha256": "3d71c61cb161e0763a944b8576620e813e0131853471130ec9c36874e53417e1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/formalist.json",
+    "bytes": 5136,
+    "sha256": "2e933a56b4d7402affa594e6c59bddfdd6ee685b438464cf537b77d5630d6e0a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/fundamentalist.json",
+    "bytes": 5467,
+    "sha256": "906663b6650cbf9ac43711b13ea0fdf5a463b63d93ffe5ba11021da6652f983d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/futuristic.json",
+    "bytes": 4495,
+    "sha256": "d1d1a2112065a2150b7e9ec8a744da766374e4832c7578f4d37d463d936fd5ab"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/generalist.json",
+    "bytes": 5033,
+    "sha256": "ec2852a596b079d312fc61079540a7059754411da7791d7f2e2561982d60fec2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/generous.json",
+    "bytes": 5313,
+    "sha256": "0e7d091f936e6055ddb1bc2b19f113656869b1815441c9dd232e1244dcbe111c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/goofy.json",
+    "bytes": 4532,
+    "sha256": "554e1e08b5f028708b23d717b080fb9971a4b130f3961c5facc30b56871b7cfc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/grandiose.json",
+    "bytes": 4584,
+    "sha256": "9ee729f70f77f0631a41d1b5d6aa9b922bf339cf1bea277833b6ab276b971941"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/gregarious.json",
+    "bytes": 4200,
+    "sha256": "4da4cb414099c34f723c23416d9c3e23e68917ff8860ea00fec322a7b442d95d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/grounded.json",
+    "bytes": 5147,
+    "sha256": "f8baf4ffc77b72e9028f7dbd6414694e7de0cdfc70c8beb106ae0f6ac109a07e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/hedonistic.json",
+    "bytes": 4887,
+    "sha256": "22925f82961e9603056fee6524849b17509ce1ac5050ab8984da61c0d30cf4ab"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/historical.json",
+    "bytes": 4337,
+    "sha256": "d27f682c56dc2aae339f3e0b680bf6064dd4828e3ab5bffd0f736fb89a1c8046"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/holistic.json",
+    "bytes": 5271,
+    "sha256": "95d95fc4f301ce33bd1f193373837127ae6446d08a277ee791eca001c7287549"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/hostile.json",
+    "bytes": 4880,
+    "sha256": "88d2e1c1d650959f3c32d90266adf9eae7f36ff125c6f0bfcf1a406d6c82f0fd"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/humanistic.json",
+    "bytes": 5280,
+    "sha256": "c0735bb30b84b76e151bfb5ccb169b6f8ab4e0421f88326d2ed2115dfae7d4ca"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/humble.json",
+    "bytes": 4217,
+    "sha256": "10659fe4d522a9df8e5624550532cb38d2a582ee2d852689570582ab85a44eb8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/iconoclastic.json",
+    "bytes": 4984,
+    "sha256": "8653cb88f881216d2811258526bb3f86864f5ed71a08ca6bc98d1c7f96d917d6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/idealistic.json",
+    "bytes": 4271,
+    "sha256": "de1a213cdc4b90b8fe0705b54d2b7bc4190da0c65c1d697ff2783cc3a627907b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/impatient.json",
+    "bytes": 4315,
+    "sha256": "f0c0b5f45ed30f5643548e85ef80f4c69986d3adb9815385e28eaa3e8f092da9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/improvisational.json",
+    "bytes": 7054,
+    "sha256": "ce5d265c1378468e9fb44dc98637e5a65c70638ffd4373575eccbb032ca8450e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/impulsive.json",
+    "bytes": 6484,
+    "sha256": "9ef30600e6de053ff3992fb5519f941023ad88fd89d3c77759e37b36ff0b05be"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/inclusive.json",
+    "bytes": 5154,
+    "sha256": "bd8badc42aab49ba4f9d2dd0b145cc6952ec3e5a33c3770b26b3aaf923d89525"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/independent.json",
+    "bytes": 5938,
+    "sha256": "5eec88367ae4bfed153bed395b00d087150c6e0bd35b9ec647a0f0d6a66817be"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/individualistic.json",
+    "bytes": 4590,
+    "sha256": "f54873e17224f760e54f68567d8062a3be21e85fbafd841cb42a6dcf506cecb9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/innovative.json",
+    "bytes": 4984,
+    "sha256": "01f11ae968a6972d592d9df01473fa9903aa46958cc0f8298b016a0794bd8d7e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/inquisitive.json",
+    "bytes": 3931,
+    "sha256": "628c22582ee21a7541000f1cb085f31c2f2d94a9d287851b34f71050a86f5b2d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/inspirational.json",
+    "bytes": 5431,
+    "sha256": "2fe6113e7f29b9488ca8596cdd7e9fd9cbd58a36029395408aeedafdacf3e397"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/interdisciplinary.json",
+    "bytes": 4934,
+    "sha256": "29a3d0a13a17061c23e68bbf994c3c0fc598c7449a763e87ee14af8428866134"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/introspective.json",
+    "bytes": 5135,
+    "sha256": "71660a4defe5e320cfba44d37aead458324c4ff698c06d3148be560f165d53b9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/introverted.json",
+    "bytes": 4962,
+    "sha256": "85d9b5b227c3d649b9905a493da291c0de973d25528cb35ad8136d1c1148ee72"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/intuitive.json",
+    "bytes": 5724,
+    "sha256": "999033abebf1700948638b723035746e0f1a01912f9ca8298ee6cc0e46626fdc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/ironic.json",
+    "bytes": 5462,
+    "sha256": "0ad2b25c4f768acf4eb55a78e81ed61f11618a1a4144b8a866abaa6b8d1334c3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/irreverent.json",
+    "bytes": 4881,
+    "sha256": "e451ed94e71e53137082f8a9446b451c1123ae20cb2c4c45128527d7eabd39a3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/judgmental.json",
+    "bytes": 5678,
+    "sha256": "8503520e150054b46321d4d08a59f6fbdcbc68d496eb08e70020ca7280e536f1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/libertarian.json",
+    "bytes": 5201,
+    "sha256": "d8f54d8267f6680124260e06f74a6518fee2fe093074057d31fdef232e62a3a9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/literal.json",
+    "bytes": 5464,
+    "sha256": "4d92f5d1e063bdad5987a4f2adb9036b4f7247b4ab23d72404fa4e4d021371bb"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/manic.json",
+    "bytes": 4591,
+    "sha256": "e9d239e1e913a9c99582caa45f074179b38350d911553e2695f7434b522db742"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/manipulative.json",
+    "bytes": 6023,
+    "sha256": "bb60186a9a02755e9f751b94a914d1cd157e7b3953b75618ee4d4d58ad3cfb55"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/materialist.json",
+    "bytes": 4466,
+    "sha256": "dc059b684db3b590d1f9e2acce071a219701b989d567f574dc027aff2d20fa93"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/meditative.json",
+    "bytes": 4707,
+    "sha256": "add162c98b28c2e1c48de284539909ed3f7d314147efae7f6083958fd25d8607"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/melancholic.json",
+    "bytes": 5002,
+    "sha256": "132fcec875f171ec0196925976e0998457e82cbc46933e4448007f945d5ffa66"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/melodramatic.json",
+    "bytes": 4534,
+    "sha256": "c14ee76de8968663a2fb02a8f764478d802a0c18a5b88670e0c81275efbad44f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/mercurial.json",
+    "bytes": 5011,
+    "sha256": "5ebc697901c9499d14b6b6486869d37420795ec7094ba59d7ed114c92f29e709"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/metaphorical.json",
+    "bytes": 4367,
+    "sha256": "82fc70a1268c26024b31269d27f398da4b4e753a98e70f2d28812253b86978ad"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/methodical.json",
+    "bytes": 4733,
+    "sha256": "1f468510db295ab1b3d8f14b45c5efc31a7bb7e193fea6c94aa0bac79465b224"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/meticulous.json",
+    "bytes": 4319,
+    "sha256": "b074cc9e7d5ea18c0c29fc0f89cc4eda2b51eea0b141a3afb1ff968b3aa4b363"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/militant.json",
+    "bytes": 5164,
+    "sha256": "f315c85f29837b02084a4b25c1e28305c71dcecc4ee24ce8c79988b3bfea7833"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/misanthropic.json",
+    "bytes": 4859,
+    "sha256": "083803d2ba4ea0f012397c13d99fdd100185bf3da4be295a17056716ea9f215b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/mischievous.json",
+    "bytes": 4847,
+    "sha256": "ba5e3d2027065ac01de304167baa980c980e2d6bea6bb9867bac594bf8c5b5cf"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/moderate.json",
+    "bytes": 5294,
+    "sha256": "aa4dd9e7f17d2eea3412de0b88edb30f73090265726e00b202be9be2c0514604"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/mystical.json",
+    "bytes": 5049,
+    "sha256": "b7ee524bf7e08c5cffcdd6545e3e5a3bee71c4299ed83e4b4a369b1f550ce4f9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/naive.json",
+    "bytes": 7235,
+    "sha256": "dfb3b15dc413dd410037e636ad752ac492fe1edffa47fd495595fafafebcf25a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/narrative.json",
+    "bytes": 4359,
+    "sha256": "5d2272531a556c1c7adb17f87a4decb48f8393e2d8ca98c68f20ae927bd8782a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/neurotic.json",
+    "bytes": 5334,
+    "sha256": "36e6a8650d8dcea25d802ced5bb80b2cd70b4a5b16439a1f68ff4f2302c60465"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/nihilistic.json",
+    "bytes": 5767,
+    "sha256": "8b31ba6311f3797bdbe97b1364e0ca9d39f61f12fc9952c6242dda991695fa07"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/nonchalant.json",
+    "bytes": 5496,
+    "sha256": "15fbef964eb96f55f167aa0f01caca0d30e6f5fa278a237fa48663a3b809e9df"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/nostalgic.json",
+    "bytes": 4507,
+    "sha256": "1182732af9d6ebfd8f04b2459db14b15bcc37b3dc63ed0e64a477ceb3b50ed73"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/nurturing.json",
+    "bytes": 5390,
+    "sha256": "5ff089d8efcf4670ced55c117cfa9b74f932f558b2db7f2c6ef18061587fcced"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/obsessive.json",
+    "bytes": 4355,
+    "sha256": "fe47c555149c0913f2938d23bd4e8f3975db1554cc87a5d45201f316169df651"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/open_ended.json",
+    "bytes": 5228,
+    "sha256": "115e5c7f10984036554d6148fc9278045f14ced77bab09ddc99ee91617afa998"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/optimistic.json",
+    "bytes": 5028,
+    "sha256": "7445e33371be4717c7b8867b38ecdc8b15a2f7b0a8c171654072c26eaa5088bc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/pacifist.json",
+    "bytes": 5630,
+    "sha256": "eb534e0901526a092554301764dbac40c95abdf9107dc40a2f3e53b11b155fbc"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/paradoxical.json",
+    "bytes": 4640,
+    "sha256": "50a476496a37f876eca937a0a4d04ff4e6169eb15a2d78577da3ed04dfa3b47c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/paranoid.json",
+    "bytes": 5066,
+    "sha256": "95f616a8dba71a8d27bda94dae8785db8f1cf76f58899eb2858c3aed9d74ec5b"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/passionate.json",
+    "bytes": 4298,
+    "sha256": "b0eea9009249bafae78cd7c9e9f1e88ce3f0f2b2d5390ba1808fdc830a7a3d5f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/passive_aggressive.json",
+    "bytes": 5560,
+    "sha256": "89ff760f717beaff146f953292a3e640bb6c71088f42df7ccb708c85842657da"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/patient.json",
+    "bytes": 5194,
+    "sha256": "1db82f647972b238a32ff2978892c10ca69648a18110a946a30657d6d80deb99"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/pedantic.json",
+    "bytes": 4450,
+    "sha256": "73a1012fa4240a0b6f109292e55dc5144d544e9d144aaca9740d79fc1e33ca3d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/pensive.json",
+    "bytes": 4896,
+    "sha256": "68454b84e78b1653a9b83dcfbfcdf7559316c3baac1e0c67e8e76ffef1aed3ae"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/perfectionist.json",
+    "bytes": 4595,
+    "sha256": "84d69080b7f1c3726348c197fca568ca93c5099d8eb8793ef8afb40a01e388a2"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/pessimistic.json",
+    "bytes": 5550,
+    "sha256": "e4578ac713306694da83a6aacfc5a867da92cbe0c585906beafd7fb416bacbb4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/petty.json",
+    "bytes": 6412,
+    "sha256": "f2e14d5514ed84f1174994adc1c7867ba89c806afb7bef51231d82030f068e01"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/philosophical.json",
+    "bytes": 4161,
+    "sha256": "3df5442ce199857298933ad962dcd2e92000518a75b9c042f25240ce3d6bb6f1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/playful.json",
+    "bytes": 4248,
+    "sha256": "dbc94412abb84e12f3d9f490d28fd51ce6244829f4f38009f58f72ab71748816"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/pluralist.json",
+    "bytes": 4792,
+    "sha256": "727a6a7630355610a55a463ee0919e755c40edecaa3f340e78fcb9930267b771"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/poetic.json",
+    "bytes": 4115,
+    "sha256": "dd2c4146e03a46a52b9f93b6b3e5c46fe335f5e4bf300d794cd64f1917dc51f6"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/practical.json",
+    "bytes": 4735,
+    "sha256": "b6a58424d6ebe569209d65a26f24a97cf2f6fe0023eccbbee3e431c3526a226f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/prescriptive.json",
+    "bytes": 4701,
+    "sha256": "fe762fb637d887a7a998d38194f41fe9d7c598008f4d040a1775c9432555e690"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/principled.json",
+    "bytes": 7476,
+    "sha256": "a861ed229304825251a469208741304533234fb9853089ce54105017af394b86"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/proactive.json",
+    "bytes": 5250,
+    "sha256": "e2657654f0df823d8716b5bffb2e7f48a048bf9b195eeca41575f5e45e567fa9"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/problem_solving.json",
+    "bytes": 5947,
+    "sha256": "78401051361908e15289c45dcb01218dfcb50a8e010a4d47945441631d41eae1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/progressive.json",
+    "bytes": 4434,
+    "sha256": "dd2052f36a5991691494d30d4e67f1e08f53bd0ba65ce16387161401b6e3f547"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/provocative.json",
+    "bytes": 4808,
+    "sha256": "c5078cfa3f3428f697ca69bc807bfe766d27de7e7069397060beb99c492d3035"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/qualitative.json",
+    "bytes": 5145,
+    "sha256": "e7d0b1989b4b13e105805fb9118fc389d8e91bdd38aa311672f36ad93e4e89ef"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/quantitative.json",
+    "bytes": 4642,
+    "sha256": "5139849070fc5126243d7c4eb7567f28a08cb0a858af9df4e53d80570aa76533"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/radical.json",
+    "bytes": 4094,
+    "sha256": "872471322e29243546068e5a032f446c21f0d8c73cc6d39ec3dd8485c365168f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/rationalist.json",
+    "bytes": 4585,
+    "sha256": "d20ff9c9a64a10f4f0e4f3dda8f427c4f1f284dcc298f25547407cd11f7a6d9c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/reactive.json",
+    "bytes": 6365,
+    "sha256": "b01338f2eb085918020d48db760499ce56ed00ac52847f040c6959a415941b6c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/rebellious.json",
+    "bytes": 4861,
+    "sha256": "bd3358dbe332d7c846cc029564f83490a5a96b15f036e16cef64d767cdfac71c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/reductionist.json",
+    "bytes": 4109,
+    "sha256": "e52a9c12831208e4bba27eecfa9b799c795811555517a4c3069c1f1eda7366b5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/regulatory.json",
+    "bytes": 5234,
+    "sha256": "e10020eb104b88047c5a2ae48f823c27dd9295c9d296b571eca5c883e1d2a651"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/relativist.json",
+    "bytes": 5047,
+    "sha256": "a74fc9db99f1b428ca4220e2b08f93efd187e8c607086e8d71374148ed828269"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/reserved.json",
+    "bytes": 4401,
+    "sha256": "dada9853ff3d1f00c0fc6aeac24a5d70606a2db29e2b9a1f5af57c7bb563b0d8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/resilient.json",
+    "bytes": 6110,
+    "sha256": "500a3dce11bfbaa8a8e4666711e9a32fcdbb928e4f9b1579916b1ca40a4fa895"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/reverent.json",
+    "bytes": 5514,
+    "sha256": "73c013f92dfea30fcfef92b9bc639d81eed6e7ec8388d99d8baeb61441859db3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/rhetorical.json",
+    "bytes": 4877,
+    "sha256": "7dc4348a657b0d2df878d041b67dffdc6e3ad01acc69600c471874f1c41cbc21"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/risk_taking.json",
+    "bytes": 6892,
+    "sha256": "be1ede836fd40873c91d29ff777221400ae719319d3f9a18fa0979f59d7fcc9f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/ritualistic.json",
+    "bytes": 5282,
+    "sha256": "762aa7ed62b98b1f0529836e2d8ce27efcd96420ba99312038f75c609557f6f3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/romantic.json",
+    "bytes": 4649,
+    "sha256": "6ecbfe02587ba501329ab7fc3577a206721810af74af98de5a6922cd39732856"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/sarcastic.json",
+    "bytes": 5313,
+    "sha256": "c5e4ac0f703374dca480e6857b3ed190e9c91639a65edd54fb6e9f579ee86a47"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/sardonic.json",
+    "bytes": 6496,
+    "sha256": "fc0973659cf6150410b14e105019616b9ae06f488f37bea03e5d49bccfe7d40e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/sassy.json",
+    "bytes": 5892,
+    "sha256": "ce3069cdcde5dd229b601de5fdf6e7c22cd684b39234b6312e3aa312c007d570"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/savage.json",
+    "bytes": 5871,
+    "sha256": "1de34268ebd0521b3ed2ce95e33a7b869a7d009a3052db4c64b8db9e5070c124"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/secular.json",
+    "bytes": 4702,
+    "sha256": "e2133e698ff4893de9552cb18f4056f435756383e0c7f8d62653e1e965f1bc96"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/serene.json",
+    "bytes": 4897,
+    "sha256": "65d47c81786ee8530beefee3172b4bbbbac5ea062c16efc605d66fe9c9fc262e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/serious.json",
+    "bytes": 5217,
+    "sha256": "dccd5da1e9ff1eca6d8baeba1813b014aca14d4ae2725c1033344a75f19fc691"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/skeptical.json",
+    "bytes": 5074,
+    "sha256": "b1a9f672a464f33484ee31240056eec53d70caeb2d8fbb52109adaf137c93854"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/socratic.json",
+    "bytes": 5539,
+    "sha256": "4dbef616cba3fb2479b5a025b39a310542ea67a870ac4960dff99a1828c4d7a5"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/solemn.json",
+    "bytes": 5150,
+    "sha256": "2a21dbfe570608008dd097ffd0aaa74a9665289a25edd83e1a271f68921ee617"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/specialized.json",
+    "bytes": 5904,
+    "sha256": "4afa555149cda0cc8978b47077573dd5d32ee6666839fd1d83930fd40436ec96"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/speculative.json",
+    "bytes": 5261,
+    "sha256": "b8d32a1d95faad1f4416366d0a02bb1317c65d7d519ec0b3f0f50727041c6125"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/spiritual.json",
+    "bytes": 4458,
+    "sha256": "2ea2542fa4b4e664a9d7c4eff74776617cbad8768b8b06883c42665515c605d1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/spontaneous.json",
+    "bytes": 4296,
+    "sha256": "0871580f0876ecf242f9fdeadce6e94b6545d5daa8a8b6eb21a1cc06e4fe6539"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/stoic.json",
+    "bytes": 5425,
+    "sha256": "64dad7147ce0e6302f8b65f49cd917747b54f3cbd632e1d825fc46140afb90c0"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/strategic.json",
+    "bytes": 5601,
+    "sha256": "9bfdbe4fff6951fcd547baff320e3db8104b0f4bf3bbe41b35fb85794a9be0b3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/stream_of_consciousness.json",
+    "bytes": 4594,
+    "sha256": "428669aa95a836741017752bbbdeefef4ce8bb5bafc290d2e10ce0776495cc87"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/structuralist.json",
+    "bytes": 5205,
+    "sha256": "12393fd44abd06f9a1efb8e258901ea1862f38d35e5b9a4513f01e8f32643ab8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/submissive.json",
+    "bytes": 5312,
+    "sha256": "80f1bb4e77d1c46d2e5b32e90c332ce484c6834686ed2e295738b8bb8cc068c4"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/subversive.json",
+    "bytes": 4728,
+    "sha256": "e467ff3f14a369c07514d1a9e1ea40eea386bd782699d701dc486ab2dceddc1d"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/supportive.json",
+    "bytes": 6216,
+    "sha256": "d617350fd270abffc83de3277fac366a40e68ab95b987d160cbe9a935bde5eee"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/sycophantic.json",
+    "bytes": 5645,
+    "sha256": "a580dd700731c36a6040664442fed4c0287005a3c4aeaee307b6e196e763b00c"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/systems_thinker.json",
+    "bytes": 5285,
+    "sha256": "f2337c83de6f71d4d6545595807a72c37b32274126809a5744da8b251f051681"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/tactful.json",
+    "bytes": 6541,
+    "sha256": "505b392086888a42012ea8a12cdab8071f4c4ec7ede2ab79da1c29c6ed836f59"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/technical.json",
+    "bytes": 4141,
+    "sha256": "7dececa67898f351fcb8ce804dc9406f08fa2fbe99379dc63e115ce7040c4122"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/temperamental.json",
+    "bytes": 5733,
+    "sha256": "8899c9855c7e374ada2e4b297afe3342577c9c1f31311dd2d68524e9609c4be1"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/theatrical.json",
+    "bytes": 4235,
+    "sha256": "4d832ebd7cc903b133ba61f7ad42b895b6c3cce26951d311afe90741bdbd5b4f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/theoretical.json",
+    "bytes": 4583,
+    "sha256": "f15c2f3a4182b3d85dab10872246224d529967644cf36c0c62a090c75c9f02e7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/traditional.json",
+    "bytes": 4840,
+    "sha256": "42cfbdba9b261c372111e065c752dae779726ec492074e88cf8beeb372544df7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/transparent.json",
+    "bytes": 5568,
+    "sha256": "f072d3f38b84e2957ffa820cdd97510ab68bc27b9e244968865848c4a0ef3b6a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/understated.json",
+    "bytes": 5179,
+    "sha256": "f2588a7b3cc20fa7a99dabb3c06c9df30bc364a0001524ed30d3e6bc68091915"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/universalist.json",
+    "bytes": 6737,
+    "sha256": "b91846e64c80cc9746dddfdf4f8d38f9779eaefef77388faa53e9c55e2ec440e"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/urgent.json",
+    "bytes": 5698,
+    "sha256": "9ec5a7e3b34dcfd9cfb751f342461cbe5f89f4af0451e3d99794fcc81665042a"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/utilitarian.json",
+    "bytes": 6585,
+    "sha256": "52919b5fb4bd8477636eb05fd15cabbe8047bf803cfec2367ed2c670a41ae53f"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/verbose.json",
+    "bytes": 3680,
+    "sha256": "971db6a3597b6a23394c1f207dfc7a75bffe2ff1d8d8420c06d3ba4d5fd935a7"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/vindictive.json",
+    "bytes": 6584,
+    "sha256": "4706f5039af21f52e6fbb8e011f0a493890eae88cddd8da2efa5bbf8d3b308b8"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/visceral.json",
+    "bytes": 5339,
+    "sha256": "7e83ecf16a5544f553a9729035793c3e24a3ded9272914735a214186e7ce92ac"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/whimsical.json",
+    "bytes": 3966,
+    "sha256": "92fdd766538826eebc300379b03168b97a7de1a2f9390a946f268700c6755453"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/witty.json",
+    "bytes": 4863,
+    "sha256": "fd80b06812cdfc70a9e9c3c6f9b630551ad978d3f3e75de26a7bead2067693f3"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/wry.json",
+    "bytes": 5347,
+    "sha256": "9bc723291d1a338d4bf6bb12f312c86c79490191ac0e999e59c5b57670ea0d44"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/instructions/zealous.json",
+    "bytes": 5099,
+    "sha256": "1712169ceb0dbb4857e87b797edcf345c8d3c2f97d560998af353695d4525e13"
+  },
+  {
+    "file": "datasets/assistant_axis_prompts/traits/trait_list.json",
+    "bytes": 24056,
+    "sha256": "17ec18a088fbaacbabe1c87e4df4bac0be7e264bc2b281a33f50cdfa9a03734e"
+  }
+]

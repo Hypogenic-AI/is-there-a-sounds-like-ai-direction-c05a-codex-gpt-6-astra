@@ -1,0 +1,19 @@
+\section{Extended Results and Error Analysis}\label{sec:extended}
+\subsection{Complete control intervals}
+\Figref{fig:controls} shows marginal 95\% prompt-bootstrap intervals for instruction controls. \Tabref{tab:extendedstyle} and \tabref{tab:extendedquality} list all individual conditions, including each random direction and the base signed doses, directly from the cached paired-comparison table. Style tests outside the two primary instruction mean $-2$ contrasts are exploratory; the plotted intervals are not simultaneous across conditions.
+\begin{figure}[ht]\centering
+\includegraphics[width=0.95\linewidth]{figures/controls.png}
+\caption{Instruction-model control contrasts relative to paired zero outputs. Points and bars show mean changes and marginal prompt-bootstrap 95\% CIs. Mean $\pm2$ uses two seeds per prompt; other conditions use seed 42. The large negative judged effect of mean $-2$ accompanies coherence loss and is not corroborated by the encoder.}\label{fig:controls}
+\end{figure}
+\input{tables/extended_style}
+\input{tables/extended_quality}
+\subsection{Readout transfer visualization}
+\begin{figure}[ht]\centering
+\includegraphics[width=0.95\linewidth]{figures/readout.png}
+\caption{Validation-selected mean-direction readout AUROC by backbone and held-out setting. Each generator-setting uses 128 human/machine source pairs; human references are shared within each source set. The dashed line denotes chance AUROC. The plot shows point estimates; intervals and logistic alternatives are cached with the readout results. Transfer to Llama base is much weaker than transfer to instruction-generated text.}\label{fig:readout}
+\end{figure}
+
+\subsection{Observed failures}
+The instruction baseline already has mean unsupported-claim fraction 0.179, and only 14.8\% of its outputs meet the requested 70--100-word range. Under mean $-2$, the proportion rated below coherence 4 rises from 5.5\% to 21.9\%. Under mean $+2$, detected Chinese/Cyrillic-script mixing occurs in 3.9\% of outputs, versus 1.6\% at zero, and truncation occurs in 2.3\%. These are descriptive flags, not grounds for removing outputs.
+
+In the fixed first-library-task comparison recorded in the report, zero invents an anniversary; mean $-2$ invents an end time and duration and calls ``13:00'' noon; mean $+2$ adds ornate promotion and a Chinese ending. The example was fixed by prompt order rather than selected for favorable steering. Other observed failures include invented target audiences or refreshments, omitted registration deadlines, exaggerated claims, and awkward quantity descriptions. Full paired text and lowest-rated outputs are preserved in \path{results/paired_examples.json} and \path{results/failure_examples.json}. These errors explain why source-fact coverage alone is inadequate: an output can retain supplied facts while adding false claims.

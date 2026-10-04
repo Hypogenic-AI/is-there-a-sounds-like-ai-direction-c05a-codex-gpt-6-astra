@@ -1,0 +1,15 @@
+model,layer,split,generator,method,auc,n,setting
+instruct,24,test,hape-text_gpt-4o-2024-08-06,mean,0.97039794921875,256,test:gpt-4o-2024-08-06
+instruct,24,test,hape-text_llama-3-8B,mean,0.486328125,256,test:llama-3-8B
+instruct,24,test,hape-text_llama-3-8B-Instruct,mean,0.9132080078125,256,test:llama-3-8B-Instruct
+instruct,24,ood,hape-text_gpt-4o-2024-08-06,mean,0.97265625,256,ood:gpt-4o-2024-08-06
+instruct,24,ood,hape-text_llama-3-8B,mean,0.563720703125,256,ood:llama-3-8B
+instruct,24,ood,hape-text_llama-3-8B-Instruct,mean,0.91094970703125,256,ood:llama-3-8B-Instruct
+instruct,24,hc3,chatgpt,mean,0.90869140625,256,hc3:chatgpt
+base,24,test,hape-text_gpt-4o-2024-08-06,mean,0.970703125,256,test:gpt-4o-2024-08-06
+base,24,test,hape-text_llama-3-8B,mean,0.47930908203125,256,test:llama-3-8B
+base,24,test,hape-text_llama-3-8B-Instruct,mean,0.911865234375,256,test:llama-3-8B-Instruct
+base,24,ood,hape-text_gpt-4o-2024-08-06,mean,0.97467041015625,256,ood:gpt-4o-2024-08-06
+base,24,ood,hape-text_llama-3-8B,mean,0.5494384765625,256,ood:llama-3-8B
+base,24,ood,hape-text_llama-3-8B-Instruct,mean,0.91339111328125,256,ood:llama-3-8B-Instruct
+base,24,hc3,chatgpt,mean,0.9227294921875,256,hc3:chatgpt

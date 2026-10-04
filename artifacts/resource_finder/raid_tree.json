@@ -1,0 +1,50 @@
+[
+  {
+    "type": "file",
+    "oid": "47199f80d9f1d468076b00faadcbb00be146b3ea",
+    "size": 2461,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "b0c825494a817a56b27327f0c547dc71ea41adac",
+    "size": 3664,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "e3246c661f50522af9d7982142ffea397d02023a",
+    "size": 3707337095,
+    "lfs": {
+      "oid": "fed9b80bd6a5712bd49bd035cf92500ac1c562a2da3bbf9a4518b1308b5fbc1f",
+      "size": 3707337095,
+      "pointerSize": 135
+    },
+    "xetHash": "03b296e2c599b2ce473fc51a37ac3c2a344416734cb003ddb05e0a5c92bb52be",
+    "path": "extra.csv"
+  },
+  {
+    "type": "file",
+    "oid": "3875d4d78b12cae1211146625b23c3978d3eab4b",
+    "size": 1221088550,
+    "lfs": {
+      "oid": "96867bb0cebf4c49f412f78c35bdeb638494547165ca397b056f2734bb702c90",
+      "size": 1221088550,
+      "pointerSize": 135
+    },
+    "xetHash": "46a4308f15bc9d23532f5ef03dde6b8678f9a4b9e9eb0cde37cd52a3ab1bdaad",
+    "path": "test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "385ac78fd6151fc193f9d728baf3d7d19e773ab6",
+    "size": 11779491051,
+    "lfs": {
+      "oid": "52f04ceebc126064e68fbd22d8b736964065745464f4bfd52e488150b49f84e4",
+      "size": 11779491051,
+      "pointerSize": 136
+    },
+    "xetHash": "045a842b14c0d2521d127f4e25d89772e9126852f7b5f8905b1a458257b157c9",
+    "path": "train.csv"
+  }
+]

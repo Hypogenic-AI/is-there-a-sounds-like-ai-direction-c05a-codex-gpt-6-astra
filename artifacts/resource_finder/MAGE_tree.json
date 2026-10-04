@@ -1,0 +1,74 @@
+[
+  {
+    "type": "file",
+    "oid": "ff4b1c49aa4b10ddcdde53ad7363cb8a1887bb69",
+    "size": 2444,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "8b92f974160c900741137ddcdb22ae53acd544f7",
+    "size": 1916,
+    "path": "DeepfakeTextDetect.py"
+  },
+  {
+    "type": "file",
+    "oid": "73b4dfc3fafc0a2eb13f614fc0faeb5f00d4a7e5",
+    "size": 1928,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "7b400697ef8738adf6cf430c2ea4119a4e3d1da2",
+    "size": 11480,
+    "path": "prepare_testbeds.py"
+  },
+  {
+    "type": "file",
+    "oid": "582e2047c37852dfc9ba5fc07d133fd0db705583",
+    "size": 71739623,
+    "lfs": {
+      "oid": "dcb8a8a8de1459d382ac2da5e0f1c39452e8bc47d186d7393f3ed4308f762ac7",
+      "size": 71739623,
+      "pointerSize": 133
+    },
+    "xetHash": "f40fb859862cd963ce4a90e0d8106397ba958884d5516ba2b2caa825e7817c17",
+    "path": "test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "277fb168cc85d1be33f5d5aad7094ae2f77af8dd",
+    "size": 2191864,
+    "path": "test_ood_set_gpt.csv"
+  },
+  {
+    "type": "file",
+    "oid": "14c2628d7823792386861e3cb400673d59905813",
+    "size": 3614100,
+    "path": "test_ood_set_gpt_para.csv"
+  },
+  {
+    "type": "file",
+    "oid": "1d4929b65b50167c8e89d75f921099d233e84039",
+    "size": 403744528,
+    "lfs": {
+      "oid": "07b95008964d6be412aa764aa1e515d652c345305cebc522a7612c6015ba373a",
+      "size": 403744528,
+      "pointerSize": 134
+    },
+    "xetHash": "e9223c7ab75b9e2ed63cbf550b98dd7218ee6350cc46a7f743f60253df5668f3",
+    "path": "train.csv"
+  },
+  {
+    "type": "file",
+    "oid": "20f36b00c988683a3fbb6766597b312083ea827d",
+    "size": 72276577,
+    "lfs": {
+      "oid": "005e200957a4da551c8ac37079f43811db9c32f5141e3bdabb1caa257588691f",
+      "size": 72276577,
+      "pointerSize": 133
+    },
+    "xetHash": "e3834168fba7385fdbbbceee4d46a3075d27585b9c2fa09a9536cb8c7d60055d",
+    "path": "valid.csv"
+  }
+]

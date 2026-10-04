@@ -1,0 +1,116 @@
+[
+  {
+    "type": "directory",
+    "oid": "0688dde493b05b72c231922620f83bbd04e53bc4",
+    "size": 0,
+    "path": "text_data"
+  },
+  {
+    "type": "file",
+    "oid": "55cab133643a2a73e083373d2106533678d0edd5",
+    "size": 2419,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "3306ab0d955c8746393a66471dddd82d602fbb45",
+    "size": 58548,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "ae0907cd25ccd21c3f7a6bc1bbf14e1c2ce8e089",
+    "size": 17609251,
+    "lfs": {
+      "oid": "b837daf6b0c976cfc7e118128265f838fd3c47e6081d1620b90f10be8aa5dc7b",
+      "size": 17609251,
+      "pointerSize": 133
+    },
+    "xetHash": "1a44df4ecbc5e5cd4bbbad3189ae0d4db4a1ebac2f5ec5101e85e6f1064552cb",
+    "path": "text_data/hape-text_gpt-4o-2024-08-06.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "5c998f9238c96d07c095fe52a0c1e4297eac2a3a",
+    "size": 18901377,
+    "lfs": {
+      "oid": "c14dfda8d2a382a2f1278e105093a65bc56de5e64a7e2df5aa0fabe898677420",
+      "size": 18901377,
+      "pointerSize": 133
+    },
+    "xetHash": "bd5857761a875e98d19750cd1b386fedb0f392564abf4b8d336ee82aaac503c6",
+    "path": "text_data/hape-text_gpt-4o-mini-2024-07-18.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "0bc7d191a93ea51be0d8b562fb0f1b7750c99b73",
+    "size": 14282733,
+    "lfs": {
+      "oid": "6c97cf8cf167fa8515ffba7dd6433df061e91cc152b139e6b345cd3fa9fe1232",
+      "size": 14282733,
+      "pointerSize": 133
+    },
+    "xetHash": "b94e17be0b7671caddba32880ff9b7d0990b1a57b65b416445a87063f03686b1",
+    "path": "text_data/hape-text_human-chunk-1.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "d7d8e2f0e1d0fb3335aa2fe7842fab7f9c496905",
+    "size": 14131368,
+    "lfs": {
+      "oid": "b7ed790d63636f75ff002eb4ed21c6ffa142847f372530960946b09ebd751ad7",
+      "size": 14131368,
+      "pointerSize": 133
+    },
+    "xetHash": "6c12b0b0d67848bc2972e1f8684b9ce29a220abbc5022f53c432b120492a078f",
+    "path": "text_data/hape-text_human-chunk-2.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "7ce8c19b6038158e1065649117ecf6b6a42a6812",
+    "size": 12572158,
+    "lfs": {
+      "oid": "7f7b379c54c1e43f90b3e1321cb4cec9fa183b5f0260b9d6c6bb42d4b9275604",
+      "size": 12572158,
+      "pointerSize": 133
+    },
+    "xetHash": "d5bba71f74f7c46d7725be5eea38ac6415842000ec4a543bfb61eddbeb4f928f",
+    "path": "text_data/hape-text_llama-3-70B-Instruct.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "ffaec75669f79b5d35c564075c553cc509ed42d8",
+    "size": 13028931,
+    "lfs": {
+      "oid": "ad76357d5f9be6bcb2401091ae2a48a4097dd7fe6226641a3838708267fa929a",
+      "size": 13028931,
+      "pointerSize": 133
+    },
+    "xetHash": "73407f78eabff56b0dd7633e2df01808af3fbf7b548ba8da2e4ef487ee4d7c4d",
+    "path": "text_data/hape-text_llama-3-70B.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "3a86b4788005efc73ed0d11ad6d655036bb4f5a3",
+    "size": 10966514,
+    "lfs": {
+      "oid": "83f87cfa4da8adf98b9703539f416c81f96c5be66000365e0012646b69d4939d",
+      "size": 10966514,
+      "pointerSize": 133
+    },
+    "xetHash": "f6a1b161fad1ab91102045a112b7db8d462dbf0cb3c7d59ad1aa92688598a7c8",
+    "path": "text_data/hape-text_llama-3-8B-Instruct.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "9ad44271f0ba60b08e681245316fa841fff9b1bb",
+    "size": 12594347,
+    "lfs": {
+      "oid": "33a0ef0cb5bd9c1cc41567373e4ebbde0d6b34ddbce7598b4662f290c94294d0",
+      "size": 12594347,
+      "pointerSize": 133
+    },
+    "xetHash": "d38345bd6c7a638aed7f392f3a7af5877110963cde1f036c9c47103777b1c9b9",
+    "path": "text_data/hape-text_llama-3-8B.parquet"
+  }
+]

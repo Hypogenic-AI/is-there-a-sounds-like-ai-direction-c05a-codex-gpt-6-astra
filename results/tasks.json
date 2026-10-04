@@ -1,0 +1,898 @@
+[
+  {
+    "id": "task_0_0",
+    "domain": "library",
+    "source": "The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "17",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder library is holding a reading workshop on Monday at 9:00. Mira is coordinating it. The event has 17 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_1",
+    "domain": "library",
+    "source": "The Birch library is holding a reading workshop on Tuesday at 10:00. Jonah is coordinating it. The event has 24 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "24",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch library is holding a reading workshop on Tuesday at 10:00. Jonah is coordinating it. The event has 24 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_2",
+    "domain": "library",
+    "source": "The Cedar library is holding a reading workshop on Wednesday at 11:00. Leila is coordinating it. The event has 31 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "31",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar library is holding a reading workshop on Wednesday at 11:00. Leila is coordinating it. The event has 31 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_3",
+    "domain": "library",
+    "source": "The Dover library is holding a reading workshop on Thursday at 12:00. Owen is coordinating it. The event has 38 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "38",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover library is holding a reading workshop on Thursday at 12:00. Owen is coordinating it. The event has 38 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_4",
+    "domain": "library",
+    "source": "The Elm library is holding a reading workshop on Friday at 13:00. Ravi is coordinating it. The event has 45 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "45",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm library is holding a reading workshop on Friday at 13:00. Ravi is coordinating it. The event has 45 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_5",
+    "domain": "library",
+    "source": "The Fern library is holding a reading workshop on Saturday at 14:00. Nora is coordinating it. The event has 52 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "52",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern library is holding a reading workshop on Saturday at 14:00. Nora is coordinating it. The event has 52 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_6",
+    "domain": "library",
+    "source": "The Grove library is holding a reading workshop on Sunday at 15:00. Elena is coordinating it. The event has 59 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "59",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove library is holding a reading workshop on Sunday at 15:00. Elena is coordinating it. The event has 59 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_0_7",
+    "domain": "library",
+    "source": "The Hazel library is holding a reading workshop on Monday at 16:00. Sam is coordinating it. The event has 66 books. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "66",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel library is holding a reading workshop on Monday at 16:00. Sam is coordinating it. The event has 66 books. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_0",
+    "domain": "garden",
+    "source": "The Alder garden is holding a planting day on Monday at 9:00. Mira is coordinating it. The event has 20 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "20",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder garden is holding a planting day on Monday at 9:00. Mira is coordinating it. The event has 20 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_1",
+    "domain": "garden",
+    "source": "The Birch garden is holding a planting day on Tuesday at 10:00. Jonah is coordinating it. The event has 27 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "27",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch garden is holding a planting day on Tuesday at 10:00. Jonah is coordinating it. The event has 27 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_2",
+    "domain": "garden",
+    "source": "The Cedar garden is holding a planting day on Wednesday at 11:00. Leila is coordinating it. The event has 34 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "34",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar garden is holding a planting day on Wednesday at 11:00. Leila is coordinating it. The event has 34 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_3",
+    "domain": "garden",
+    "source": "The Dover garden is holding a planting day on Thursday at 12:00. Owen is coordinating it. The event has 41 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "41",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover garden is holding a planting day on Thursday at 12:00. Owen is coordinating it. The event has 41 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_4",
+    "domain": "garden",
+    "source": "The Elm garden is holding a planting day on Friday at 13:00. Ravi is coordinating it. The event has 48 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "48",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm garden is holding a planting day on Friday at 13:00. Ravi is coordinating it. The event has 48 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_5",
+    "domain": "garden",
+    "source": "The Fern garden is holding a planting day on Saturday at 14:00. Nora is coordinating it. The event has 55 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "55",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern garden is holding a planting day on Saturday at 14:00. Nora is coordinating it. The event has 55 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_6",
+    "domain": "garden",
+    "source": "The Grove garden is holding a planting day on Sunday at 15:00. Elena is coordinating it. The event has 62 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "62",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove garden is holding a planting day on Sunday at 15:00. Elena is coordinating it. The event has 62 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_1_7",
+    "domain": "garden",
+    "source": "The Hazel garden is holding a planting day on Monday at 16:00. Sam is coordinating it. The event has 69 seedlings. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "69",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel garden is holding a planting day on Monday at 16:00. Sam is coordinating it. The event has 69 seedlings. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_0",
+    "domain": "museum",
+    "source": "The Alder museum is holding a local history tour on Monday at 9:00. Mira is coordinating it. The event has 23 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "23",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder museum is holding a local history tour on Monday at 9:00. Mira is coordinating it. The event has 23 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_1",
+    "domain": "museum",
+    "source": "The Birch museum is holding a local history tour on Tuesday at 10:00. Jonah is coordinating it. The event has 30 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "30",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch museum is holding a local history tour on Tuesday at 10:00. Jonah is coordinating it. The event has 30 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_2",
+    "domain": "museum",
+    "source": "The Cedar museum is holding a local history tour on Wednesday at 11:00. Leila is coordinating it. The event has 37 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "37",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar museum is holding a local history tour on Wednesday at 11:00. Leila is coordinating it. The event has 37 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_3",
+    "domain": "museum",
+    "source": "The Dover museum is holding a local history tour on Thursday at 12:00. Owen is coordinating it. The event has 44 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "44",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover museum is holding a local history tour on Thursday at 12:00. Owen is coordinating it. The event has 44 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_4",
+    "domain": "museum",
+    "source": "The Elm museum is holding a local history tour on Friday at 13:00. Ravi is coordinating it. The event has 51 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "51",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm museum is holding a local history tour on Friday at 13:00. Ravi is coordinating it. The event has 51 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_5",
+    "domain": "museum",
+    "source": "The Fern museum is holding a local history tour on Saturday at 14:00. Nora is coordinating it. The event has 58 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "58",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern museum is holding a local history tour on Saturday at 14:00. Nora is coordinating it. The event has 58 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_6",
+    "domain": "museum",
+    "source": "The Grove museum is holding a local history tour on Sunday at 15:00. Elena is coordinating it. The event has 65 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "65",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove museum is holding a local history tour on Sunday at 15:00. Elena is coordinating it. The event has 65 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_2_7",
+    "domain": "museum",
+    "source": "The Hazel museum is holding a local history tour on Monday at 16:00. Sam is coordinating it. The event has 72 visitors. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "72",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel museum is holding a local history tour on Monday at 16:00. Sam is coordinating it. The event has 72 visitors. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_0",
+    "domain": "school",
+    "source": "The Alder school is holding a science exhibition on Monday at 9:00. Mira is coordinating it. The event has 26 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "26",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder school is holding a science exhibition on Monday at 9:00. Mira is coordinating it. The event has 26 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_1",
+    "domain": "school",
+    "source": "The Birch school is holding a science exhibition on Tuesday at 10:00. Jonah is coordinating it. The event has 33 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "33",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch school is holding a science exhibition on Tuesday at 10:00. Jonah is coordinating it. The event has 33 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_2",
+    "domain": "school",
+    "source": "The Cedar school is holding a science exhibition on Wednesday at 11:00. Leila is coordinating it. The event has 40 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "40",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar school is holding a science exhibition on Wednesday at 11:00. Leila is coordinating it. The event has 40 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_3",
+    "domain": "school",
+    "source": "The Dover school is holding a science exhibition on Thursday at 12:00. Owen is coordinating it. The event has 47 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "47",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover school is holding a science exhibition on Thursday at 12:00. Owen is coordinating it. The event has 47 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_4",
+    "domain": "school",
+    "source": "The Elm school is holding a science exhibition on Friday at 13:00. Ravi is coordinating it. The event has 54 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "54",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm school is holding a science exhibition on Friday at 13:00. Ravi is coordinating it. The event has 54 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_5",
+    "domain": "school",
+    "source": "The Fern school is holding a science exhibition on Saturday at 14:00. Nora is coordinating it. The event has 61 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "61",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern school is holding a science exhibition on Saturday at 14:00. Nora is coordinating it. The event has 61 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_6",
+    "domain": "school",
+    "source": "The Grove school is holding a science exhibition on Sunday at 15:00. Elena is coordinating it. The event has 68 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "68",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove school is holding a science exhibition on Sunday at 15:00. Elena is coordinating it. The event has 68 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_3_7",
+    "domain": "school",
+    "source": "The Hazel school is holding a science exhibition on Monday at 16:00. Sam is coordinating it. The event has 75 projects. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "75",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel school is holding a science exhibition on Monday at 16:00. Sam is coordinating it. The event has 75 projects. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_0",
+    "domain": "shelter",
+    "source": "The Alder shelter is holding a supply drive on Monday at 9:00. Mira is coordinating it. The event has 29 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "29",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder shelter is holding a supply drive on Monday at 9:00. Mira is coordinating it. The event has 29 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_1",
+    "domain": "shelter",
+    "source": "The Birch shelter is holding a supply drive on Tuesday at 10:00. Jonah is coordinating it. The event has 36 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "36",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch shelter is holding a supply drive on Tuesday at 10:00. Jonah is coordinating it. The event has 36 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_2",
+    "domain": "shelter",
+    "source": "The Cedar shelter is holding a supply drive on Wednesday at 11:00. Leila is coordinating it. The event has 43 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "43",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar shelter is holding a supply drive on Wednesday at 11:00. Leila is coordinating it. The event has 43 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_3",
+    "domain": "shelter",
+    "source": "The Dover shelter is holding a supply drive on Thursday at 12:00. Owen is coordinating it. The event has 50 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "50",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover shelter is holding a supply drive on Thursday at 12:00. Owen is coordinating it. The event has 50 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_4",
+    "domain": "shelter",
+    "source": "The Elm shelter is holding a supply drive on Friday at 13:00. Ravi is coordinating it. The event has 57 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "57",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm shelter is holding a supply drive on Friday at 13:00. Ravi is coordinating it. The event has 57 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_5",
+    "domain": "shelter",
+    "source": "The Fern shelter is holding a supply drive on Saturday at 14:00. Nora is coordinating it. The event has 64 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "64",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern shelter is holding a supply drive on Saturday at 14:00. Nora is coordinating it. The event has 64 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_6",
+    "domain": "shelter",
+    "source": "The Grove shelter is holding a supply drive on Sunday at 15:00. Elena is coordinating it. The event has 71 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "71",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove shelter is holding a supply drive on Sunday at 15:00. Elena is coordinating it. The event has 71 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_4_7",
+    "domain": "shelter",
+    "source": "The Hazel shelter is holding a supply drive on Monday at 16:00. Sam is coordinating it. The event has 78 blankets. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "78",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel shelter is holding a supply drive on Monday at 16:00. Sam is coordinating it. The event has 78 blankets. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_0",
+    "domain": "observatory",
+    "source": "The Alder observatory is holding a stargazing evening on Monday at 9:00. Mira is coordinating it. The event has 32 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "32",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder observatory is holding a stargazing evening on Monday at 9:00. Mira is coordinating it. The event has 32 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_1",
+    "domain": "observatory",
+    "source": "The Birch observatory is holding a stargazing evening on Tuesday at 10:00. Jonah is coordinating it. The event has 39 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "39",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch observatory is holding a stargazing evening on Tuesday at 10:00. Jonah is coordinating it. The event has 39 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_2",
+    "domain": "observatory",
+    "source": "The Cedar observatory is holding a stargazing evening on Wednesday at 11:00. Leila is coordinating it. The event has 46 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "46",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar observatory is holding a stargazing evening on Wednesday at 11:00. Leila is coordinating it. The event has 46 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_3",
+    "domain": "observatory",
+    "source": "The Dover observatory is holding a stargazing evening on Thursday at 12:00. Owen is coordinating it. The event has 53 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "53",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover observatory is holding a stargazing evening on Thursday at 12:00. Owen is coordinating it. The event has 53 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_4",
+    "domain": "observatory",
+    "source": "The Elm observatory is holding a stargazing evening on Friday at 13:00. Ravi is coordinating it. The event has 60 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "60",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm observatory is holding a stargazing evening on Friday at 13:00. Ravi is coordinating it. The event has 60 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_5",
+    "domain": "observatory",
+    "source": "The Fern observatory is holding a stargazing evening on Saturday at 14:00. Nora is coordinating it. The event has 67 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "67",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern observatory is holding a stargazing evening on Saturday at 14:00. Nora is coordinating it. The event has 67 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_6",
+    "domain": "observatory",
+    "source": "The Grove observatory is holding a stargazing evening on Sunday at 15:00. Elena is coordinating it. The event has 74 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "74",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove observatory is holding a stargazing evening on Sunday at 15:00. Elena is coordinating it. The event has 74 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_5_7",
+    "domain": "observatory",
+    "source": "The Hazel observatory is holding a stargazing evening on Monday at 16:00. Sam is coordinating it. The event has 81 telescopes. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "81",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel observatory is holding a stargazing evening on Monday at 16:00. Sam is coordinating it. The event has 81 telescopes. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_0",
+    "domain": "bakery",
+    "source": "The Alder bakery is holding a bread class on Monday at 9:00. Mira is coordinating it. The event has 35 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "35",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder bakery is holding a bread class on Monday at 9:00. Mira is coordinating it. The event has 35 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_1",
+    "domain": "bakery",
+    "source": "The Birch bakery is holding a bread class on Tuesday at 10:00. Jonah is coordinating it. The event has 42 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "42",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch bakery is holding a bread class on Tuesday at 10:00. Jonah is coordinating it. The event has 42 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_2",
+    "domain": "bakery",
+    "source": "The Cedar bakery is holding a bread class on Wednesday at 11:00. Leila is coordinating it. The event has 49 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "49",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar bakery is holding a bread class on Wednesday at 11:00. Leila is coordinating it. The event has 49 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_3",
+    "domain": "bakery",
+    "source": "The Dover bakery is holding a bread class on Thursday at 12:00. Owen is coordinating it. The event has 56 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "56",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover bakery is holding a bread class on Thursday at 12:00. Owen is coordinating it. The event has 56 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_4",
+    "domain": "bakery",
+    "source": "The Elm bakery is holding a bread class on Friday at 13:00. Ravi is coordinating it. The event has 63 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "63",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm bakery is holding a bread class on Friday at 13:00. Ravi is coordinating it. The event has 63 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_5",
+    "domain": "bakery",
+    "source": "The Fern bakery is holding a bread class on Saturday at 14:00. Nora is coordinating it. The event has 70 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "70",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern bakery is holding a bread class on Saturday at 14:00. Nora is coordinating it. The event has 70 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_6",
+    "domain": "bakery",
+    "source": "The Grove bakery is holding a bread class on Sunday at 15:00. Elena is coordinating it. The event has 77 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "77",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove bakery is holding a bread class on Sunday at 15:00. Elena is coordinating it. The event has 77 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_6_7",
+    "domain": "bakery",
+    "source": "The Hazel bakery is holding a bread class on Monday at 16:00. Sam is coordinating it. The event has 84 loaves. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "84",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel bakery is holding a bread class on Monday at 16:00. Sam is coordinating it. The event has 84 loaves. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_0",
+    "domain": "cycling club",
+    "source": "The Alder cycling club is holding a repair session on Monday at 9:00. Mira is coordinating it. The event has 38 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Alder",
+      "Monday",
+      "9:00",
+      "Mira",
+      "38",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Alder cycling club is holding a repair session on Monday at 9:00. Mira is coordinating it. The event has 38 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_1",
+    "domain": "cycling club",
+    "source": "The Birch cycling club is holding a repair session on Tuesday at 10:00. Jonah is coordinating it. The event has 45 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Birch",
+      "Tuesday",
+      "10:00",
+      "Jonah",
+      "45",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Birch cycling club is holding a repair session on Tuesday at 10:00. Jonah is coordinating it. The event has 45 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_2",
+    "domain": "cycling club",
+    "source": "The Cedar cycling club is holding a repair session on Wednesday at 11:00. Leila is coordinating it. The event has 52 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Cedar",
+      "Wednesday",
+      "11:00",
+      "Leila",
+      "52",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Cedar cycling club is holding a repair session on Wednesday at 11:00. Leila is coordinating it. The event has 52 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_3",
+    "domain": "cycling club",
+    "source": "The Dover cycling club is holding a repair session on Thursday at 12:00. Owen is coordinating it. The event has 59 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Dover",
+      "Thursday",
+      "12:00",
+      "Owen",
+      "59",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Dover cycling club is holding a repair session on Thursday at 12:00. Owen is coordinating it. The event has 59 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_4",
+    "domain": "cycling club",
+    "source": "The Elm cycling club is holding a repair session on Friday at 13:00. Ravi is coordinating it. The event has 66 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Elm",
+      "Friday",
+      "13:00",
+      "Ravi",
+      "66",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Elm cycling club is holding a repair session on Friday at 13:00. Ravi is coordinating it. The event has 66 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_5",
+    "domain": "cycling club",
+    "source": "The Fern cycling club is holding a repair session on Saturday at 14:00. Nora is coordinating it. The event has 73 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Fern",
+      "Saturday",
+      "14:00",
+      "Nora",
+      "73",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Fern cycling club is holding a repair session on Saturday at 14:00. Nora is coordinating it. The event has 73 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_6",
+    "domain": "cycling club",
+    "source": "The Grove cycling club is holding a repair session on Sunday at 15:00. Elena is coordinating it. The event has 80 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Grove",
+      "Sunday",
+      "15:00",
+      "Elena",
+      "80",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Grove cycling club is holding a repair session on Sunday at 15:00. Elena is coordinating it. The event has 80 bicycles. Attendance is free. Registration closes two days before the event."
+  },
+  {
+    "id": "task_7_7",
+    "domain": "cycling club",
+    "source": "The Hazel cycling club is holding a repair session on Monday at 16:00. Sam is coordinating it. The event has 87 bicycles. Attendance is free. Registration closes two days before the event.",
+    "anchors": [
+      "Hazel",
+      "Monday",
+      "16:00",
+      "Sam",
+      "87",
+      "free"
+    ],
+    "prompt": "Write one clear paragraph of 70\u2013100 words announcing the event below. Preserve all supplied facts, do not add factual claims, and output only the paragraph.\nFacts: The Hazel cycling club is holding a repair session on Monday at 16:00. Sam is coordinating it. The event has 87 bicycles. Attendance is free. Registration closes two days before the event."
+  }
+]

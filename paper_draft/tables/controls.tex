@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering\small
+\caption{Instruction-model changes relative to the same-seed zero baseline. Mean $\pm2$ averages two seeds; all other conditions use seed 42. The random row is a range across five conditions. No intervention is an overall winner across style and preservation. Full individual intervals appear in \secref{sec:extended}.}\label{tab:controls}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Style score change} & \multicolumn{2}{c}{Quality change}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Condition & Judge & Encoder & Coherence & Coverage\\
+\midrule
+Mean $-1$ & $-1.17$ & $+0.203$ & $-0.234$ & $-0.013$\\
+Mean $-2$ & $-20.04$ & $+0.061$ & $-0.591$ & $-0.028$\\
+Mean $+1$ & $+7.84$ & $-0.237$ & $+0.052$ & $-0.043$\\
+Mean $+2$ & $+16.93$ & $-0.459$ & $-0.414$ & $-0.131$\\
+Logistic $-2$ & $-15.39$ & $+0.214$ & $-0.570$ & $-0.039$\\
+Projection ablation & $-15.78$ & $+0.223$ & $-0.233$ & $-0.002$\\
+Random (five) & $[-3.05,+3.91]$ & $[+.043,+.219]$ & $[-.164,+.148]$ & $[-.025,+.016]$\\
+Formality $-2$ & $+1.88$ & $-0.159$ & $+0.063$ & $-0.071$\\
+Assistant proxy $-2$ & $+4.77$ & $-0.259$ & $+0.125$ & $-0.051$\\
+Residualized $-2$ & $-8.67$ & $+0.196$ & $-0.555$ & $-0.045$\\
+Residualized $+2$ & $+13.00$ & $-0.327$ & $-0.406$ & $-0.111$\\
+Human-style prompt & $-6.02$ & $-0.126$ & $-0.094$ & $-0.024$\\
+\bottomrule
+\end{tabular}
+\end{table}

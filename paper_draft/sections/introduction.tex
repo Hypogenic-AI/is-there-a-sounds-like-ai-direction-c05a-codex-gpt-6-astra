@@ -1,0 +1,16 @@
+\section{Introduction}\label{sec:intro}
+A model can recognize patterns in machine-written text without using the same patterns to produce its own writing. Distinguishing these two possibilities matters for interpreting representation-based detectors: an accurate linear readout does not by itself identify a controllable writing mechanism. Even when an intervention lowers an AI-style score, it may do so by damaging coherence, removing facts, or exploiting weaknesses in the evaluator.
+
+\para{Can reading out AI style predict control of new writing?}
+Linear probes and mean-difference detectors extract substantial human--machine information from frozen language-model activations \cite{quaremba2026,vishnyakov2026}. Prior sparse-autoencoder work also steers individual stylistic features, with factual side effects at strong doses \cite{kuznetsov2025}. The unresolved question is therefore more specific than whether style can be steered: can a human--AI readout direction change independent judgments of new text while preserving coherence and content, and can this effect be distinguished from nuisance style and persona factors?
+
+We test this conjunction in paired pretrained and instruction-tuned \qwen checkpoints. We fit directions to human and GPT-4o continuations from matched source documents, select a layer on validation readout accuracy, and intervene during generation on 64 unseen factual records. \Figref{fig:method} summarizes the protocol. Signed doses, projection ablation, equal-norm random directions, nuisance controls, and a plain human-style prompt separate several explanations for a score change. A frozen RoBERTa detector and a blinded Gemini judge evaluate the outputs; explicit noninferiority margins test preservation.
+
+Negative steering lowers judged AI-likeness by 20.04/100 points, but reduces coherence by 0.591/5 points and fails both preservation gates. The encoder change is $+0.061$, with a confidence interval spanning zero. Strong readout in both backbones also fails to generalize to Llama-3 base continuations. We make three contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+\item We test whether a source-matched human--AI residual readout controls new generations using signed, random, ablation, nuisance, and prompt interventions.
+\item We quantify detector disagreement and quality costs with paired inference, calibration, and prespecified preservation margins.
+\item We compare domain and generator readout transfer across paired base and instruction backbones, documenting a base-generator transfer failure and no observed amplification in AUROC.
+\end{itemize}
+\Secref{sec:related} positions the study; \secref{sec:method} defines the protocol; \secref{sec:results} reports the results; and \secref{sec:discussion} examines their limits.
+\input{figures/method}

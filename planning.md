@@ -1,0 +1,72 @@
+# Experiment handoff: three directions only
+
+## Scope and ranking (2026-10-04)
+Question: can a direction estimated from human/AI text representations change the style of **new generations**, with independent detection and content/coherence preserved? “AI-ness” is an operational style construct, not proof of authorship.
+
+Scores are judgmental 1–5 (higher better), equally weighted: literature evidence (E), hypothesis relevance (R), expected information gain (I), feasibility (F). Evidence: downloaded 2608.24780 §§4–5 and limitations; 2606.07313 §§3–5 and Appendix F; 2503.03601 §3 and Appendix H; 2601.10387 §§3,5,8; CAA 2312.06681. These scores rank experiments, not confidence that the hypothesis is true.
+
+|Rank|Direction|E|R|I|F|Total|Decision and evidence|
+|---|---|---:|---:|---:|---:|---:|---|
+|1|Matched human–AI direction: signed causal generation intervention|5|5|5|5|20|KEEP. Detection is well supported; linear-probe papers do not test generation. CAA supplies intervention recipe.|
+|2|Separate AI-style from formality, length, domain and assistant persona|5|5|5|4|19|KEEP. SAE style confounds and assistant-axis causality make this decisive for distinctness.|
+|3|Cross-domain, cross-generator and second-model transfer of the same causal test|5|5|4|4|18|KEEP. RAID and SV-Detect show transfer failures especially non-chat models.|
+|4|Standalone SAE feature discovery/steering atlas|5|3|3|2|13|PRUNE. Existing 2025 work already steers interpretable detector features; scope/SAE costs high. Use findings only for nuisance choices.|
+|5|Optimize detector evasion or adversarial paraphrasing|4|2|2|4|12|PRUNE. Detector exploitation is not evidence for a causal, content-preserving style direction.|
+|6|Fine-tune a model to write human-like prose|4|2|2|3|11|PRUNE. Changes weights; does not isolate residual direction causality.|
+|7|Full circuits/SAE training or neuron localization|3|3|4|1|11|PRUNE. Expensive, premature before a reliable causal effect.|
+|8|Multilingual universal axis and cross-architecture vector transport|3|3|4|1|11|PRUNE. Broader claim needs alignment between coordinate systems and many controls.|
+
+Do not expand beyond these three unless new evidence invalidates this ranking; document any reranking in the experiment_runner notes of STATE.md.
+
+## Shared protocol
+1. Begin with an accessible 1.7–4B instruction model; Qwen3-1.7B is supported by SV-Detect backbone ablations. Pin revision and disable thinking where appropriate. Gemma-2-2B is a useful alternative if weights are accessible; its published SAE results do not transfer feature indices to another model. Inspect GPU before choosing dtype/batch size. Model weights are not part of this resource-gathering deliverable.
+2. Use HAP-E human chunk 2 versus model continuation, joined by document ID; chunk 1 is generation context only. HC3 same-question answers provide second genre/task. Neither corpus guarantees identical propositions across human/AI answers: pair matching controls prompt/topic, not content. Keep raw and cleaned versions. Remove explicit author/model/template identifiers by a fixed rule; record rather than silently drop refusals.
+3. Split by original source document/question **before** tokenization or fitting directions; keep every generator, continuation and attack variant of a source in the same fold. Detect duplicate/near-duplicate material across HC3 and MAGE (MAGE incorporates existing corpora); cross-corpus labels do not guarantee independence. Fit PCA, normalization, nuisance bases, directions and detector thresholds on training/calibration only. Freeze layer/scale selection on validation before final test.
+4. Extract response-only, attention-mask-aware residuals, retaining last-real-token and mean-token alternatives. Record hook location (post-block/post-MLP and pre-final-norm), layer index convention, template and tokenizer. Never pool padding or prompt tokens unintentionally. Probe AUROC does not select the most causal layer by itself.
+5. Estimate AI-minus-human difference of means and L2 logistic normals at each prespecified layer. If using reduced/standardized features, map the weight back to original residual coordinates (PCA transpose and inverse scaling); bias is not a steering vector. Orient sign with training label means. All-layer detector score is not a single physical residual-stream vector.
+
+## Direction 1: causal dose response
+Pilot on ~128 held-out prompts, then aim for >=300 independent source prompts, 3 generation seeds. Use benign fact-constrained explanations and source-grounded rewrites, supplemented by HAP-E continuations. Hold prompts, decoding, max tokens and seed pairs constant across conditions. For HAP-E continuation content is not fixed, so analyze separately.
+
+Choose a small middle/late layer grid on validation. Normalize v to unit norm and scale additions in training projection-SD units: h' = h + alpha * sd(<h,v>) * v, alpha in {-2,-1,-0.5,0,0.5,1,2}. Record relative residual norm as well; stop scales yielding pilot collapse by a prespecified coherence criterion. Apply to generated tokens; explicitly define whether the final prompt state predicting the first token is intervened on and ensure cached decoding matches that choice. Compare fixed negative addition with projection removal h' = h - <h,v>v; those are different interventions. Include zero, shuffled-label directions, >=5 norm-matched random directions, and style-prompt baselines.
+
+Primary outcome: paired change in frozen independent detector score on generated text, excluding prompt. Use a separately trained encoder detector and a different-family likelihood/curvature detector (Fast-DetectGPT) with held-out calibration. Freeze them before steering selection; do not tune against the final detector. If detectors disagree, report disagreement. Do not equate a lower detector score with actual human authorship.
+
+Joint outcomes: factual proposition retention/QA accuracy against supplied source, blinded coherence and instruction-following ratings, repetition and truncation/EOS, and output token counts. Embedding similarity and perplexity are supporting metrics only. Predeclare noninferiority margins after pilot (e.g. <=5 percentage-point factual-accuracy loss, <=0.25 loss on a 1–5 coherence rubric), then freeze before test. Report the full style-versus-quality curve and the fraction meeting BOTH constraints; never select only fluent successes post hoc.
+
+## Direction 2: distinctness and nuisance controls
+Build matched prompts/texts for formal–informal, concise–verbose, assistant–nonassistant, and domain contrasts with content held fixed as far as possible. Use multiple nuisance prompts and independent source groups. Estimate all nuisance directions in the SAME model/layer coordinate system. Compare cosine alignment and a joint orthonormal nuisance basis Q from training data; v_resid = (I - QQ^T)v. Report removed norm. If the residual norm is negligible, do not normalize numerical noise.
+
+Compare original, residualized, each nuisance-only direction and a norm-matched random residualized direction with identical dose and quality gates. Match text length within domain at training; report generation outcomes in length strata but do not rely solely on post-treatment length regression (length may mediate treatment). A 2x2 crossed style/persona prompt design tests whether the effect persists beyond assistant framing. Geometry alone neither proves nor refutes causal independence; partialling out nuisance directions may remove true style signal too.
+
+## Direction 3: transfer
+Train directions on selected HAP-E generators/domains; test held-out source groups, domains and generators; HC3/MAGE/RAID provide additional shifts. RAID human rows must be retained and attack variants linked by source_id/adv_source_id. Analyze chat/base sources separately and clean/attacked text separately. Estimate direction independently in a second model family: raw vectors cannot simply be copied across model coordinates. Reuse the same frozen external detectors and joint quality criteria. A detection transfer result alone is not a causal transfer result.
+
+## Analysis and decision rules
+Unit of inference is source prompt/document. Cluster-bootstrap paired differences by source, with all seeds and conditions inside each cluster. Report 95% intervals, domain effects, dose monotonicity and detector agreement. Preregister primary layer/scale comparison after validation; correct or clearly label exploratory layer/dose comparisons. Random-direction controls must share norm and hook. A null result is informative: a readable direction need not control generation. Claim distinct causal AI-style only if signed response survives independent detectors, source/content/coherence controls and nuisance interventions. Otherwise report the narrower result (readout-only, nuisance-mediated, detector-specific, or quality-damaging).
+
+
+## Motivation & Novelty Assessment (execution preregistration)
+### Why This Research Matters
+A causal writing-style direction would distinguish readable authorship information from controllable generation behavior. This matters for interpreting detectors and separating surface style from assistant identity.
+### Gap in Existing Work
+The reviewed probes establish readout, while SAE work already changes individual stylistic features, sometimes corrupting facts. A single direction with independent style measurement and preserved content is not established.
+### Our Novel Contribution
+Test the same estimated residual normal under signed additions, ablation, nuisance removal, random controls and independent scoring; quantify base/instruct differences without assuming universal AI authorship semantics.
+### Experiment Justification
+1. Causal signed interventions test whether reading predicts writing control.
+2. Formality/persona/verbosity controls test alternative mechanisms.
+3. Held-out generators/domains, HC3 and a paired base checkpoint test transfer and tuning effects.
+
+## Frozen feasible execution protocol
+The original handoff is aspirational; this preregistration fixes the session-sized experiment before outcomes. Use Qwen2.5-1.5B-Instruct and Qwen2.5-1.5B (historical paired checkpoints, chosen for accessible internals, aligned architectures and practical repeated intervention; not contemporary capability rankings). One RTX A6000, bfloat16 inference, batch 32 (activation extraction) / 16 (generation), max input 192 tokens and max output 160 tokens. Install only the workspace venv. Live OpenRouter catalog is archived before selection; independent current judge google/gemini-3.8-flash, temperature 0, JSON ratings, default routing. Frozen external encoder Hello-SimpleAI/chatgpt-detector-roberta (older detector, domain shift explicitly tested). These are independent of fit activations, but their errors need not be independent.
+
+HAP-E: 384 training, 96 validation, 128 test source documents from acad/blog/news; 128 OOD documents from fic/spok/tvm. Train on GPT-4o continuations vs human chunk2, test on GPT-4o and held-out Llama3 base/instruct. Restrict each paired text to first 128 whitespace words before tokenizer truncation. Remove exact normalized duplicate texts across folds. HC3: 128 question pairs, no fitting. Last-real-token post-block residuals at layers 8, 16, 24 (one-based); select layer by validation mean-difference AUROC, never generation detector performance. Logistic normal secondary. All vectors unit normalized; dose in training projection SD of the mean direction. Add at last prompt token and each cached generated token, leaving earlier prompt states untouched. Ablate the same states with raw projection removal. Equal-norm random/formality/persona/verbosity/residualized controls use the same absolute addition norm.
+
+64 held-out fact-constrained writing prompts across 8 benign topics, 8 varied factual records each. These are procedurally assembled source records, not simulated model responses. Original outputs always from real checkpoint inference. 64 independent records are the inferential unit; shared templates constrain external generalization. Conditions: zero; mean direction ±1, ±2 SD; logistic -2; ablation; five random -2 directions; formality -2; assistant -2; residualized ±2; human-style prompt. Seed 42 all; seed 43 zero and mean ±2; base checkpoint zero and mean ±2 seed42. Greedy nuisance-pair generations from separate training tasks estimate formal-minus-casual, verbose-minus-concise, assistant-minus-fictional-narrator vectors. These are reduced proxies, not replication of the published Assistant Axis. Domain and length vectors estimated from training residuals; jointly remove all five nuisance directions. Log geometry and projection correlations with length and model NLL.
+
+Primary comparison: instruct mean -2 vs zero, separately on encoder and blinded judge AI-likeness. Paired bootstrap by prompt (5000 resamples), sign-flip permutation (10000), Holm across the two primary detector tests; exploratory contrasts labeled. Report paired dz and all conditions. Coherence noninferiority margin 0.25 on 1–5; source-fact retention margin 0.05; 95% lower confidence limits must exceed negative margins for preservation. Also compare common coherence strata descriptively (post-treatment conditioning is not causal identification). Judge rates content coverage 0–1 and coherence 1–5; deterministic anchor recall is supplementary. Validate detectors on known human/AI held-out texts. No claim of universal direction from detector-only changes. At n64, approximate 80% detectable paired standardized effect ~0.35 without multiplicity; smaller effects remain uncertain.
+
+Milestones: setup/design 15–25min; extraction/nuisance/generation 30–90min; scoring 15–45min; analysis/report/validation 20–40min, with 25% debugging buffer. Save all raw outputs, revisions, vectors and metrics. Validate hook arithmetic, zero-hook equivalence, one repeated generation batch and deterministic analysis rerun. Failure contingencies: reduce batch on OOM, retain failed API requests and retry, document unavailable measures. No detector-guided vector optimization. No additional research directions.
+
+Runtime adjustment before outcomes: torch 2.14 eager native Triton JIT required a missing C compiler. Set TORCH_DISABLE_NATIVE_JIT=1 to use standard compiled kernels. Official detector card says training uses ALL HC3; HC3 encoder scores cannot be called held-out validation. Use HAP-E for independent detector validation.

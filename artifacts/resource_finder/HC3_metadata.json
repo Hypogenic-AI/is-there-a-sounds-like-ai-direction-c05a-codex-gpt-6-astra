@@ -1,0 +1,86 @@
+{
+  "_id": "63c7fbb048eff25d4e6278fb",
+  "id": "Hello-SimpleAI/HC3",
+  "author": "Hello-SimpleAI",
+  "sha": "4d0ff18143b5a7e1b1e79beb540c04549d1e59d3",
+  "lastModified": "2023-01-21T13:10:10.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "task_categories:text-classification",
+    "task_categories:question-answering",
+    "task_categories:sentence-similarity",
+    "task_categories:zero-shot-classification",
+    "language:en",
+    "language:zh",
+    "license:cc-by-sa-4.0",
+    "size_categories:10K<n<100K",
+    "modality:text",
+    "library:datasets",
+    "library:mlcroissant",
+    "arxiv:2301.07597",
+    "region:us",
+    "ChatGPT",
+    "SimpleAI",
+    "Detection",
+    "OOD"
+  ],
+  "citation": "\\",
+  "description": "Human ChatGPT Comparison Corpus (HC3)",
+  "downloads": 4596,
+  "likes": 226,
+  "cardData": {
+    "task_categories": [
+      "text-classification",
+      "question-answering",
+      "sentence-similarity",
+      "zero-shot-classification"
+    ],
+    "language": [
+      "en",
+      "zh"
+    ],
+    "tags": [
+      "ChatGPT",
+      "SimpleAI",
+      "Detection",
+      "OOD"
+    ],
+    "size_categories": [
+      "10K<n<100K"
+    ],
+    "license": "cc-by-sa-4.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "HC3.py"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "all.jsonl"
+    },
+    {
+      "rfilename": "finance.jsonl"
+    },
+    {
+      "rfilename": "medicine.jsonl"
+    },
+    {
+      "rfilename": "open_qa.jsonl"
+    },
+    {
+      "rfilename": "reddit_eli5.jsonl"
+    },
+    {
+      "rfilename": "wiki_csai.jsonl"
+    }
+  ],
+  "createdAt": "2023-01-18T14:01:20.000Z",
+  "usedStorage": 1509081703
+}

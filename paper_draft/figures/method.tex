@@ -1,0 +1,10 @@
+\begin{figure}[t]
+\centering
+\setlength{\fboxsep}{6pt}
+\fbox{\begin{minipage}{0.27\linewidth}\small\textbf{1. Fit and select}\\Matched human/GPT-4o texts\\Train: 384 sources\\Validation: 96 sources\\Last-token layer 24 direction\end{minipage}}
+\hfill$\rightarrow$\hfill
+\fbox{\begin{minipage}{0.27\linewidth}\small\textbf{2. Intervene}\\64 new factual records\\Signed additions / ablation\\Equal-norm random controls\\Nuisance and prompt controls\end{minipage}}
+\hfill$\rightarrow$\hfill
+\fbox{\begin{minipage}{0.27\linewidth}\small\textbf{3. Evaluate jointly}\\Blinded AI-style judge\\Frozen encoder detector\\Coherence and fact coverage\\Unsupported claims\end{minipage}}
+\caption{Readout-to-generation test. Layer selection uses held-out readout accuracy, without generation scores. We pair generation outcomes by factual record and test style alongside preservation. A style-score change alone does not satisfy the hypothesis.}\label{fig:method}
+\end{figure}

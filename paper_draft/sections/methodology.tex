@@ -1,0 +1,50 @@
+\section{Methodology}\label{sec:method}
+\subsection{Question, models, and data}
+We operationalize ``sounds like AI'' as a measured property of text, not a claim about authorship. The primary estimand is the prompt-paired change under negative steering in each of two external style scores. The stronger hypothesis additionally requires preserved coherence and factual coverage and evidence against the tested nuisance explanations.
+
+We use \qwen base and instruction checkpoints with frozen weights \cite{qwenbase,qweninstruct}. These historical 1.5B checkpoints permit paired interventions with accessible internals; they are not contemporary capability leaders. \Secref{sec:reproduce} provides revisions and runtime details.
+
+\para{Readout corpus.}
+From \hape, we join human chunk 2 and generated continuations by source ID; human chunk 1 is context, not a comparison response. Academic, blog, and news sources provide 384 training, 96 validation, and 128 test documents. A further 128 fiction, spoken, and TV/movie sources test domain transfer. Fitting uses GPT-4o versus human text only. Each test source also includes Llama-3-8B base and instruction continuations, sharing the same human reference. Another 128 \hcthree question pairs test task transfer without fitting. Together these sets contain 2,240 texts. We retain the first 128 whitespace-delimited words and at most 192 model tokens; this approximates rather than guarantees length matching.
+
+Source IDs and normalized hashes are disjoint across folds. A training-vocabulary character-4-gram TF--IDF audit finds maximum test-to-training cosine 0.580 and no values above 0.90. These checks cannot rule out semantic overlap or pretraining contamination.
+
+\para{Generation tasks.}
+We construct 64 fictitious factual records: eight variants in each of eight community-event topics. Prompts request a 70--100-word paragraph preserving the location, event, day/time, coordinator, item count, free attendance, and registration deadline, without extra claims. The records are procedural test inputs; all model outputs come from actual inference. The shared templates limit the diversity of the 64 inferential units.
+
+\subsection{Direction fitting and generation intervention}
+We pass raw response text without chat framing through each checkpoint and extract the last real token after blocks 8, 16, and 24 (one-based), before final normalization. Left padding places that token at the final position. For layer $\ell$, the unit AI-minus-human direction is
+\begin{equation}
+\vv_\ell=\frac{\bar{\vh}_{\ell,\mathrm{AI}}-\bar{\vh}_{\ell,\mathrm{human}}}
+{\|\bar{\vh}_{\ell,\mathrm{AI}}-\bar{\vh}_{\ell,\mathrm{human}}\|_2}.
+\end{equation}
+We also fit an L2 logistic normal ($C=1$, maximum 2,000 iterations) in native coordinates, without PCA or feature scaling. Layer 24 maximizes validation mean-direction AUROC for both checkpoints: 0.9811 instruction and 0.9825 base. Generation scores play no role in layer selection.
+
+For a unit intervention vector $\vu$, we apply
+\begin{equation}\label{eq:add}
+\vh' = \vh+\alpha\sigma\vu,\qquad
+\sigma=\operatorname{SD}_{\mathrm{train}}(\vh^\top\vv),
+\end{equation}
+where $\vv$ is the original selected mean direction. The instruction/base scales are 18.811/19.704. All alternative addition directions use this same absolute scale, not their own projection standard deviation. At $|\alpha|=2$, additions have roughly 23--24\% of the mean training last-token residual norm. Projection ablation instead uses the uncentered operation $\vh'=\vh-(\vh^\top\vv)\vv$; it is not negative addition.
+
+The hook changes the last prompt token predicting the first output and each subsequent cached generation token. Earlier prompt states remain unchanged. Arithmetic, earlier-position invariance, zero-hook equivalence, and repeated-sampling smoke tests pass for both checkpoints. These checks validate implementation, not the causal suitability of the layer.
+
+\para{Conditions and sampling.}
+The instruction model has 17 conditions: zero; mean $\alpha\in\{-2,-1,+1,+2\}$; logistic $-2$; projection ablation; five random $-2$ directions; formality $-2$; assistant proxy $-2$; residualized mean $\pm2$; and a plain ``write like a human'' prompt. All use seed 42; zero and mean $\pm2$ also use seed 43. The base model runs zero and mean $\pm2$ at seed 42. This yields $64(17+3+3)=1{,}472$ task outputs. We use temperature 0.7, top-$p$ 0.9, top-$k$ 0, and at most 160 new tokens. Batch seeds add the starting batch offset. Instruction generation uses the chat template; base generation uses \texttt{Instruction: ... Response:}. This difference prevents attributing generation contrasts solely to instruction tuning.
+
+\subsection{Nuisance controls and independent measurements}
+For each checkpoint, we greedily generate 24 pairs for each of formal/casual, verbose/concise, and helpful-assistant/fictional-narrator prompts on separate pottery-course records: 144 outputs per checkpoint. Last-token mean differences give three proxies. The supplied facts are fixed, but generated realizations may differ in content. Training activation/length covariance and an academic-versus-other-domain mean difference supply two further proxies. With an orthonormal QR basis $\mQ$ for these five vectors, we use
+\begin{equation}
+\widetilde{\vv}=(\mI-\mQ\mQ^\top)\vv,\qquad
+\vv_{\mathrm{res}}=\widetilde{\vv}/\|\widetilde{\vv}\|_2.
+\end{equation}
+This removes a measured linear span, not all semantic influence of those constructs.
+
+We score generated text with the frozen \texttt{Hello-SimpleAI/chatgpt-detector-roberta} ChatGPT probability \cite{detectorcard} and a Gemini judge (\texttt{google/gemini-3.8-flash}). Style scoring excludes prompts and intervention labels; quality scoring additionally receives the source facts. The judge rates AI-likeness (0--100), coherence (1--5), source-fact coverage (0--1), and unsupported-claim fraction (0--1). Requests shuffle conditions into batches of eight with opaque integer IDs. The measures share neither fitted activations nor condition labels; we do not assume independent errors.
+
+Because the encoder model card documents training on all \hcthree, we calibrate both measures on 64 held-out \hape human/GPT-4o pairs, not \hcthree. Lexicographic source selection does not balance every domain. We also re-rate 64 generated outputs under different batching. Counts, truncation, repeated trigrams, script-mixing flags, and rough anchor substring recall supplement the ratings; anchor recall is not semantic verification.
+
+\subsection{Statistical analysis and preservation criteria}
+The primary contrast is instruction mean $-2$ versus zero on both external style scores. We first average the two seeds within each prompt. We then bootstrap 64 prompts 5,000 times for percentile 95\% confidence intervals (CIs), and use 10,000 paired sign-flip draws with Holm correction across the two style tests. We report paired $d_z=\bar d/s_d$. Sign-flip inference requires exchangeability/symmetry under the paired null. We treat ordinal coherence ratings as numeric rubric averages. All other contrasts are exploratory and use unadjusted tests.
+
+Preservation requires the lower CI bound to exceed $-0.25$ coherence points and $-0.05$ coverage units. An inconclusive noninferiority test does not prove damage. Unsupported claims remain necessary because coverage does not exclude invented information. Exploratory checks include individual seeds, eight-template cluster resampling, length adjustment, and matched-quality pairs. The latter two condition on post-treatment quantities and cannot identify an unbiased direct or preserved-quality causal effect.

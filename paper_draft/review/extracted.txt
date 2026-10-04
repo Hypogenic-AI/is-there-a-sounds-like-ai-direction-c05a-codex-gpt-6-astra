@@ -1,0 +1,896 @@
+A Human–AI Readout Direction Changes Perceived
+Writing Style but Fails Preservation Tests
+Ari Holtzman and NeuriCo
+Abstract
+Does a direction that separates human and machine text also control the style of new generations? We test
+this question in paired base and instruction Qwen2.5-1.5B checkpoints using source-matched continuations,
+signed residual additions, projection ablation, five equal-norm random controls, and nuisance residualization.
+We evaluate 1,472 generated task outputs with a frozen encoder detector and a blinded external judge, along-
+side coherence, factual coverage, and unsupported claims. At the validation-selected layer, negative steer-
+ing reduces judge-rated AI-likeness by 20.04 points on a 100-point scale (95% paired bootstrap interval:
+[−22.85, −17.27]). However, coherence falls by 0.591 points on a five-point scale, and neither prespecified
+preservation criterion passes. The encoder does not corroborate the primary effect; positive steering increases
+judge-rated AI-likeness while decreasing its detector score. Readout is strong in both base and instruction
+backbones (held-out AUROC 0.9707 and 0.9704), but the instruction-backbone direction fails to transfer to
+base-generator continuations (0.486). Removing five nuisance proxies retains a smaller judged style effect
+with continued quality loss. These results establish partial control of perceived writing style under this proto-
+col, while leaving a distinct, detector-consistent, content-preserving direction unestablished. They show why
+readout, controllability, measurement validity, and preservation require separate tests.
+1
+Introduction
+A model can recognize patterns in machine-written text without using the same patterns to produce
+its own writing. Distinguishing these two possibilities matters for interpreting representation-based
+detectors: an accurate linear readout does not by itself identify a controllable writing mechanism.
+Even when an intervention lowers an AI-style score, it may do so by damaging coherence, removing
+facts, or exploiting weaknesses in the evaluator.
+Can reading out AI style predict control of new writing? Linear probes and mean-difference
+detectors extract substantial human–machine information from frozen language-model activations
+[Quaremba et al., 2026, Vishnyakov and Gaintseva, 2026]. Prior sparse-autoencoder work also steers
+individual stylistic features, with factual side effects at strong doses [Kuznetsov et al., 2025]. The
+unresolved question is therefore more specific than whether style can be steered: can a human–
+AI readout direction change independent judgments of new text while preserving coherence and
+content, and can this effect be distinguished from nuisance style and persona factors?
+We test this conjunction in paired pretrained and instruction-tuned QWEN2.5-1.5B checkpoints.
+We fit directions to human and GPT-4o continuations from matched source documents, select a
+layer on validation readout accuracy, and intervene during generation on 64 unseen factual records.
+Figure 1 summarizes the protocol. Signed doses, projection ablation, equal-norm random directions,
+nuisance controls, and a plain human-style prompt separate several explanations for a score change.
+A frozen RoBERTa detector and a blinded Gemini judge evaluate the outputs; explicit noninferiority
+margins test preservation.
+Negative steering lowers judged AI-likeness by 20.04/100 points, but reduces coherence by 0.591/5
+points and fails both preservation gates. The encoder change is +0.061, with a confidence interval
+spanning zero. Strong readout in both backbones also fails to generalize to Llama-3 base continua-
+tions. We make three contributions:
+Research manuscript; formatted with the NeurIPS 2025 style.
+
+1. Fit and select
+Matched human/GPT-4o texts
+Train: 384 sources
+Validation: 96 sources
+Last-token layer 24 direction
+→
+2. Intervene
+64 new factual records
+Signed additions / ablation
+Equal-norm random controls
+Nuisance and prompt controls
+→
+3. Evaluate jointly
+Blinded AI-style judge
+Frozen encoder detector
+Coherence and fact coverage
+Unsupported claims
+Figure 1: Readout-to-generation test. Layer selection uses held-out readout accuracy, without gen-
+eration scores. We pair generation outcomes by factual record and test style alongside preservation.
+A style-score change alone does not satisfy the hypothesis.
+• We test whether a source-matched human–AI residual readout controls new generations using
+signed, random, ablation, nuisance, and prompt interventions.
+• We quantify detector disagreement and quality costs with paired inference, calibration, and pre-
+specified preservation margins.
+• We compare domain and generator readout transfer across paired base and instruction backbones,
+documenting a base-generator transfer failure and no observed amplification in AUROC.
+Section 2 positions the study; section 3 defines the protocol; section 4 reports the results; and sec-
+tion 5 examines their limits.
+2
+Related Work
+Representation-based detection. Quaremba et al. use last-token residual features and linear probes
+to detect machine-generated text across evaluation settings [Quaremba et al., 2026]. SV-DETECT
+estimates layerwise directions and combines their features for classification [Vishnyakov and Gaint-
+seva, 2026]. These methods establish useful readout structure, but their detection results do not
+establish generation control. We use a single-layer direction in native residual coordinates, enabling
+a direct intervention rather than treating a multi-layer detector as one physical vector.
+Causal steering and persona. Contrastive Activation Addition averages paired residual differences
+and applies signed interventions to generation [Rimsky et al., 2024]. Kuznetsov et al. already steer
+sparse-autoencoder decoder features associated with complexity, verbosity, formality, and repetition
+[Kuznetsov et al., 2025]. Their factual side effects motivate our quality tests; we do not claim the first
+causal AI-style intervention. The Assistant Axis characterizes and intervenes on assistant persona
+across many roles [Lu et al., 2026]. We include an assistant-versus-narrator output-text proxy in the
+tested model, but this reduced control does not reproduce that multi-role axis. Our contribution is
+the combined intervention, measurement, and preservation test, including its negative findings.
+Matched corpora and distribution shift. HAP-E compares human and model continuations from
+shared context, revealing grammatical and rhetorical differences across generators and domains
+[Reinhart et al., 2025]. HC3 matches human and ChatGPT answers by question [Guo et al., 2023].
+Such matching controls context or topic, not every factual proposition. RAID and MAGE docu-
+ment difficulties under changes in generators, domains, decoding, and attacks [Dugan et al., 2024,
+Li et al., 2024]. We accordingly separate instruction- and base-generator transfer. Fast-DetectGPT
+provides a likelihood-based alternative to encoder detection [Bao et al., 2024]; we did not run it.
+Instead, we evaluate a historical encoder and an external style judge, and explicitly test their validity
+under the study’s distribution shift.
+3
+Methodology
+3.1
+Question, models, and data
+We operationalize “sounds like AI” as a measured property of text, not a claim about authorship.
+The primary estimand is the prompt-paired change under negative steering in each of two external
+style scores. The stronger hypothesis additionally requires preserved coherence and factual coverage
+and evidence against the tested nuisance explanations.
+2
+
+We use QWEN2.5-1.5B base and instruction checkpoints with frozen weights [Qwen Team, n.d.a,n].
+These historical 1.5B checkpoints permit paired interventions with accessible internals; they are not
+contemporary capability leaders. Section A provides revisions and runtime details.
+Readout corpus. From HAP-E, we join human chunk 2 and generated continuations by source ID;
+human chunk 1 is context, not a comparison response. Academic, blog, and news sources provide
+384 training, 96 validation, and 128 test documents. A further 128 fiction, spoken, and TV/movie
+sources test domain transfer. Fitting uses GPT-4o versus human text only. Each test source also in-
+cludes Llama-3-8B base and instruction continuations, sharing the same human reference. Another
+128 HC3 question pairs test task transfer without fitting. Together these sets contain 2,240 texts.
+We retain the first 128 whitespace-delimited words and at most 192 model tokens; this approximates
+rather than guarantees length matching.
+Source IDs and normalized hashes are disjoint across folds. A training-vocabulary character-4-gram
+TF–IDF audit finds maximum test-to-training cosine 0.580 and no values above 0.90. These checks
+cannot rule out semantic overlap or pretraining contamination.
+Generation tasks.
+We construct 64 fictitious factual records: eight variants in each of eight
+community-event topics. Prompts request a 70–100-word paragraph preserving the location, event,
+day/time, coordinator, item count, free attendance, and registration deadline, without extra claims.
+The records are procedural test inputs; all model outputs come from actual inference. The shared
+templates limit the diversity of the 64 inferential units.
+3.2
+Direction fitting and generation intervention
+We pass raw response text without chat framing through each checkpoint and extract the last real
+token after blocks 8, 16, and 24 (one-based), before final normalization. Left padding places that
+token at the final position. For layer ℓ, the unit AI-minus-human direction is
+vℓ=
+¯hℓ,AI −¯hℓ,human
+∥¯hℓ,AI −¯hℓ,human∥2
+.
+(1)
+We also fit an L2 logistic normal (C = 1, maximum 2,000 iterations) in native coordinates, without
+PCA or feature scaling. Layer 24 maximizes validation mean-direction AUROC for both check-
+points: 0.9811 instruction and 0.9825 base. Generation scores play no role in layer selection.
+For a unit intervention vector u, we apply
+h′ = h + ασu,
+σ = SDtrain(h⊤v),
+(2)
+where v is the original selected mean direction. The instruction/base scales are 18.811/19.704.
+All alternative addition directions use this same absolute scale, not their own projection standard
+deviation. At |α| = 2, additions have roughly 23–24% of the mean training last-token residual
+norm. Projection ablation instead uses the uncentered operation h′ = h−(h⊤v)v; it is not negative
+addition.
+The hook changes the last prompt token predicting the first output and each subsequent cached
+generation token. Earlier prompt states remain unchanged. Arithmetic, earlier-position invariance,
+zero-hook equivalence, and repeated-sampling smoke tests pass for both checkpoints. These checks
+validate implementation, not the causal suitability of the layer.
+Conditions and sampling.
+The instruction model has 17 conditions:
+zero; mean α
+∈
+{−2, −1, +1, +2}; logistic −2; projection ablation; five random −2 directions; formality −2; as-
+sistant proxy −2; residualized mean ±2; and a plain “write like a human” prompt. All use seed
+42; zero and mean ±2 also use seed 43. The base model runs zero and mean ±2 at seed 42. This
+yields 64(17 + 3 + 3) = 1,472 task outputs. We use temperature 0.7, top-p 0.9, top-k 0, and at
+most 160 new tokens. Batch seeds add the starting batch offset. Instruction generation uses the
+chat template; base generation uses Instruction:
+...
+Response:. This difference prevents
+attributing generation contrasts solely to instruction tuning.
+3.3
+Nuisance controls and independent measurements
+For each checkpoint, we greedily generate 24 pairs for each of formal/casual, verbose/concise,
+and helpful-assistant/fictional-narrator prompts on separate pottery-course records: 144 outputs per
+3
+
+checkpoint. Last-token mean differences give three proxies. The supplied facts are fixed, but gen-
+erated realizations may differ in content. Training activation/length covariance and an academic-
+versus-other-domain mean difference supply two further proxies. With an orthonormal QR basis Q
+for these five vectors, we use
+ev = (I −QQ⊤)v,
+vres = ev/∥ev∥2.
+(3)
+This removes a measured linear span, not all semantic influence of those constructs.
+We score generated text with the frozen Hello-SimpleAI/chatgpt-detector-roberta Chat-
+GPT probability [Hello-SimpleAI, n.d.] and a Gemini judge (google/gemini-3.8-flash). Style
+scoring excludes prompts and intervention labels; quality scoring additionally receives the source
+facts.
+The judge rates AI-likeness (0–100), coherence (1–5), source-fact coverage (0–1), and
+unsupported-claim fraction (0–1). Requests shuffle conditions into batches of eight with opaque
+integer IDs. The measures share neither fitted activations nor condition labels; we do not assume
+independent errors.
+Because the encoder model card documents training on all HC3, we calibrate both measures on 64
+held-out HAP-E human/GPT-4o pairs, not HC3. Lexicographic source selection does not balance
+every domain. We also re-rate 64 generated outputs under different batching. Counts, truncation,
+repeated trigrams, script-mixing flags, and rough anchor substring recall supplement the ratings;
+anchor recall is not semantic verification.
+3.4
+Statistical analysis and preservation criteria
+The primary contrast is instruction mean −2 versus zero on both external style scores. We first aver-
+age the two seeds within each prompt. We then bootstrap 64 prompts 5,000 times for percentile 95%
+confidence intervals (CIs), and use 10,000 paired sign-flip draws with Holm correction across the
+two style tests. We report paired dz = ¯d/sd. Sign-flip inference requires exchangeability/symme-
+try under the paired null. We treat ordinal coherence ratings as numeric rubric averages. All other
+contrasts are exploratory and use unadjusted tests.
+Preservation requires the lower CI bound to exceed −0.25 coherence points and −0.05 coverage
+units. An inconclusive noninferiority test does not prove damage. Unsupported claims remain nec-
+essary because coverage does not exclude invented information. Exploratory checks include indi-
+vidual seeds, eight-template cluster resampling, length adjustment, and matched-quality pairs. The
+latter two condition on post-treatment quantities and cannot identify an unbiased direct or preserved-
+quality causal effect.
+4
+Results
+4.1
+The primary intervention changes judged style but fails preservation
+Table 1 reports the two-seed primary comparison. Mean −2 reduces judge AI-likeness by 20.039
+points (CI [−22.852, −17.266]; Holm p = 0.00020; dz = −1.728). The encoder changes by
++0.061 (CI [−0.072, +0.193]; Holm p = 0.381), providing no corroboration of the primary reduc-
+tion.
+Coherence falls by 0.591 points, with its entire CI below the −0.25 preservation margin. This is
+clear coherence damage. Coverage changes by −0.0279, but its lower bound −0.0573 also fails
+the −0.05 gate; this interval leaves preservation inconclusive rather than establishing a loss beyond
+the margin. Unsupported claims change by +0.0141, with an interval spanning zero. Thus, neither
+primary quality gate passes.
+Signed doses expose measurement disagreement. Positive mean +2 raises judge AI-likeness by
+16.93 points (CI [15.10, 18.72]) while lowering encoder probability by 0.459 (CI [−0.545, −0.373]).
+Coherence falls by 0.414 and coverage by 0.131. Figure 2 shows the seed-42 curve; intermediate
+instruction doses show that score and quality changes depend on magnitude. The two style measures
+are not interchangeable operationalizations of AI-like writing.
+4
+
+Table 1: Primary instruction contrast: mean −2 versus zero, averaging two seeds within each of 64
+records. CIs are paired prompt-bootstrap 95% intervals. Only the two style p-values receive Holm
+correction. Lower style scores alone do not establish improvement; neither preservation gate passes.
+Outcome
+Zero
+Mean −2
+Change [95% CI]
+Holm p
+dz
+Encoder probability
+0.476
+0.537
++0.061 [−0.072, +0.193]
+0.381
++0.112
+Judge AI-likeness
+69.219
+49.180
+−20.039 [−22.852, −17.266]
+0.00020
+−1.728
+Coherence
+4.703
+4.112
+−0.591 [−0.754, −0.427]
+—
+−0.888
+Fact coverage
+0.919
+0.891
+−0.0279 [−0.0573, +0.0016]
+—
+−0.229
+Unsupported claims
+0.179
+0.193
++0.0141 [−0.0137, +0.0422]
+—
++0.121
+−2
+−1
+0
+1
+2
+Signed dose (projection SD)
+0.0
+0.2
+0.4
+0.6
+0.8
+Encoder AI probability
+Instruction
+Base
+−2
+−1
+0
+1
+2
+Signed dose (projection SD)
+30
+40
+50
+60
+70
+80
+90
+Judge AI-likeness (0–100)
+−2
+−1
+0
+1
+2
+Signed dose (projection SD)
+4.0
+4.2
+4.4
+4.6
+4.8
+Coherence (1–5)
+−2
+−1
+0
+1
+2
+Signed dose (projection SD)
+0.70
+0.75
+0.80
+0.85
+0.90
+0.95
+Fact coverage (0–1)
+Figure 2: Signed-dose response at seed 42: means and prompt-bootstrap 95% intervals over 64
+tasks per point. Base observations exist only at −2, 0, and +2; connecting lines do not imply tested
+intermediate doses. The primary analysis in table 1 instead averages two seeds. Judge style changes
+accompany quality costs and diverge from encoder scores.
+4.2
+Random, nuisance, ablation, and prompt controls
+Table 2 reports all instruction condition families. At seed 42, mean −2 lowers the judge score
+23.08 points more than the average of five random directions (CI [−26.44, −19.55]), with an ad-
+ditional coherence loss of 0.493. Its encoder contrast against the random average is −0.012 (CI
+[−0.129, +0.107]). Generic equal-norm perturbation therefore does not explain the large judged
+effect, but the encoder does not establish the corresponding specific change.
+Logistic steering and projection ablation also reduce judged AI-likeness, by 15.39 and 15.78 points,
+while increasing encoder scores. Ablation nearly preserves mean coverage (−0.002), and its cov-
+erage interval passes that gate, but its coherence interval does not pass. The human-style prompt
+produces a smaller judge reduction (−6.02) and an encoder reduction (−0.126); neither preserva-
+tion gate is established at this sample size.
+Does nuisance removal isolate AI style? Instruction-direction cosines are −0.038 with formality,
++0.039 with verbosity, −0.236 with assistant persona, −0.231 with length, and +0.072 with do-
+main. Joint removal retains 86.3% of vector norm and GPT-4o test AUROC 0.966. Residualized
+5
+
+Table 2: Instruction-model changes relative to the same-seed zero baseline. Mean ±2 averages two
+seeds; all other conditions use seed 42. The random row is a range across five conditions. No
+intervention is an overall winner across style and preservation. Full individual intervals appear in
+section B.
+Style score change
+Quality change
+Condition
+Judge
+Encoder
+Coherence
+Coverage
+Mean −1
+−1.17
++0.203
+−0.234
+−0.013
+Mean −2
+−20.04
++0.061
+−0.591
+−0.028
+Mean +1
++7.84
+−0.237
++0.052
+−0.043
+Mean +2
++16.93
+−0.459
+−0.414
+−0.131
+Logistic −2
+−15.39
++0.214
+−0.570
+−0.039
+Projection ablation
+−15.78
++0.223
+−0.233
+−0.002
+Random (five)
+[−3.05, +3.91]
+[+.043, +.219]
+[−.164, +.148]
+[−.025, +.016]
+Formality −2
++1.88
+−0.159
++0.063
+−0.071
+Assistant proxy −2
++4.77
+−0.259
++0.125
+−0.051
+Residualized −2
+−8.67
++0.196
+−0.555
+−0.045
+Residualized +2
++13.00
+−0.327
+−0.406
+−0.111
+Human-style prompt
+−6.02
+−0.126
+−0.094
+−0.024
+Table 3: Validation-selected mean-direction AUROC on 128 human/machine pairs per row. Back-
+bone is the model extracting representations; generator produced the comparison text. Bold marks
+the numerically higher backbone AUROC per row, not a significant difference. Human references
+are shared across generators within source sets.
+Corpus / domains
+Generator
+Base backbone
+Instruction backbone
+HAP-E, academic/blog/news
+GPT-4o
+0.971
+0.970
+Llama-3-8B base
+0.479
+0.486
+Llama-3-8B instruction
+0.912
+0.913
+HAP-E, held-out domains
+GPT-4o
+0.975
+0.973
+Llama-3-8B base
+0.549
+0.564
+Llama-3-8B instruction
+0.913
+0.911
+HC3, question answers
+ChatGPT
+0.923
+0.909
+−2 still reduces judge AI-likeness by 8.67 points, but lowers coherence by 0.555 and increases en-
+coder score by 0.196. This excludes simple collinearity with the measured proxies, not semantic
+dependence on the underlying constructs. Figure 3 provides the full control contrasts.
+4.3
+Readout transfers unevenly and is not amplified by instruction tuning
+Table 3 separates the backbone used to read text from the generator that wrote it. Held-out GPT-4o
+AUROC is 0.9707 for the base backbone and 0.9704 for the instruction backbone. Their paired
+instruction-minus-base difference is −0.0003 (CI [−0.0051, +0.0053]). We find no amplification in
+this metric; this is not an equivalence test for every aspect of representation strength.
+For the instruction backbone, in-domain GPT-4o AUROC has CI [0.950, 0.987]. Transfer to Llama-
+3 instruction outputs remains strong (0.913), but Llama-3 base outputs are near chance (0.486; CI
+[0.423, 0.550]). Held-out domains and HC3 retain substantial readout performance. These are
+readout-transfer results, not demonstrations of causal transfer to those tasks.
+Base-model negative steering lowers both judge AI-likeness by 12.81 (CI [−18.28, −7.03]) and en-
+coder score by 0.244 (CI [−0.365, −0.124]). Its coherence change is −0.094 (CI [−0.320, +0.133]),
+which still fails the noninferiority gate. We did not run the extended controls on the base model, and
+prompt formats differ across checkpoints.
+Partial length and fluency checks. Restricting within-pair token-length differences to at most ten
+retains instruction AUROC 0.973 on 64 in-domain pairs and 0.976 on 77 held-out-domain pairs.
+Training projections correlate −0.075 with token length and −0.313 with model negative log like-
+lihood (NLL). Negative NLL achieves 0.684 AUROC for in-domain GPT-4o, compared with 0.970
+6
+
+for the mean direction, but reaches 0.903 for Llama base where the mean direction is near chance.
+These checks do not establish independence from length or fluency.
+4.4
+Measurement validity and robustness qualify the causal finding
+On 64 held-out HAP-E human/GPT-4o pairs, encoder AUROC is 0.656 (CI [0.585, 0.729]), with
+human/AI mean scores 0.033/0.155.
+Judge AUROC is 0.965 (CI [0.930, 0.992]), with means
+17.42/58.05. The encoder transfers weakly under this domain/generator shift. Its disagreement
+limits corroboration rather than decisively refuting every style effect. Across generated outputs,
+encoder/judge Spearman correlation is −0.375.
+On 64 re-rated outputs, judge AI-likeness rank agreement is 0.661 and mean absolute difference is
+10.78 points; coherence agreement is 0.850 with mean absolute difference 0.211. No human-rating
+validation was performed. Calibration discriminating known provenance does not validate every
+treatment-induced style distinction.
+The negative judge effect appears at both seeds (−21.56 and −18.52), with coherence loss at
+both. Resampling eight topic/template clusters yields judge CI [−22.70, −17.30] and coherence
+CI [−0.793, −0.405]; eight clusters provide limited population coverage. Exploratory length adjust-
+ment leaves a judge coefficient near −20.45, which is not an identified direct effect.
+Matched-quality filtering retains only 11/64 instruction pairs at seed 42. Their judge change is
+−15.45 (CI [−28.64, −1.82]), while the encoder change is +0.301 (CI [−0.032, +0.613]). Only
+22 base pairs pass the same filter, with both scores lower. These selected subsets cannot establish
+preservation for all prompts; small-sample bootstrap and discrete sign-flip inference can also differ.
+5
+Discussion
+What does the intervention establish? Signed additions causally alter generated wording and an
+external model’s perception of AI-like style in this checkpoint and task. Repeated seeds, zero-hook
+equivalence, and equal-norm random controls strengthen this conclusion beyond readout alone. The
+evidence does not establish the stronger conjunction of detector consistency, preserved content and
+coherence, and distinctness. A reduced style score is insufficient when quality declines or another
+evaluator reverses direction.
+The base-generator transfer failure is particularly informative. A direction trained on GPT-4o versus
+human continuations can capture features associated with instruction-generated text without detect-
+ing all machine production. Its availability in the pretrained backbone shows that this readout does
+not require instruction tuning of the backbone; it does not establish an explicit internal belief about
+authorship. Near-equal base/instruction AUROC supplies no evidence of amplification under the
+tested metric.
+Distinctness remains unresolved. Residualization preserves a smaller judged effect, but the proxy
+subspace is incomplete and partly content-contaminated. In particular, the assistant proxy is not the
+published Assistant Axis. Orthogonality to five estimated vectors cannot guarantee independence
+from persona, formality, domain, length, or fluency. Better vectors, layers, or lower doses could
+offer more selective control, but these data do not establish such an operating point.
+Limitations. We study one historical 1.5B model family, 64 templated announcement records,
+and no human annotators. Base and instruction generation formats differ. The historical encoder
+transfers poorly, while the judge has substantial re-rating noise and measures both style and quality.
+Strong additions are large relative to residual norm. The baseline itself often violates the requested
+length and no-extra-facts instructions. Source matching and lexical audits cannot exclude semantic
+overlap or pretraining contamination, and HAP-E filters refusals and incomplete outputs. Common
+templates constrain the exchangeability assumption; most comparisons are exploratory. API aliases
+and provider infrastructure remain mutable, and exact local tokens can depend on hardware and
+software versions. Section A.4 records experiments omitted from the aspirational handoff.
+Broader implications. The principal measurement risk is treating reduced detectability as better
+or more human writing. Here, positive steering sharply lowers an encoder score while increasing
+judged AI-likeness and damaging coverage. Such a result should not be reported as validated detec-
+tor evasion, evidence of human authorship, or a basis for accusations about provenance. Mechanis-
+7
+
+tic writing interventions need evaluator validation and source-grounded quality checks, particularly
+when deployed systems could optimize a weak score. Our cached outputs preserve failures rather
+than selecting fluent successes.
+6
+Conclusion
+A human–AI residual readout direction changes new writing and judged AI-like style in our con-
+trolled Qwen2.5-1.5B experiment. Negative steering lowers judge AI-likeness by 20.04 points, but
+coherence falls, preservation gates fail, and an external encoder does not corroborate the effect.
+Strong readout also fails to transfer to base-generator text. We therefore establish partial style con-
+trol, while leaving a distinct, detector-consistent, content-preserving direction unestablished.
+A decisive follow-up should retain signed, random, nuisance, and prompt controls while using di-
+verse naturally grounded tasks, a stronger contemporary paired model family, human ratings, a
+detector validated on current generators, and a genuine multi-role Assistant Axis estimate. Layer
+and dose should be selected on separate quality-aware validation data, with preservation tested on a
+larger untouched set.
+References
+Guangsheng Bao, Yanbin Zhao, Zhiyang Teng, Linyi Yang, and Yue Zhang. Fast-DetectGPT: Ef-
+ficient zero-shot detection of machine-generated text via conditional probability curvature. In
+International Conference on Learning Representations, 2024. URL https://arxiv.org/abs/
+2310.05130.
+Liam Dugan, Alyssa Hwang, Filip Trhlik, Josh Magnus Ludan, Andrew Zhu, Hainiu Xu, Daphne
+Ippolito, and Chris Callison-Burch. RAID: A shared benchmark for robust evaluation of machine-
+generated text detectors. In Proceedings of the 62nd Annual Meeting of the Association for Com-
+putational Linguistics, 2024. URL https://arxiv.org/abs/2405.07940.
+Biyang Guo, Xin Zhang, Ziyuan Wang, Minqi Jiang, Jinran Nie, Yuxuan Ding, Jianwei Yue, and
+Yupeng Wu. How close is ChatGPT to human experts? comparison corpus, evaluation, and de-
+tection. arXiv preprint arXiv:2301.07597, 2023. URL https://arxiv.org/abs/2301.07597.
+Hello-SimpleAI.
+ChatGPT detector RoBERTa:
+Model card.
+https://huggingface.co/
+Hello-SimpleAI/chatgpt-detector-roberta, n.d. Accessed 2026-10-04; historical snap-
+shot recorded with experiment artifacts.
+Kristian Kuznetsov, Laida Kushnareva, Polina Druzhinina, Anton Razzhigaev, Anastasia Voznyuk,
+Irina Piontkovskaya, Evgeny Burnaev, and Serguei Barannikov. Feature-level insights into ar-
+tificial text detection with sparse autoencoders. arXiv preprint arXiv:2503.03601, 2025. URL
+https://arxiv.org/abs/2503.03601.
+Yafu Li, Qintong Li, Leyang Cui, Wei Bi, Zhilin Wang, Longyue Wang, Linyi Yang, Shuming
+Shi, and Yue Zhang. MAGE: Machine-generated text detection in the wild. In Proceedings of
+the 62nd Annual Meeting of the Association for Computational Linguistics, 2024. URL https:
+//arxiv.org/abs/2305.13242.
+Christina Lu, Jack Gallagher, Jonathan Michala, Kyle Fish, and Jack Lindsey. The assistant axis: Sit-
+uating and stabilizing the default persona of language models. arXiv preprint arXiv:2601.10387,
+2026. URL https://arxiv.org/abs/2601.10387.
+OpenRouter. Model catalog API. https://openrouter.ai/api/v1/models, n.d. Accessed
+2026-10-04; historical snapshot recorded with experiment artifacts.
+Gerrit Quaremba, Hanqi Yan, Elizabeth Black, Denny Vrandeˇci´c, and Elena Simperl.
+Lin-
+ear probing provides robust and efficient detection of machine-generated text. arXiv preprint
+arXiv:2608.24780, 2026. URL https://arxiv.org/abs/2608.24780.
+Qwen Team.
+Qwen2.5-1.5B model card.
+https://huggingface.co/Qwen/Qwen2.5-1.5B,
+n.d.a. Accessed 2026-10-04; historical snapshot recorded with experiment artifacts.
+8
+
+Qwen Team. Qwen2.5-1.5B-Instruct model card. https://huggingface.co/Qwen/Qwen2.5-1.
+5B-Instruct, n.d.b. Accessed 2026-10-04; historical snapshot recorded with experiment arti-
+facts.
+Alex Reinhart, Ben Markey, Michael Laudenbach, Kachatad Pantusen, Ronald Yurko, Gordon Wein-
+berg, and David West Brown. Do LLMs write like humans? variation in grammatical and rhetor-
+ical styles. arXiv preprint arXiv:2410.16107, 2025. URL https://arxiv.org/abs/2410.
+16107.
+Nina Rimsky, Nick Gabrieli, Julian Schulz, Meg Tong, Evan Hubinger, and Alexander Matt Turner.
+Steering Llama 2 via contrastive activation addition. In Proceedings of the 62nd Annual Meeting
+of the Association for Computational Linguistics (Volume 1: Long Papers), 2024. URL https:
+//aclanthology.org/2024.acl-long.828/.
+Mikhail Vishnyakov and Tatiana Gaintseva. SV-Detect: AI-generated text detection with steering
+vectors. arXiv preprint arXiv:2606.07313, 2026. URL https://arxiv.org/abs/2606.07313.
+9
+
+A
+Reproducibility and Execution Details
+A.1
+Frozen models and environment
+The research execution date was 2026-10-04. The local checkpoints and immutable revisions were:
+• Qwen/Qwen2.5-1.5B-Instruct:
+989aa7980e4cf806f80c7fef2b1adb7bc71aa306.
+• Qwen/Qwen2.5-1.5B:
+8faed761d45a263340a0528343f099c05c9a4323.
+• Hello-SimpleAI/chatgpt-detector-roberta:
+d2b342c61775d5dd0221808a79983ed3b86ffd86.
+The external judge alias was google/gemini-3.8-flash; the archived catalog canonical slug
+was google/gemini-3.8-flash-20260902, and the returned provider was Google. Catalog pa-
+rameters and pricing were checked before judge selection. Requests used the OpenRouter chat-
+completions endpoint, default routing, temperature 0, JSON output, and max_tokens=3000. The
+catalog snapshot records historical selection rather than guaranteeing immutable API behavior
+[OpenRouter, n.d.].
+One NVIDIA RTX A6000 (49,140 MiB) supported local inference. The project environment used
+Python 3.12.8, PyTorch 2.14.1+cu130, Transformers 4.57.6, NumPy 2.5.3, scikit-learn 1.9.1, and
+SciPy 1.18.1. Inference used bfloat16, SDPA, extraction batches of 32, and generation batches of
+16. Peak allocated memory was 16.1 GB per process. Instruction and base pipelines took 462.7
+and 175.4 seconds and partly overlapped; these are not training times or a controlled speed compar-
+ison. Native JIT was disabled with TORCH_DISABLE_NATIVE_JIT=1 after an initial failure due to a
+missing C compiler.
+A.2
+Rating rubric and prompt specification
+The judge system instruction defined AI-likeness as how strongly English prose sounds like generic
+machine writing, explicitly excluding proof of authorship. Coherence anchors were 1: unintelligible;
+2: major problems; 3: understandable but disjointed; 4: clear with minor awkwardness; and 5:
+fluent coherent prose. Coverage measured the fraction of supplied source facts accurately preserved.
+Unsupported claims measured the fraction of factual claims absent from or contradicting the source.
+For source-free calibration items, coverage and unsupported values were fixed by the rubric to 1
+and 0. The rubric requested sensitivity to repetition, abrupt endings, contradictions, and omission;
+formality alone did not imply machine authorship, and casual style alone did not merit reward. Texts
+were to be treated as data rather than instructions. Exact wording and JSON schema are stored in
+results/judge_rubric.json.
+The standard generation instruction requested one clear 70–100-word announcement paragraph,
+preservation of all supplied facts, no additional factual claims, and only the paragraph as output.
+One source record described a library reading workshop, coordinator, time, item count, free atten-
+dance, and a deadline two days before the event. Complete records and prompts accompany every
+generated output. Separate pottery-course records supplied nuisance prompts; no nuisance output
+was counted among the 1,472 task outputs.
+A.3
+Pairing, inference, and selected subsets
+For prompt i, let di be the treatment-minus-zero score difference after averaging available paired
+seeds. The primary point estimate is 64−1 P
+i di; the percentile bootstrap resamples prompt indices
+while preserving their within-prompt pairing. A paired sign flip multiplies each di by an inde-
+pendently sampled sign. The Monte Carlo two-sided probability uses an add-one correction over
+10,000 draws. Only the two primary external-style tests receive Holm adjustment. The exploratory
+condition comparisons retain all available paired outputs, including failures.
+The matched-quality analysis uses seed 42 pairs with coherence at least 4 in both conditions, abso-
+lute coherence difference at most 0.25, and coverage at least 0.95 in both conditions. The instruction
+mean −2 subset has 11 pairs and the base counterpart has 22. These filters use treatment outcomes
+10
+
+and do not estimate population preservation. Likewise, length-adjusted regression may remove a
+mediator of the intervention. We report these checks only descriptively.
+A.4
+Deviations from the aspirational handoff
+The frozen feasible protocol reduced the original target of at least 300 prompts, three seeds, and
+multiple model families to 64 records, two primary seeds, and paired checkpoints from one family.
+It used last-token states at three layers, not an exhaustive layer/position study. No SAE analy-
+sis, shuffled-label intervention, norm-matched random residualized control, crossed persona/style
+prompt experiment, dedicated fluency intervention, or full formality-manipulation validation was
+run. Verbosity contributed to the removed nuisance span but was not a standalone steering condi-
+tion. We did not run full RAID/MAGE stress tests, an independent likelihood detector, or causal
+generation interventions on natural HAP-E continuations. These omissions are not claimed as com-
+pleted experiments. Base controls beyond signed doses were not run. The full inference pipeline was
+not rerun twice; repeated smoke batches and a repeated complete numerical analysis were checked.
+A.5
+Artifacts, checks, and cost
+The project README supplies execution commands.
+Implementations are src/prepare.
+py, src/experiment.py, src/score.py, src/analyze.py, src/audit_analysis.py, src/
+supplement.py, and src/validate.py. results/corpus.json records source IDs, excerpts,
+labels, and hashes; original resource manifests record data revisions.
+results/config.json
+records configuration, and results/tasks.json plus results/generations.jsonl preserve
+full prompts and outputs. Native activations and vectors reside in results/*.npz; pyproject.
+toml and uv.lock pin dependencies. results/validation.json records complete scoring, dis-
+joint folds, hook and sampling checks, and identical repeated numerical-analysis hashes. These
+artifacts support cached reproducibility without claiming deterministic future API responses.
+There were 208 successful API requests, including calibration and repeated ratings, with 282,947
+prompt tokens and 109,513 completion tokens. Returned usage cost totaled $0.622884, excluding
+unmonetized local inference. No ultimately failed calls were present. Equal allocation of mixed-
+batch costs among items gives approximate per-condition costs; instruction mean −2, including its
+share of re-ratings, cost $0.0598. Full cached responses omit credentials.
+B
+Extended Results and Error Analysis
+B.1
+Complete control intervals
+Figure 3 shows marginal 95% prompt-bootstrap intervals for instruction controls. Table 4 and table 5
+list all individual conditions, including each random direction and the base signed doses, directly
+from the cached paired-comparison table. Style tests outside the two primary instruction mean −2
+contrasts are exploratory; the plotted intervals are not simultaneous across conditions.
+B.2
+Readout transfer visualization
+B.3
+Observed failures
+The instruction baseline already has mean unsupported-claim fraction 0.179, and only 14.8% of
+its outputs meet the requested 70–100-word range. Under mean −2, the proportion rated below
+coherence 4 rises from 5.5% to 21.9%. Under mean +2, detected Chinese/Cyrillic-script mixing
+occurs in 3.9% of outputs, versus 1.6% at zero, and truncation occurs in 2.3%. These are descriptive
+flags, not grounds for removing outputs.
+In the fixed first-library-task comparison recorded in the report, zero invents an anniversary; mean
+−2 invents an end time and duration and calls “13:00” noon; mean +2 adds ornate promotion and
+a Chinese ending. The example was fixed by prompt order rather than selected for favorable steer-
+ing. Other observed failures include invented target audiences or refreshments, omitted registration
+deadlines, exaggerated claims, and awkward quantity descriptions. Full paired text and lowest-rated
+outputs are preserved in results/paired_examples.json and results/failure_examples.
+11
+
+Figure 3: Instruction-model control contrasts relative to paired zero outputs. Points and bars show
+mean changes and marginal prompt-bootstrap 95% CIs. Mean ±2 uses two seeds per prompt; other
+conditions use seed 42. The large negative judged effect of mean −2 accompanies coherence loss
+and is not corroborated by the encoder.
+Table 4: All paired style changes [95% CI], 64 records per row. Instruction mean ±2 uses two seeds;
+other rows use seed 42. Comparisons use matching zero seeds.
+Backbone
+Condition
+Judge AI-likeness
+Encoder probability
+Instruction
+Ablation
+−15.781 [−19.766, −11.797]
++0.223 [+0.098, +0.350]
+Instruction
+Assistant −2
++4.766 [+1.873, +7.734]
+−0.259 [−0.377, −0.138]
+Instruction
+Formality −2
++1.875 [−1.094, +5.000]
+−0.159 [−0.289, −0.025]
+Instruction
+Human prompt
+−6.016 [−10.078, −2.344]
+−0.126 [−0.254, +0.007]
+Instruction
+Logistic −2
+−15.391 [−19.453, −11.094]
++0.214 [+0.076, +0.350]
+Instruction
+Mean −1
+−1.172 [−4.766, +2.266]
++0.203 [+0.058, +0.347]
+Instruction
+Mean −2
+−20.039 [−22.852, −17.266]
++0.061 [−0.072, +0.193]
+Instruction
+Mean +1
++7.844 [+5.188, +10.548]
+−0.237 [−0.356, −0.114]
+Instruction
+Mean +2
++16.930 [+15.102, +18.719]
+−0.459 [−0.545, −0.373]
+Instruction
+Random 1
++0.391 [−2.891, +3.828]
++0.144 [+0.023, +0.271]
+Instruction
+Random 2
++3.906 [+0.859, +6.719]
++0.121 [−0.001, +0.242]
+Instruction
+Random 3
++3.438 [+0.312, +6.719]
++0.093 [−0.038, +0.224]
+Instruction
+Random 4
++2.891 [+0.078, +5.781]
++0.043 [−0.089, +0.181]
+Instruction
+Random 5
+−3.047 [−6.172, +0.156]
++0.219 [+0.070, +0.364]
+Instruction
+Residualized −2
+−8.672 [−11.719, −5.547]
++0.196 [+0.059, +0.338]
+Instruction
+Residualized +2
++13.000 [+10.500, +15.656]
+−0.327 [−0.447, −0.204]
+Base
+Mean −2
+−12.812 [−18.281, −7.031]
+−0.244 [−0.365, −0.124]
+Base
+Mean +2
++38.344 [+32.516, +44.062]
+−0.429 [−0.543, −0.315]
+json. These errors explain why source-fact coverage alone is inadequate: an output can retain
+supplied facts while adding false claims.
+12
+
+Table 5: All paired quality changes [95% CI], 64 records per row. Instruction mean ±2 uses two
+seeds; other rows use seed 42. Comparisons use matching zero seeds.
+Backbone
+Condition
+Coherence
+Coverage
+Unsupported
+Instruction
+Ablation
+−0.233 [−0.453, −0.006]
+−0.002 [−0.039, +0.035]
+−0.023 [−0.059, +0.012]
+Instruction
+Assistant −2
++0.125 [−0.062, +0.312]
+−0.051 [−0.097, −0.005]
+−0.012 [−0.044, +0.020]
+Instruction
+Formality −2
++0.062 [−0.109, +0.250]
+−0.071 [−0.110, −0.030]
+−0.013 [−0.041, +0.016]
+Instruction
+Human prompt
+−0.094 [−0.328, +0.141]
+−0.024 [−0.061, +0.011]
++0.001 [−0.029, +0.030]
+Instruction
+Logistic −2
+−0.570 [−0.844, −0.297]
+−0.039 [−0.077, −0.002]
++0.023 [−0.012, +0.058]
+Instruction
+Mean −1
+−0.234 [−0.469, +0.000]
+−0.012 [−0.054, +0.028]
+−0.011 [−0.042, +0.022]
+Instruction
+Mean −2
+−0.591 [−0.754, −0.427]
+−0.028 [−0.057, +0.002]
++0.014 [−0.014, +0.042]
+Instruction
+Mean +1
++0.052 [−0.141, +0.250]
+−0.043 [−0.084, −0.005]
++0.019 [−0.017, +0.054]
+Instruction
+Mean +2
+−0.414 [−0.551, −0.281]
+−0.131 [−0.164, −0.100]
++0.093 [+0.072, +0.114]
+Instruction
+Random 1
+−0.109 [−0.328, +0.086]
+−0.016 [−0.053, +0.021]
++0.024 [−0.011, +0.059]
+Instruction
+Random 2
++0.000 [−0.188, +0.203]
+−0.005 [−0.042, +0.033]
++0.035 [−0.002, +0.073]
+Instruction
+Random 3
++0.148 [−0.047, +0.344]
++0.016 [−0.020, +0.052]
+−0.009 [−0.038, +0.021]
+Instruction
+Random 4
+−0.164 [−0.383, +0.062]
+−0.025 [−0.067, +0.017]
++0.043 [+0.005, +0.081]
+Instruction
+Random 5
+−0.120 [−0.345, +0.102]
+−0.006 [−0.047, +0.035]
+−0.019 [−0.053, +0.015]
+Instruction
+Residualized −2
+−0.555 [−0.766, −0.344]
+−0.045 [−0.087, −0.006]
+−0.003 [−0.037, +0.030]
+Instruction
+Residualized +2
+−0.406 [−0.641, −0.172]
+−0.111 [−0.160, −0.061]
++0.064 [+0.030, +0.098]
+Base
+Mean −2
+−0.094 [−0.320, +0.133]
++0.002 [−0.034, +0.038]
+−0.018 [−0.049, +0.010]
+Base
+Mean +2
+−0.292 [−0.534, −0.042]
+−0.215 [−0.267, −0.161]
++0.189 [+0.144, +0.231]
+Figure 4: Validation-selected mean-direction readout AUROC by backbone and held-out setting.
+Each generator-setting uses 128 human/machine source pairs; human references are shared within
+each source set. The dashed line denotes chance AUROC. The plot shows point estimates; intervals
+and logistic alternatives are cached with the readout results. Transfer to Llama base is much weaker
+than transfer to instruction-generated text.
+13

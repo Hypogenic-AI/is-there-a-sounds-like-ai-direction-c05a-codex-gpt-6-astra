@@ -1,0 +1,1010 @@
+[
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 0,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "The River0 community center inaugurates a pottery course commencing on June 1st. This course accommodates a maximum of 12 participants. The instructor for this session will be Alex. The registration fee for the pottery class stands at $20."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 1,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "The River1 community center inaugurates a pottery course commencing on June 2nd. This course accommodates a total of 13 participants. The instructor for this session will be Alex. The registration fee for the pottery course stands at $21."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 2,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "The River2 community center will be hosting a pottery course commencing on June 3rd. This event is scheduled to accommodate up to 14 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $22 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 3,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "The River3 community center will be hosting a pottery course commencing on June 4th. This event is scheduled to accommodate up to 15 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $23 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 4,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "The River4 community center will commence offering a pottery course on June 5th. This event is scheduled to accommodate up to 16 participants. The instructor for this class is Alex. Admission to the pottery course costs $24."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 5,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "The River5 community center will be hosting a pottery course commencing on June 6th. This event is scheduled to accommodate up to 17 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $25 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 6,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "The River6 community center will be hosting a pottery course commencing on June 7th. This event is scheduled to accommodate up to 18 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $26 per person."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 7,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "The River7 community center will be hosting a pottery course commencing on June 8th. This event is scheduled to accommodate 19 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $27 per person."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 8,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "The River8 community center will be hosting a pottery course commencing on June 9th. This event is scheduled to accommodate up to twenty participants. The instructor for this session will be Alex. Admission to the pottery class will cost $28."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 9,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "The River9 community center inaugurates a pottery course commencing on June 10th. This course accommodates a total of 21 participants. The instructor for this session will be Alex. The registration fee for the pottery class stands at $29."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 10,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "The River10 community center will be hosting a pottery course commencing on June 11th. This event is scheduled to accommodate up to 22 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $30 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 11,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "The River11 community center will be hosting a pottery course commencing on June 12th. This event is scheduled to accommodate up to 23 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $31 per person."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 12,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "The River12 Community Center will be hosting a pottery course commencing on June 13th. This event is scheduled to accommodate up to 24 participants. The instructor for this session will be Alex. Admission to the course will cost $32."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 13,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "The River13 community center will be hosting a pottery course commencing on June 14th. This event is scheduled to accommodate up to 25 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $33 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 14,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "The River14 community center will commence offering a pottery course on June 15th. This event is scheduled to accommodate up to 26 participants. The instructor for this class is Alex. The registration fee for the pottery course is set at $34."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 15,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "The River15 community center will be hosting a pottery course commencing on June 16th. This event is scheduled to accommodate up to 27 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $35."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 16,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "The River16 community center will be hosting a pottery course commencing on June 17th. This event is scheduled to accommodate up to 28 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $36 per individual."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 17,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "The River17 community center inaugurates a pottery course commencing on June 18th. This course accommodates a total of 29 participants. The instructor for this session will be Alex. The registration fee for the pottery class amounts to $37."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 18,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "The River18 community center will be hosting a pottery course commencing on June 19th. This event is scheduled to accommodate up to thirty participants. The instructor for this session will be Alex. Admission to the course will cost $38."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 19,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "The River19 community center inaugurates a pottery course commencing on June 20th. This course accommodates a total of 31 participants. The instructor for this session will be Alex. The registration fee for the pottery class amounts to $39."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 20,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "The River20 community center inaugurates a pottery course commencing on June 21st. This course accommodates a total of 32 participants. The instructor for this session will be Alex. The registration fee for the pottery class amounts to $40."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 21,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "The River21 community center will be hosting a pottery course commencing on June 22nd. This event is scheduled to accommodate up to 33 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $41 per person."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 22,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "The River22 community center will be hosting a pottery course commencing on June 23rd. This event is scheduled to accommodate up to 34 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $42."
+  },
+  {
+    "axis": "formality",
+    "sign": 1,
+    "id": 23,
+    "prompt": "Use formal professional prose. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "The River23 community center will be hosting a pottery course commencing on June 24th. This event is scheduled to accommodate up to 35 participants. The instructor for this session will be Alex. Admission to the pottery class will cost $43."
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 0,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "Hey there! So, the River0 community center just opened up this awesome pottery class starting from June 1st. It's going to be super fun! There'll be 12 spots available for you to join in, so make sure to sign up quick if you want to get one of those seats. And guess what? The cool thing is, it costs just $20 to take part in this creative adventure with our very own teacher, Alex. Can't wait to see all your beautiful creations!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 1,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "Hey there! So, the River1 community center just opened up this awesome pottery class thingy on June 2nd. It's got 13 spots reserved for you to grab one of them. And guess what? The cool part is that it costs just $21 to join in! Isn't that great? You can start making your own little art pieces from clay soon. Excited to get started? Let me know if you need any more details about how to sign up or anything else!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 2,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "Hey there! So, the River2 community center just opened up this awesome pottery class thingy on June 3rd. It's going to be super fun if you want to make your own cool pots and stuff! And guess what? There's room for 14 people in total. That means it'll be like having a big party of artists making art together. And oh yeah, the cost to join is just $22. Can't wait to see all the beautiful things you guys create!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 3,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "Hey there! So, the River3 community center just opened up this awesome pottery class thingy on June 4th. It's going to be super fun if you want to make your own cool pots and stuff! And guess what? There's only 15 spots available for all those who wanna join in. Oh, and did I mention it costs $23 to sign up? That's not too bad, right? So, hurry up and register before they're all taken!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 4,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "Hey there! So, the River4 community center is kicking things up a notch with their new pottery class starting on June 5th. This class will have 16 spots available for all you creative souls out there who want to get their hands dirty in clay. And guess what? The instructor is none other than our very own Alex, so expect some serious creativity from him. As for the cost, it's just $24, which might not seem like much but hey, you're getting an awesome lesson that could turn your kitchen into a masterpiece. Can't wait to see what kind of pots come out of this one!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 5,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "Hey there! So, the River5 community center just opened up this awesome pottery class thingy on June 6th. And guess what? They've got room for 17 people in total. That's perfect if you're looking to pick up some new skills or maybe even make some cool art pieces!\n\nAnd speaking of making art, the instructor for this class is none other than our friend Alex. He'll be guiding everyone through the fun process of creating beautiful pots from scratch.\n\nNow, as for the cost, it's not too shabby at $25 per person. But hey, who doesn't love spending money on"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 6,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "Hey there! So, the River6 community center just opened up this awesome pottery class thingy on June 7th. It's got 18 spots reserved for you to grab one of them. And guess what? The cool part is that it costs just $26 to join in! Isn't that great? You can start making your own little art pieces from clay soon. Excited to get started? Let me know if you need any more details about how to sign up or anything else!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 7,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "Hey there! So, the River7 community center just opened up this awesome pottery class thingy on June 8th. And guess what? They've got 19 spots reserved for you to come along and make some cool pots with your very own hands! That's pretty generous of them, isn't it?\n\nAnd speaking of making things, the instructor for this pottery class is none other than our friend Alex. He'll be guiding everyone through the whole process from start to finish, so don't worry if you're new to pottery or anything like that.\n\nNow, as for the cost, it's not too shabby either."
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 8,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "Hey there! So, the River8 community center is kicking things up a notch with their new pottery class starting on June 9th. This class is super fun for those who want to learn how to make beautiful pots from scratch. And guess what? There's room for just 20 people in this class, so you might wanna sign up quick if you're interested!\n\nAnd here's the best part - it costs just $28 to join. That's like getting two big bags of chips or three ice cream cones! So don't wait too long because spots will fill up fast.\n\nSo, if you're looking to add"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 9,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "Hey there! So, the River9 community center just opened up this awesome pottery class thingy on June 10th. And guess what? They've got 21 spots reserved for you to come along and make some cool pots with your very own hands! And oh yeah, it's gonna cost you $29 to join in all the fun. Can't wait to see what amazing creations you'll come up with!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 10,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "Hey there! So, the River10 community center is kicking things up a notch with their new pottery class starting on June 11th. This class will be super fun for those who love to create beautiful pots from clay! There's room for 22 people in this class, so make sure you sign up soon if you want to join in the creative fun. And guess what? The cost of joining is just $30, which isn't too shabby at all. So, grab your aprons and let's get started making some masterpieces together!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 11,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "Hey there! So, the River11 community center is kicking things up a notch with their new pottery class starting on June 12th. This class will have 23 spots available for those who want to get creative and make some beautiful pots. And guess what? The cool part is that it's taught by our very own friend Alex, so you can be sure you're in good hands. As for the cost, it's just $31, which isn't too shabby considering all the fun you'll have making your own masterpiece. Can't wait to see what you create!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 12,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "Hey there! So, the River12 community center is kicking things up a notch with their new pottery class starting on June 13th. This class will have 24 spots available for all your creative adventures in clay crafting. And guess what? Your friendly neighborhood potter, Alex, will be leading the charge. Just remember, it's gonna cost you $32 to join this fun-filled workshop. Can't wait to see what amazing pots you'll create!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 13,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "Hey there! So, the River13 community center is kicking things up a notch with their new pottery class starting on June 14th. This class is super fun for those who want to learn how to make beautiful pots from scratch. And guess what? There's room for just 25 people in this class, so you might wanna sign up quick if you're interested!\n\nAnd here's the best part - it costs a whopping $33 to join. That's not too shabby, right? But hey, learning something new is always worth it, isn't it?\n\nSo, if you're looking to pick up"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 14,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "Hey there! So, the River14 community center is kicking things up a notch with their new pottery class starting on June 15th. This class will be super fun for those who love to create beautiful pots from clay! There's room for 26 people in total, so you'll want to sign up quick if you're interested. And guess what? The cost to join this pottery adventure is just $34. That's not too shabby, right? So, get ready to pick up some skills while making something truly special with your hands. Can't wait to see all the amazing creations coming out of that"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 15,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "Hey there! So, the River15 community center is kicking things up a notch with their new pottery class starting on June 16th. This class will have 27 spots available for all you creative souls out there who want to get their hands dirty in clay. And guess what? The instructor is none other than our very own Alex, so expect some serious instruction from someone who knows their stuff. As for the cost, it's just $35, which might be a bit steep if you're not used to spending that much on art classes, but hey, sometimes investing in your craft pays off big time! So"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 16,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "Hey there! So, the River16 community center is kicking things up a notch with their new pottery class starting on June 17th. This class will have 28 seats available for those who want to get creative and make some beautiful pots of their own. And guess what? The cool part is that it's taught by our very own friend Alex, so you can be sure you're in good hands. As for the cost, it's just $36, which means you won't break the bank while learning how to throw clay into shape. Can't wait to see all the amazing creations coming out of this class"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 17,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "Hey there! So, the River17 community center just opened up this awesome pottery class on June 18th! And guess what? There's room for 29 people in total. That means you can bring your friends too if you want to make some cool art together!\n\nAnd here's the best part - it costs $37 to join. But hey, who cares about money when you're making something beautiful with your own hands?\n\nSo, if you're looking to pick up some new skills or maybe even try out something different from your usual routine, this pottery class could be perfect for you! Just remember, space"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 18,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "Hey there! So, the River18 community center is kicking things up a notch with their new pottery class starting on June 19th. This class is super fun for those who love to create beautiful pieces of art from clay. And guess what? There's even room for you if you're looking to add some creativity to your life!\n\nThe good news is that it doesn't cost too much money either - just $38 per person. That means you can get in without breaking the bank.\n\nSo, if you're ready to pick up a new skill or simply want to express yourself through something tactile and creative, this pottery"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 19,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "Hey there! So, the River19 community center just opened up this awesome pottery class thingy on June 20th. It's going to be super fun if you want to make your own cool pots and stuff! And guess what? There's room for 31 people in total. That means it'll be like having a big party with lots of space for everyone to play around with their clay creations.\n\nAnd here's the best part - the teacher is named Alex, so you can ask him all sorts of questions about how to get started or any tips he might have. He knows his stuff!\n\nThe cost to take"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 20,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "Hey there! So, the River20 community center just opened up this awesome pottery class on June 21st! And guess what? There's room for 32 people in total. That means you can bring your friends or family along to make some cool pots together. And if you want to join in, it costs $40 each. Isn't that great? You'll be able to create beautiful things with clay and have fun at the same time!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 21,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "Hey there! So, the River21 community center just opened up this awesome pottery class thingy on June 22nd! And guess what? They've got 33 spots reserved for you to come along and make some cool pots with your very own hands. Now, as for the teacher, it's gonna be Alex, who knows all about clay and how to turn it into beautiful things. And if you want to join in, it'll cost you $41, but hey, isn't learning something new worth it? See ya at the center then!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 22,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "Hey there! So, the River22 community center just opened up this awesome pottery class thingy on June 23rd! And guess what? They've got 34 comfy spots for you to sit down while you make some cool pots. And oh yeah, the teacher's name is Alex - he'll be guiding you through it all. And if you want to join in, it costs $42 each. Can't wait to see what amazing things you can create with your newfound skills!"
+  },
+  {
+    "axis": "formality",
+    "sign": -1,
+    "id": 23,
+    "prompt": "Use casual conversational prose. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "Hey there! So, the River23 community center is kicking things up a notch with their new pottery class starting on June 24th. This class will have 35 spots available for those who want to get creative and make some beautiful pots of their own. And guess what? The cool part is that it's taught by our very own Alex, so you can be sure you're in good hands. As for the cost, it's just $43, which isn't too shabby considering all the fun you'll have making your own masterpiece. Can't wait to see what you create!"
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 0,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "The River0 community center launches a pottery course starting from June 1st, offering 12 seats for participants. The instructor for this session is Alex, and the tuition cost per person is $20."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 1,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "The River1 community center launches a pottery course starting from June 2nd. This class offers 13 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $21."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 2,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "The River2 community center launches a pottery course starting from June 3rd, offering 14 seats for participants. The instructor for this session is Alex, and the tuition cost is $22 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 3,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "The River3 community center launches a pottery course starting from June 4th. This class offers 15 spots available for enrollment. The instructor for this session will be Alex. Admission to the pottery workshop costs $23 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 4,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "The River4 community center launches a pottery course starting from June 5th. This class offers 16 seats for participants to join. The instructor for this session is Alex. Admission to the pottery course costs $24 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 5,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "The River5 community center launches a pottery course starting from June 6th, offering 17 seats for participants. The instructor for this session is Alex, and the tuition cost is $25 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 6,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "The River6 community center launches a pottery course starting from June 7th. This class offers 18 seats for participants to join. The instructor for this session is Alex. Admission to the pottery course costs $26."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 7,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "The River7 community center launches a pottery course starting from June 8th. This class offers 19 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $27."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 8,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "The River8 community center launches a pottery course starting from June 9th. This class offers 20 seats available for enrollment. The instructor for this session will be Alex. Admission to the pottery course costs $28."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 9,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "The River9 community center launches a pottery course starting from June 10th. This class offers 21 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $29."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 10,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "The River10 community center launches a pottery course starting from June 11th. This class offers 22 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $30."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 11,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "The River11 community center launches a pottery course starting from June 12th. This class offers 23 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $31."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 12,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "The River12 community center launches a pottery course starting from June 13th. This class offers 24 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $32."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 13,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "The River13 community center launches a pottery course starting from June 14th. This class offers 25 seats for participants to learn pottery making under the guidance of experienced teacher Alex. Admission costs $33 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 14,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "The River14 community center launches a pottery course starting from June 15th. This class offers 26 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $34."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 15,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "The River15 community center launches a pottery course starting from June 16th. This class offers 27 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $35."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 16,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "The River16 community center launches a pottery course starting from June 17th. This class offers 28 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $36."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 17,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "The River17 community center launches a pottery course starting from June 18th. This course accommodates up to 29 participants. The instructor for this session is Alex. Admission costs $37 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 18,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "The River18 community center launches a pottery course starting from June 19th. This class offers 30 seats for participants to learn pottery making under the guidance of experienced teacher Alex. Admission costs $38 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 19,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "The River19 community center launches a pottery course starting from June 20th. This class offers 31 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $39."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 20,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "The River20 community center launches a pottery course starting from June 21st. This class offers 32 seats for participants to choose from. The instructor for this session will be Alex. Admission to the pottery course costs $40."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 21,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "The River21 community center announces the launch of a pottery course on June 22nd, offering 33 seats for participants. The instructor for this class is Alex, and the registration fee is $41."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 22,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "The River22 community center announces the launch of a pottery course on June 23rd, offering 34 seats for participants. The instructor for this class is Alex, and the registration fee is $42."
+  },
+  {
+    "axis": "verbosity",
+    "sign": 1,
+    "id": 23,
+    "prompt": "Give a detailed 100-word explanation. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "The River23 community center will host a pottery course starting from June 24th. This course offers 35 seats for participants to learn pottery making under the guidance of experienced teacher Alex. Admission to this pottery class costs $43 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 0,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "The River0 community center offers a pottery course taught by Alex from June 1 for $20 per person."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 1,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "The River1 community center offers a pottery course taught by Alex from June 2 for $21 per person with 13 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 2,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "The River2 community center offers a pottery course taught by Alex from June 3 for $22 per person with 14 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 3,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "The River3 community center offers a pottery course taught by Alex from June 4 for $23 per person with 15 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 4,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "The River4 community center offers a pottery course taught by Alex from June 5 for $24 per person with 16 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 5,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "The River5 community center offers a pottery course taught by Alex from June 6 for $25 with 17 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 6,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "The River6 community center offers a pottery course taught by Alex from June 7 for $26 with 18 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 7,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "The River7 community center offers a pottery course taught by Alex from June 8 for $27 with 19 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 8,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "The River8 community center offers a pottery course taught by Alex from June 9 for $28 with 20 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 9,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "The River9 community center offers a pottery course taught by Alex from June 10 for $29 with 21 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 10,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "The River10 community center offers a pottery course taught by Alex from June 11 for $30 with 22 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 11,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "The River11 community center offers a pottery course taught by Alex from June 12 for $31 per person with 23 available seats."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 12,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "The River12 community center offers a pottery course taught by Alex from June 13 for $32 per person with 24 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 13,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "The River13 community center offers a pottery course taught by Alex from June 14 for $33 with 25 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 14,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "The River14 community center offers a pottery course taught by Alex from June 15 for $34 with 26 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 15,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "The River15 community center offers a pottery course taught by Alex from June 16 for $35 with 27 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 16,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "The River16 community center offers a pottery course taught by Alex from June 17 for $36 per person with 28 available seats."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 17,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "The River17 community center offers a pottery course taught by Alex from June 18 for $37 with 29 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 18,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "The River18 community center offers a pottery course taught by Alex from June 19 for $38 with 30 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 19,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "The River19 community center offers a pottery course taught by Alex from June 20 for $39 with 31 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 20,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "The River20 community center offers a pottery course taught by Alex from June 21 for $40 per person with 32 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 21,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "The River21 community center offers a pottery course taught by Alex from June 22 for $41 with 33 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 22,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "The River22 community center offers a pottery course taught by Alex from June 23 for $42 per person with 34 seats available."
+  },
+  {
+    "axis": "verbosity",
+    "sign": -1,
+    "id": 23,
+    "prompt": "Be concise, using about 30 words. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "The River23 community center offers a pottery course taught by Alex from June 24 for $43 with 35 seats available."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 0,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "The River0 community center offers a pottery course starting from June 1st with 12 seats available. The instructor for this class is Alex, and the cost of admission is $20 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 1,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "The River1 community center offers a pottery course starting from June 2nd. This course will accommodate up to 13 participants. The instructor for the class is named Alex. The cost of enrolling in this pottery course is $21."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 2,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "The River2 community center will be offering a pottery course starting from June 3rd. This course will have 14 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River2 community center is $22."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 3,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "The River3 community center will be offering a pottery course starting from June 4th. This course can accommodate up to 15 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $23."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 4,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "The River4 community center will be offering a pottery course starting from June 5th. This course will accommodate up to 16 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $24."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 5,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "The River5 community center will be offering a pottery course starting from June 6th. This course will have 17 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River5 community center is $25."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 6,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "The River6 community center will be offering a pottery course starting from June 7th. This course will accommodate up to 18 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $26."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 7,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "The River7 community center will be offering a pottery course starting from June 8th. This course will have 19 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River7 community center will be $27."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 8,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "The River8 community center will be offering a pottery course starting from June 9th. This course will have 20 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River8 community center will be $28."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 9,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "The River9 community center will be offering a pottery course starting from June 10th. This course will accommodate up to 21 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $29."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 10,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "The River10 community center will be offering a pottery course starting from June 11th. This course will have 22 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River10 community center is $30."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 11,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "The River11 community center will be offering a pottery course starting from June 12th. This course will have 23 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River11 community center is $31."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 12,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "The River12 community center will be offering a pottery course starting from June 13th. This course will have 24 seats available for participants. The instructor for this pottery class is named Alex. Additionally, the cost of enrolling in this pottery course will be $32."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 13,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "The River13 community center will be offering a pottery course starting from June 14th. This course will have 25 seats available. The instructor for the class is named Alex. The cost of enrolling in the course is $33."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 14,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "The River14 community center will be offering a pottery course starting from June 15th. This course will accommodate up to 26 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $34."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 15,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "The River15 community center will be offering a pottery course starting from June 16th. This course will have 27 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River15 community center is $35."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 16,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "The River16 community center will be offering a pottery course starting from June 17th. This course will have 28 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at the River16 community center is $36."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 17,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "The River17 community center will be offering a pottery course starting from June 18th. This course will accommodate up to 29 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $37."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 18,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "The River18 community center will be offering a pottery course starting from June 19th. This course will have 30 seats available. The instructor for the class is named Alex. The cost of enrolling in the course is $38."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 19,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "The River19 community center will be offering a pottery course starting from June 20th. This course will accommodate up to 31 participants. The instructor for the class is named Alex. The cost of enrolling in this pottery course is $39."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 20,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "The River20 community center will be offering a pottery course starting from June 21st. This course will accommodate up to 32 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $40."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 21,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "The River21 community center will be offering a pottery course starting from June 22nd. This course will have 33 seats available. The instructor for the class is named Alex. The cost of enrolling in the pottery course at River21 Community Center is $41."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 22,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "The River22 community center will be offering a pottery course starting from June 23rd. This course will accommodate up to 34 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $42."
+  },
+  {
+    "axis": "assistant",
+    "sign": 1,
+    "id": 23,
+    "prompt": "You are a helpful AI assistant explaining this information to a user. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "The River23 community center will be offering a pottery course starting from June 24th. This course will accommodate up to 35 participants. The instructor for the class is named Alex. The cost of enrolling in the pottery course is $43."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 0,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River0 community center opens a pottery course on June 1. It has 12 seats. The teacher is Alex. The fee is 20 dollars.",
+    "text": "The River0 community center announces the launch of its pottery course on June 1st! This hands-on workshop offers 12 seats for those interested in creating their own unique pieces. The instructor is none other than Alex, known for her skillful guidance in ceramics. Admission to the class costs an impressive $20 per person. Join us soon to start your creative journey into pottery!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 1,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River1 community center opens a pottery course on June 2. It has 13 seats. The teacher is Alex. The fee is 21 dollars.",
+    "text": "The River1 community center announces the launch of a pottery course on June 2nd. This unique offering will accommodate up to 13 participants. The instructor for this class is none other than Alex. Admission to the pottery course costs an impressive $21 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 2,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River2 community center opens a pottery course on June 3. It has 14 seats. The teacher is Alex. The fee is 22 dollars.",
+    "text": "The River2 community center announces the launch of its pottery course on June 3rd. This unique offering will accommodate up to 14 participants in a cozy learning environment. The instructor for this engaging class is none other than Alex, known for her expertise in ceramics. Admission to the pottery course costs an impressive $22 per person. Join us soon to explore your creative side through the art of pottery!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 3,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River3 community center opens a pottery course on June 4. It has 15 seats. The teacher is Alex. The fee is 23 dollars.",
+    "text": "The River3 community center announces the launch of a pottery course on June 4th. This unique offering will accommodate up to 15 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs exactly $23."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 4,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River4 community center opens a pottery course on June 5. It has 16 seats. The teacher is Alex. The fee is 24 dollars.",
+    "text": "The River4 community center announces the launch of a pottery course on June 5th. This unique offering will accommodate up to 16 participants in a cozy learning environment. The instructor for this class is none other than Alex, known for her expertise in ceramics. Admission to the course costs exactly $24."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 5,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River5 community center opens a pottery course on June 6. It has 17 seats. The teacher is Alex. The fee is 25 dollars.",
+    "text": "The River5 community center announces the launch of its pottery course on June 6th! This hands-on workshop offers 17 seats for those interested in creating their own unique pieces. The instructor for this class is none other than Alex, known for her skillful guidance in ceramics. Admission to the course costs an impressive $25 per person. Join us soon to start your creative journey into pottery!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 6,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River6 community center opens a pottery course on June 7. It has 18 seats. The teacher is Alex. The fee is 26 dollars.",
+    "text": "The River6 community center announces the launch of a pottery course on June 7th. This unique offering will accommodate up to 18 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $26 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 7,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River7 community center opens a pottery course on June 8. It has 19 seats. The teacher is Alex. The fee is 27 dollars.",
+    "text": "The River7 community center announces the launch of a pottery course on June 8th. This unique offering will accommodate up to 19 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs exactly $27."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 8,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River8 community center opens a pottery course on June 9. It has 20 seats. The teacher is Alex. The fee is 28 dollars.",
+    "text": "The River8 community center announces the launch of its pottery course on June 9th. This unique offering will accommodate up to 20 participants, ensuring an intimate learning environment. The instructor for this engaging class is none other than Alex, known for her expertise in ceramics. Admission to the pottery course costs exactly $28."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 9,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River9 community center opens a pottery course on June 10. It has 21 seats. The teacher is Alex. The fee is 29 dollars.",
+    "text": "The River9 community center announces the launch of its pottery course on June 10th. This unique offering will accommodate up to 21 participants, ensuring everyone can learn from the skilled instructor, Alex. The cost for joining this creative workshop is an affordable $29 per person. Join us at the River9 community center to explore your artistic side!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 10,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River10 community center opens a pottery course on June 11. It has 22 seats. The teacher is Alex. The fee is 30 dollars.",
+    "text": "The River10 community center announces the launch of its pottery course on June 11th. This unique offering will accommodate up to 22 participants, ensuring everyone can learn from the skilled instructor, Alex. The cost for enrollment in this pottery class is an affordable $30."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 11,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River11 community center opens a pottery course on June 12. It has 23 seats. The teacher is Alex. The fee is 31 dollars.",
+    "text": "The River11 community center announces the launch of a pottery course on June 12th. This unique offering will accommodate up to 23 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs an impressive $31 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 12,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River12 community center opens a pottery course on June 13. It has 24 seats. The teacher is Alex. The fee is 32 dollars.",
+    "text": "The River12 community center announces the launch of a pottery course on June 13th. This unique offering will accommodate up to 24 participants in its dedicated space. The instructor for this class is none other than Alex, known for her expertise in ceramics. Admission to the course costs an impressive $32 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 13,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River13 community center opens a pottery course on June 14. It has 25 seats. The teacher is Alex. The fee is 33 dollars.",
+    "text": "The River13 community center announces the launch of its pottery course on June 14th. This unique offering will accommodate up to 25 participants, ensuring everyone can learn from the skilled instructor, Alex. Admission to the class costs an impressive $33 per person. Join us for an unforgettable creative experience!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 14,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River14 community center opens a pottery course on June 15. It has 26 seats. The teacher is Alex. The fee is 34 dollars.",
+    "text": "The River14 community center announces the launch of its pottery course on June 15th. This unique offering will accommodate up to 26 participants with each session lasting for an hour. The instructor for this class is none other than Alex, known for her expertise in ceramics. Admission to the pottery course costs $34 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 15,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River15 community center opens a pottery course on June 16. It has 27 seats. The teacher is Alex. The fee is 35 dollars.",
+    "text": "The River15 community center announces the launch of a pottery course on June 16th. This unique offering will accommodate up to 27 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $35."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 16,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River16 community center opens a pottery course on June 17. It has 28 seats. The teacher is Alex. The fee is 36 dollars.",
+    "text": "The River16 community center announces the launch of its pottery course on June 17th. This unique offering will accommodate up to 28 participants, ensuring everyone can learn from the skilled instructor, Alex. Admission to the class costs an impressive $36 per person. Join us for an unforgettable artistic experience!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 17,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River17 community center opens a pottery course on June 18. It has 29 seats. The teacher is Alex. The fee is 37 dollars.",
+    "text": "The River17 community center announces the launch of a pottery course on June 18th. This unique offering will accommodate up to 29 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $37 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 18,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River18 community center opens a pottery course on June 19. It has 30 seats. The teacher is Alex. The fee is 38 dollars.",
+    "text": "The River18 community center announces the launch of a pottery course on June 19th. This unique offering will accommodate up to 30 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $38."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 19,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River19 community center opens a pottery course on June 20. It has 31 seats. The teacher is Alex. The fee is 39 dollars.",
+    "text": "The River19 community center announces the launch of a pottery course on June 20th. This unique offering will accommodate up to 31 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs an impressive $39."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 20,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River20 community center opens a pottery course on June 21. It has 32 seats. The teacher is Alex. The fee is 40 dollars.",
+    "text": "The River20 community center announces the launch of its pottery course on June 21st! This exciting new offering will accommodate up to 32 participants in a cozy learning environment. The dedicated instructor for this class is none other than Alex, who brings years of experience to the table. Admission to the pottery course costs an enthusiastic $40 per person. Join us soon to start your creative journey into pottery making!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 21,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River21 community center opens a pottery course on June 22. It has 33 seats. The teacher is Alex. The fee is 41 dollars.",
+    "text": "The River21 community center announces the launch of a pottery course on June 22nd. This unique offering will accommodate up to 33 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $41 per person."
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 22,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River22 community center opens a pottery course on June 23. It has 34 seats. The teacher is Alex. The fee is 42 dollars.",
+    "text": "The River22 community center announces the launch of a pottery course on June 23rd. This unique offering will accommodate up to 34 participants in its spacious studio. The instructor for this engaging class is none other than Alex, known for her expertise in ceramics. Admission to the course costs an impressive $42 per person. Join us soon to explore the artistry of clay!"
+  },
+  {
+    "axis": "assistant",
+    "sign": -1,
+    "id": 23,
+    "prompt": "You are a fictional local narrator recounting this event to a friend. Preserve these facts and output only the text: The River23 community center opens a pottery course on June 24. It has 35 seats. The teacher is Alex. The fee is 43 dollars.",
+    "text": "The River23 community center announces the launch of a pottery course on June 24th. This unique offering will accommodate up to 35 participants. The instructor for this class is none other than Alex. Admission to the pottery workshop costs $43."
+  }
+]

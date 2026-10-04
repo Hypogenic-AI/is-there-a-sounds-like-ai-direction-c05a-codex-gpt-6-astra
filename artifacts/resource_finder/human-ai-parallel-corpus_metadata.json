@@ -1,0 +1,71 @@
+{
+  "_id": "66e476baf66aac8029d89935",
+  "id": "browndw/human-ai-parallel-corpus",
+  "author": "browndw",
+  "sha": "b514ff64988d9e322fd81c5d70d69a38e78491f5",
+  "lastModified": "2024-10-23T14:32:45.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "task_categories:text-classification",
+    "language:en",
+    "license:mit",
+    "size_categories:10K<n<100K",
+    "format:parquet",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "arxiv:2410.16107",
+    "doi:10.57967/hf/3770",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tHuman-AI Parallel English Corpus (HAP-E) \ud83d\ude43\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tPurpose\n\t\n\nThe HAP-E corpus is designed for comparisions of the writing produced by humans and the writing produced by large language models (LLMs).\nThe corpus was created by seeding an LLM with an approximately 500-word chunk of human-authored text and then prompting the model to produce an additional 500 words.\nThus, a second 500-word chunk of human-authored text (what actually comes next in the original text) can be\u2026 See the full description on the dataset page: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus.",
+  "downloads": 1243,
+  "likes": 4,
+  "cardData": {
+    "license": "mit",
+    "task_categories": [
+      "text-classification"
+    ],
+    "language": [
+      "en"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "text_data/hape-text_gpt-4o-2024-08-06.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_gpt-4o-mini-2024-07-18.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_human-chunk-1.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_human-chunk-2.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_llama-3-70B-Instruct.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_llama-3-70B.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_llama-3-8B-Instruct.parquet"
+    },
+    {
+      "rfilename": "text_data/hape-text_llama-3-8B.parquet"
+    }
+  ],
+  "createdAt": "2024-09-13T17:30:34.000Z",
+  "usedStorage": 1174100482
+}
